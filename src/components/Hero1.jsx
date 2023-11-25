@@ -22,7 +22,7 @@ const Hero1 = () => {
 
   return (
     <section>
-      <div className="flex flex-col justify-around HeroGridContainer z-10">
+      <div className="reveal flex flex-col justify-around HeroGridContainer z-10">
         <div className="w-full h-3/5 justify-center items-center flex flex-col">
           <img className="w-full md:w-32 lg:w-3/6" src="https://images.ctfassets.net/1euybtmvarct/E1AtIFaT27VDaRgIJ5vSd/c5c11fcc52f8b5f156ee2aaa45d53da2/icon-logo.svg" alt="Icon Logo" />
         </div>
