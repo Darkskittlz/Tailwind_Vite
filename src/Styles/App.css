@@ -1,7 +1,6 @@
 #root {
   max-width: 100%;
   margin: 0 auto;
-  text-align: center;
   display: flex;
   justify-content: center;
 }
@@ -18,21 +17,38 @@
   position: relative;
 }
 
-.scroller {
-  height: 80vh;
-  margin-top: 10vh;
-  overflow-y: scroll;
-  scroll-snap-type: y mandatory;
+
+.LoyalNav {
+  background-image: url('../assets/clouds.svg');
+  position: relative;
+}
+
+.HeroGridContainer {
+  height: 100vh;
+  background-image: url('../assets/HolderIMG.png');
+  background-size: cover;
+  background-position: left; /* Adjust the position as needed */
+}
+
+.Hero2Container {
+  height: calc(100vh + clamp(1.2rem, 0.8842rem + 0.8421vw, 2.4rem));
 }
 
 /* Style to hide the scrollbar itself */
-.scroller::-webkit-scrollbar {
+::-webkit-scrollbar {
   width: 0; /* Set width to 0 */
 }
 
+.scroller {
+  /* height: 100vh; */
+  /* overflow-y: scroll; */
+  /* scroll-snap-type: y mandatory; */
+  background-color: #eeeeee;
+}
+
 .scroller section {
-  height: 100vh;
-  scroll-snap-align: start;
+  background-color: #eeeeee;
+  /* scroll-snap-align: start; */
 }
 
 .element {
@@ -45,28 +61,22 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: black;
 }
 
-.expired-notice {
-  text-align: center;
-  padding: 2rem;
-  border: 1px solid #ebebeb;
-  border-radius: 0.25rem;
+.show-counter {
+  justify-content: center;
+  display: flex;
 }
 
-.expired-notice > span {
-  font-size: 2.5rem;
-  font-weight: bold;
-  color: red;
-}
-
-.expired-notice > p {
-  font-size: 1.5rem;
+.sup {
+  font-size: 50%;
+  vertical-align: top;
 }
 
 @media screen and (max-width: 960px) {
   .show-counter {
+    display: flex;
+    justify-content: center;
     padding: 0rem;
   }
 }

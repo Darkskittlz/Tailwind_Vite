@@ -25,11 +25,11 @@ const Home = () => {
       <article className="scroller">
         <Hero1 />
         <Hero2 />
-        <Hero3 />
-        <Hero4 />
-        <Hero5 />
-        <Hero6 />
-        <Hero7 />
+        {/* <Hero3 /> */}
+        {/* <Hero4 /> */}
+        {/* <Hero5 /> */}
+        {/* <Hero6 /> */}
+        {/* <Hero7 /> */}
       </article>
     </GridContainer>
   )

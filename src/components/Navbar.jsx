@@ -1,60 +1,57 @@
 import React from 'react'
 import styled from "styled-components"
 import CountdownTimer from "./CountdownTimer"
-
+import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
+import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
+import ArrowOutwardIcon from '@mui/icons-material/ArrowOutward'
+import LoyalLogo from "../assets/LoyalPNG.png"
 
 const GridContainer = styled.div`
   grid-template-columns: 1fr 1fr 2fr 150px;
   width: 100%;
   height: 100px;
-  margin-top: -10px;
   display: grid;
   top: 0;
   left: 0;
-  position: fixed;
+  position: relative;
   grid-gap: 20px;
   padding: 0px 5px 0px 5px;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   background: rgb(255,11,159);
   background: linear-gradient(25deg, rgba(255,11,159,1) 0%, rgba(251,142,1,1) 85%, rgba(251,142,1,1) 88%);
 
   h1 {
-    font-size: 18px;
+    font-size: 28px;
     font-weight: 700;
     text-align: left;
+
+    @media screen and (max-width: 1451px) {
+      font-size: 35px;
+    }
   }
 
   h3 {
-    font-size: 15px;
+    font-size: 25px;
     text-align: left;
 
-    @media screen and (max-width: 960px) {
+    @media screen and (max-width: 1451px) {
       display: none;
     }
   }
 
-  button {
-    background-color: white;
-    border-radius: 15px;
-    padding-left: 10px;
-    font-weight: 700;
-    font-size: 10px;
-    color: #000052;
-    height: 34px;
-    width: 100px;
-    right: 0;
-
-    @media screen and (max-width: 960px) {
-      display: none;
-    }
-  }
-
-  @media screen and (max-width: 960px) {
-    grid-template-columns: 1fr 1fr;
+  @media screen and (max-width: 1451px) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
   }
 }
+`
+
+const NavContainer = styled.div`
+  position: relative;
+  top: 0;
 `
 
 const Navbar = () => {
@@ -66,12 +63,34 @@ const Navbar = () => {
   const dateTime = NOW_IN_MS + totalMilliseconds;
 
   return (
-    <GridContainer>
-      <h1>ICON OF THE SEAS SETS SAIL IN</h1>
-      <CountdownTimer targetDate={dateTime} />
-      <h3>We can't wait for Icon of the Seas, the very first ship in a revolutionary, all-new class - debuting in January 2024!</h3>
-      <button>Learn More</button>
-    </GridContainer>
+    <>
+      <NavContainer>
+        <GridContainer>
+          <h1>ICON OF THE SEAS SETS SAIL IN</h1>
+          <CountdownTimer targetDate={dateTime} />
+          <h3>We can't wait for Icon of the Seas, the very first ship in a revolutionary, all-new class - debuting in January 2024!</h3>
+          <button className="rounded-full p-2 bg-white text-black hidden xl:inline">
+            Learn More
+            <ArrowForwardIcon />
+          </button>
+        </GridContainer >
+        <div className="w-full flex LoyalNav justify-between pl-3 items-center">
+          <img src={LoyalLogo} alt="https://loading.io/license/#by-license" />
+          <div className="ml-auto mr-5 flex h-full items-center">
+            <button
+              className="rounded-full p-2 bg-white mr-5 text-black hidden md:inline">
+              Marketing Tools
+              <ArrowDownwardIcon style={{ color: "#3663ae" }} />
+            </button>
+            <button
+              className="rounded-full p-2 bg-white mr-5 text-black">
+              Book Now
+              <ArrowOutwardIcon style={{ color: "#3663ae" }} />
+            </button>
+          </div>
+        </div>
+      </NavContainer>
+    </>
   )
 }
 
