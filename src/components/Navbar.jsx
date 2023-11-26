@@ -30,6 +30,10 @@ const GridContainer = styled.div`
     @media screen and (max-width: 1451px) {
       font-size: 35px;
     }
+
+    @media screen and (max-width: 960px) {
+      font-size: 15px;
+    }
   }
 
   h3 {
@@ -45,6 +49,7 @@ const GridContainer = styled.div`
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    grid-gap: 18px;
   }
 }
 `

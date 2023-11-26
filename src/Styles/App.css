@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
 
 #root {
@@ -47,13 +48,35 @@
   height: calc(100vh + clamp(1.2rem, 0.8842rem + 0.8421vw, 2.4rem));
 }
 
+.UpperContainer {
+  padding-bottom: 2.5rem;
+
+  @media screen and (max-width: 960px) {
+    margin-top: -2rem;
+  }
+}
+
 .InnerContainer {
+  padding: 7rem;
 
   @media screen and (max-width: 1222px) {
     display: grid;
     grid-template-columns: 1fr;
     padding-top: 20px;
     padding-bottom: 20px;
+  }
+
+  @media screen and (max-width: 960px) {
+    padding: 3rem;
+  }
+}
+
+.LowerContainer {
+  padding-top: 2.5rem;
+
+  @media screen and (max-width: 960px) {
+    padding-top: 2rem;
+    margin-bottom: -4rem;
   }
 }
 
@@ -91,11 +114,13 @@
   /* height: 80vh; */
   /* overflow-y: scroll; */
   /* scroll-snap-type: y mandatory; */
+
   background-color: #eeeeee;
 }
 
 .scroller section {
   background-color: #eeeeee;
+  /* background-color: #003732; */
   /* scroll-snap-align: start; */
 }
 
@@ -116,18 +141,12 @@
   display: flex;
 }
 
+
 .sup {
   font-size: 50%;
   vertical-align: top;
 }
 
-@media screen and (max-width: 960px) {
-  .show-counter {
-    display: flex;
-    justify-content: center;
-    padding: 0rem;
-  }
-}
 
 .countdown {
   display: flex;
@@ -136,7 +155,6 @@
   border: 1px solid #ebebeb;
   border-radius: 10px;
   height: 65px;
-  padding: -20px;
   color: #3663ae;
   background-color: white;
   padding: 15px;
@@ -180,3 +198,15 @@
 }
 
 
+@media screen and (max-width: 960px) {
+  .show-counter {
+    display: flex;
+    justify-content: flex-start;
+    width: 50%;
+    padding: 0rem;
+  }
+
+  .countdown {
+    margin-right: -4px;
+  }
+}
