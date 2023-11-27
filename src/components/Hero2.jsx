@@ -33,6 +33,16 @@ const FlexContainer = styled.div`
   }
 
 
+  @media screen and (max-width: 960px) {
+    h2 {
+      padding-right: 0px;
+    }
+
+    h3 {
+      padding-right: 0px;
+    }
+  }
+
 
   @media screen and (max-width: 1536px) {
     flex-direction: column-reverse;
@@ -45,7 +55,7 @@ const FlexContainer = styled.div`
       font-family: GTAmerica;
       font-weight: 700;
       line-height: 0.95;
-      padding-right: 50px;
+      /* padding-right: 50px; */
     }
 
     h2 {
@@ -54,7 +64,7 @@ const FlexContainer = styled.div`
       font-weight: 500;
       line-height: 1.4;
       font-weight: 400;
-      padding-right: 50px;
+      /* padding-right: 50px; */
     }
 
     h3 {
@@ -83,7 +93,7 @@ const Hero2 = () => {
           <h2 className="text-4xl mb-5 text-black">This is more than a vacation upgrade. It’s the best family vacation in the world. Introducing the new <span className="italic">Icon of the Seas<span className="sup">SM</span></span> — a first-of-its-kind Royal Caribbean® adventure where your clients will have the time of their life, multiple times a day.</h2>
           <h3 className="text-2xl text-black">It’s thrills they never dared to imagine and next-level chill nobody ever dreamed possible. Your clients’ adrenaline will surge at the largest waterpark at sea, or as they conquer an all-out test of courage dangling high above the ocean. Pick from seven unique pools to satisfy any mood — this is an all-you-can-swim buffet. Fuel bolder bonding with tons to do for everyone in the crew at SurfsideSM, the ultimate stay-all-day family neighborhood right onboard. And discover dishes to delight every appetite with 40 ways to dine and drink. This is the Icon of VacationsSM — arriving January 2024.</h3>
           <button
-            className="rounded-full w-56 p-5 bg-white mt-4 text-2xl font-semibold text-black">
+            className="rounded-full HeroButton w-56 px-3  bg-white mt-4 text-2xl font-semibold text-black">
             Book Now
             <ArrowOutwardIcon style={{ color: "#3663ae", marginLeft: "10px", marginTop: "-5px", fontWeight: "600" }} />
           </button>

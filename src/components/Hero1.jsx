@@ -72,7 +72,7 @@ const Hero1 = () => {
         ) : (
           <div className="w-full flex justify-center">
             <button
-              className="rounded-full pt-5 pb-5 pl-10 pr-10 mb-10 bg-white text-black">
+              className="rounded-full pt-5 pb-5 pl-10 pr-10 mb-10 HeroButton bg-white text-black">
               Explore Details
               <ArrowDownwardIcon style={{ color: "#3663ae" }} />
             </button>
