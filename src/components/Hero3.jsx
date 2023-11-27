@@ -12,8 +12,8 @@ const FlexContainer = styled.div`
   align-content: center;
   border-radius: 20px;
   margin: 5vh;
-  padding-top: 110px;
-  padding-bottom: 120px;
+  padding-top: 70px;
+  padding-bottom: 70px;
 
 
   h1 {
