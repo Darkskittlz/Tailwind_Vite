@@ -102,7 +102,8 @@
 }
 
 .Hero5TextContainer {
-  margin: 50px;
+  padding-right: 200px;
+  margin: 77px;
 
 
   @media screen and (max-width: 1536px) {
@@ -111,7 +112,7 @@
 }
 
 .Hero6TextContainer {
-  margin: 50px;
+  margin: 120px;
 
 
   @media screen and (max-width: 1536px) {
