@@ -46,7 +46,7 @@ const EmblaCarousel = (props) => {
   return (
     <section>
       <EmblaGridContainer>
-        <div className="embla__viewport" ref={emblaRef}>
+        <div className="mb-20 embla__viewport" ref={emblaRef}>
           <div className="embla__container">
             {slides.map((slide, index) => (
               <div className="embla__slide" key={index}>
@@ -55,9 +55,11 @@ const EmblaCarousel = (props) => {
                 </div>
                 <IMGContainer>
                   <InnerContainer1>
-                    <h5 className="text-3xl text-left font-semibold"><ul className="list-disc list-inside"><li className="listItem">ICONIC THRILLS</li></ul></h5>
-                    <h1 className="mb-5 text-black mt-2">{slide.heading}</h1>
-                    <h3 className="text-2xl text-black">{slide.text}</h3>
+                    <div className="xs:mr-20 xs:mb-20">
+                      <h5 className="text-3xl text-left font-semibold"><ul className="list-disc list-inside"><li className="listItem">ICONIC THRILLS</li></ul></h5>
+                      <h1 className="mb-5 text-black mt-2">{slide.heading}</h1>
+                      <h3 className="text-2xl text-black">{slide.text}</h3>
+                    </div>
                   </InnerContainer1>
                   <InnerContainer2>
                     <h2><ul className="list-disc list-inside"><li>{slide.caption}</li></ul></h2>

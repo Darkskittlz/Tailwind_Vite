@@ -67,13 +67,6 @@
   margin-top: -100px;
 }
 
-.Hero2 {
-  margin-top: 100vh;
-
-  @media screen and (max-width: 1530px) {
-    margin-top: 50vh;
-  }
-}
 
 .HeroTextContainer {
   display: flex;
@@ -145,6 +138,10 @@
   }
 }
 
+.Hero3Container {
+  background: linear-gradient(90deg, rgb(255, 13, 178) 0%, rgb(255, 165, 0) 100%);
+}
+
 .HeroButton {
   margin-left: 5px;
   padding-top: 15px;
@@ -165,38 +162,6 @@
 }
 
 
-
-.UpperContainer {
-  padding-bottom: 3.5rem;
-
-  @media screen and (max-width: 960px) {
-    margin-top: -2rem;
-  }
-}
-
-.InnerContainer {
-  padding: 7rem;
-
-  @media screen and (max-width: 1222px) {
-    display: grid;
-    grid-template-columns: 1fr;
-    padding-top: 20px;
-    padding-bottom: 20px;
-  }
-
-  @media screen and (max-width: 960px) {
-    padding: 3rem;
-  }
-}
-
-.LowerContainer {
-  padding-top: 3.5rem;
-
-  @media screen and (max-width: 960px) {
-    padding-top: 2rem;
-    margin-bottom: -4rem;
-  }
-}
 
 .Hero4Container {
   height: 100vh;
@@ -269,7 +234,6 @@ div.carousel-inner img {
   object-fit: cover;
 }
 
-
 /* Style to hide the scrollbar itself */
 ::-webkit-scrollbar {
   width: 0; /* Set width to 0 */
@@ -284,6 +248,7 @@ div.carousel-inner img {
 }
 
 .scroller section {
+  /* height: 100vh; */
   background-color: #eeeeee;
   /* background-color: #003732; */
   /* scroll-snap-align: start; */

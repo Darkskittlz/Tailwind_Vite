@@ -1,10 +1,11 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import styled from "styled-components"
 import CountdownTimer from "./CountdownTimer"
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
 import ArrowOutwardIcon from '@mui/icons-material/ArrowOutward'
 import LoyalLogo from "../assets/LoyalPNG.png"
+import AnchorLogo from "../assets/AnchorIMG.png"
 
 const GridContainer = styled.div`
   grid-template-columns: 1fr 1fr 2fr 150px;
@@ -60,6 +61,7 @@ const NavContainer = styled.div`
 `
 
 const Navbar = () => {
+  const [showAnchor, setShowAnchor] = useState(true);
   const DAYS_IN_MS = 24 * 60 * 60 * 1000; // milliseconds in a day
   const HOURS_IN_MS = 60 * 60 * 1000; // milliseconds in an hour
   const MINUTES_IN_MS = 60 * 1000; // milliseconds in a minute
@@ -67,11 +69,25 @@ const Navbar = () => {
   const NOW_IN_MS = new Date().getTime();
   const dateTime = NOW_IN_MS + totalMilliseconds;
 
+  useEffect(() => {
+    const handleResize = () => {
+      const viewportWidth = window.innerWidth;
+      setShowAnchor(viewportWidth >= 960);
+    };
+
+    handleResize(); // Initial check
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
   return (
     <>
       <NavContainer>
         <GridContainer>
-          <h1>ICON OF THE SEAS SETS SAIL IN</h1>
+          <h1 className="text-white">ICON OF THE SEAS SETS SAIL IN</h1>
           <CountdownTimer targetDate={dateTime} />
           <h3>We can't wait for Icon of the Seas, the very first ship in a revolutionary, all-new class - debuting in January 2024!</h3>
           <button className="rounded-full p-2 bg-white text-black hidden xl:inline">
@@ -79,21 +95,15 @@ const Navbar = () => {
             <ArrowForwardIcon />
           </button>
         </GridContainer >
-        <div className="w-full flex LoyalNav justify-between pl-3 items-center">
-          <img src={LoyalLogo} alt="https://loading.io/license/#by-license" />
-          <div className="ml-auto mr-5 flex h-full items-center">
-            <button
-              className="rounded-full p-2 bg-white mr-5 text-black hidden md:inline">
-              Marketing Tools
-              <ArrowDownwardIcon style={{ color: "#3663ae" }} />
-            </button>
-            <button
-              className="rounded-full p-2 bg-white mr-5 text-black">
-              Book Now
-              <ArrowOutwardIcon style={{ color: "#3663ae" }} />
-            </button>
+        {showAnchor ? (
+          <div className="w-full flex LoyalNav justify-between pl-3 items-center">
+            <img src={LoyalLogo} className="h-16 m-10" alt="https://loading.io/license/#by-license" />
           </div>
-        </div>
+        ) : (
+          <div className="w-full flex LoyalNav justify-between pl-3 items-center">
+            <img src={AnchorLogo} className="h-16 m-10" alt="https://loading.io/license/#by-license" />
+          </div>
+        )}
       </NavContainer>
     </>
   )

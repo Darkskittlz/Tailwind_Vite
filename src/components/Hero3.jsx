@@ -56,128 +56,53 @@ const FlexContainer = styled.div`
 const Hero3 = () => {
   return (
     <section>
-      <FlexContainer>
-        <div className="reveal flex items-center flex-col justify-center UpperContainer">
-          <h1 className="text-6xl font-sans text-center px-40 font-light">ICON OF THE SEAS MARKETING TOOLS</h1>
-          <h2 className="text-2xl mt-6 text-center px-34 font-semibold">Everything you need to market <span className="italic">Icon of the Seas</span></h2>
+      <div className="Hero3Container rounded-xl py-44 md:mb-40 md:ml-20 md:mr-20 lg:mx-96 xs:my-60 xs:mx-14">
+        <div className="reveal flex items-center flex-col pb-24 justify-center">
+          <h1 className="md:text-7xl xs:text-6xl font-semibold font-sans text-center text-white px-40 font-light">ICON OF THE SEAS MARKETING TOOLS</h1>
+          <h2 className="md:text-3xl mt-6 text-center px-34 font-semibold">Everything you need to market <span className="italic">Icon of the Seas</span></h2>
         </div>
         <hr />
-        <div className="reveal InnerContainer flex items-center flex-col  justify-center">
+        <div className="reveal flex items-center flex-col py-20 justify-center">
           <div className="items-center justify-center text-center">
             <button
-              className="rounded-full text-2xl bg-white m-2 text-black">
+              className="rounded-full text-2xl bg-white m-2 pl-5 pr-2 pt-3 pb-3 text-black">
               Trade Flyer
               <ArrowOutwardIcon style={{ color: "#3663ae" }} />
             </button>
             <button
-              className="rounded-full m-2 text-2xl bg-white text-black">
+              className="rounded-full m-2 text-2xl bg-white pl-4 pr-2 pt-3 pb-2 text-black">
               Consumer Flyer
               <ArrowOutwardIcon className="mb-2 ml-2" style={{ color: "#3663ae" }} />
             </button>
             <button
-              className="rounded-full bg-white m-2 text-2xl text-black">
+              className="rounded-full bg-white m-2 text-2xl pl-4 pr-2 pt-3 pb-2 text-black">
               Customizable Consumer Email
-              <ArrowOutwardIcon className="mb-2 ml-2" style={{ color: "#3663ae" }} />
-            </button>
-            <button
-              className="rounded-full bg-white text-2xl m-2 text-black">
-              Web Banners
-              <ArrowOutwardIcon className="mb-2 ml-2" style={{ color: "#3663ae" }} />
-            </button>
-            <button
-              className="rounded-full bg-white text-2xl m-2 text-black">
-              Accomadations Brochure
-              <ArrowOutwardIcon className="mb-2 ml-2" style={{ color: "#3663ae" }} />
-            </button>
-            <button
-              className="rounded-full bg-white text-2xl m-2 text-black">
-              Infinite Accomadations
-              <ArrowOutwardIcon className="mb-2 ml-2" style={{ color: "#3663ae" }} />
-            </button>
-            <button
-              className="rounded-full bg-white text-2xl m-2 text-black">
-              Categorization Grid
-              <ArrowOutwardIcon className="mb-2 ml-2" style={{ color: "#3663ae" }} />
-            </button>
-            <button
-              className="rounded-full bg-white text-2xl m-2 text-black">
-              2024-2025 Deployment
-              <ArrowOutwardIcon className="mb-2 ml-2" style={{ color: "#3663ae" }} />
-            </button>
-            <button
-              className="rounded-full bg-white text-2xl m-2 text-black">
-              2025-2026 Deployment
-              <ArrowOutwardIcon className="mb-2 ml-2" style={{ color: "#3663ae" }} />
-            </button>
-            <button
-              className="rounded-full bg-white text-2xl m-2 text-black">
-              Ship Infographic
-              <ArrowOutwardIcon className="mb-2 ml-2" style={{ color: "#3663ae" }} />
-            </button>
-            <button
-              className="rounded-full bg-white text-2xl m-2 text-black">
-              Thrills Infographic
-              <ArrowOutwardIcon className="mb-2 ml-2" style={{ color: "#3663ae" }} />
-            </button>
-            <button
-              className="rounded-full bg-white text-2xl m-2 text-black">
-              Chills Infographic
-              <ArrowOutwardIcon className="mb-2 ml-2" style={{ color: "#3663ae" }} />
-            </button>
-            <button
-              className="rounded-full bg-white text-2xl m-2 text-black">
-              Ship Cutaway
-              <ArrowOutwardIcon className="mb-2 ml-2" style={{ color: "#3663ae" }} />
-            </button>
-            <button
-              className="rounded-full bg-white text-2xl m-2 text-black">
-              FAQs
-              <ArrowOutwardIcon className="mb-2 ml-2" style={{ color: "#3663ae" }} />
-            </button>
-            <button
-              className="rounded-full bg-white text-2xl m-2 text-black">
-              Consumer Flyer
-              <ArrowOutwardIcon className="mb-2 ml-2" style={{ color: "#3663ae" }} />
-            </button>
-            <button
-              className="rounded-full bg-white text-2xl m-2 text-black">
-              Customizable Car Magnet
-              <ArrowOutwardIcon className="mb-2 ml-2" style={{ color: "#3663ae" }} />
-            </button>
-            <button
-              className="rounded-full bg-white text-2xl m-2 text-black">
-              Countdown Social Media Banners
-              <ArrowOutwardIcon className="mb-2 ml-2" style={{ color: "#3663ae" }} />
-            </button>
-            <button
-              className="rounded-full bg-white text-2xl m-2 text-black">
-              Which Cruiser Are You?
               <ArrowOutwardIcon className="mb-2 ml-2" style={{ color: "#3663ae" }} />
             </button>
           </div>
         </div>
         <hr />
-        <div className="flex items-center flex-col justify-center LowerContainer">
+        <div className="flex items-center flex-col justify-center pt-28">
           <h2 className="text-2xl font-sans font-semibold text-center">Start planning your clients' vacation with a personalized website</h2>
           <div className="items-center pt-5 justify-center text-center">
             <button
-              className="rounded-full text-2xl bg-white m-2 text-black">
+              className="rounded-full text-2xl bg-white pl-4 pr-2 pt-3 pb-0 m-2 text-black">
               Create Now
               <ArrowOutwardIcon className="mb-2 ml-2" style={{ color: "#3663ae" }} />
             </button>
             <button
-              className="rounded-full text-2xl bg-white m-2 text-black">
+              className="rounded-full text-2xl bg-white pl-4 pr-2 pt-3 pb-2 m-2 text-black">
               How To
               <ArrowOutwardIcon className="mb-2 ml-2" style={{ color: "#3663ae" }} />
             </button>
             <button
-              className="rounded-full text-2xl bg-white m-2 text-black">
+              className="rounded-full text-2xl bg-white pl-4 pr-2 pt-3 pb-2 m-2 text-black">
               Customizable Email
               <ArrowOutwardIcon className="mb-2 ml-2" style={{ color: "#3663ae" }} />
             </button>
           </div>
         </div>
-      </FlexContainer>
+      </div>
     </section>
   )
 }

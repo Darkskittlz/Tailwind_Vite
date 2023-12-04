@@ -23,7 +23,6 @@ export const EmblaGridContainer = styled.div`
   --slide-spacing: 1rem;
   --slide-size: 100%;
   --slide-height: 19rem;
-  margin-top: 200px;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
