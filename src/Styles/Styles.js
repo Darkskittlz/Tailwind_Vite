@@ -22,8 +22,9 @@ export const FlexContainer = styled.div`
 export const EmblaGridContainer = styled.div`
   --slide-spacing: 1rem;
   --slide-size: 100%;
-  --slide-height: 19rem;
+  --slide-height: 22rem;
   display: flex;
+  /* height: 100vh; */
   justify-content: space-between;
   flex-direction: column;
 `
@@ -41,8 +42,6 @@ export const InnerContainer1 = styled.div`
   padding-left: 50px;
   width: 40%;
 
-
-
   @media screen and (max-width: 1530px) {
     width: 100%;
   }
@@ -51,6 +50,7 @@ export const InnerContainer1 = styled.div`
 export const InnerContainer2 = styled.div`
   width: 40%;
   padding-bottom: 50px;
+  margin-right: 50px;
 
   h2 {
     width: 100%;

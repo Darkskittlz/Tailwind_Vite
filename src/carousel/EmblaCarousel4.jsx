@@ -74,7 +74,7 @@ export const slides = [
   },
 ]
 
-const EmblaCarousel2 = (props) => {
+const EmblaCarousel4 = (props) => {
   const { options } = props
   const [emblaRef, emblaApi] = useEmblaCarousel(options)
 
@@ -126,7 +126,7 @@ const EmblaCarousel2 = (props) => {
   )
 }
 
-export default EmblaCarousel2
+export default EmblaCarousel4
 
 
 

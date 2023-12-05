@@ -7,8 +7,8 @@ import {
   usePrevNextButtons
 } from './EmblaCarouselArrowButtons'
 import { EmblaGridContainer, FlexContainer, IMGContainer, InnerContainer1, InnerContainer2 } from "../Styles/Styles.js"
-import Cruise1 from '/Cruise2.jpg'
-import Cruise2 from '/Cruise1.jpg'
+import Cruise1 from '/Cruise1.jpg'
+import Cruise2 from '/Cruise2.jpg'
 import Cruise3 from '/Cruise3.jpg'
 
 export const slides = [
@@ -68,7 +68,7 @@ const EmblaCarousel = (props) => {
                       src={slide.image}
                       alt={`IMG${index + 1}`}
                     />
-                    <div className="embla__buttons">
+                    <div className="embla__buttons mt-18 pb-2 flex absolute">
                       <PrevButton onClick={onPrevButtonClick} disabled={prevBtnDisabled} />
                       <NextButton onClick={onNextButtonClick} disabled={nextBtnDisabled} />
                     </div>

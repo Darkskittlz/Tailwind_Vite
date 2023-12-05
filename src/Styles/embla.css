@@ -27,7 +27,16 @@
   }
 
   h3 {
-   font-size: 2rem;
+    font-size: 2rem;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5;
+    color: rgb(0, 0, 0);
+  }
+
+  p {
+    font-size: 1.6rem;
     font-family: Roboto;
     font-style: normal;
     font-weight: 400;
@@ -38,6 +47,7 @@
   h5 {
     color: #2d68b2;
   }
+
 
   @media screen and (max-width: 1536px) {
     display: flex;
@@ -144,13 +154,10 @@
 }
 
 .embla__buttons {
-  display: flex;
-  position: absolute;
   left: 0;
   align-items: center;
   transform: translateY(-50%);
   margin-left: 8rem;
-  margin-top: -25px;
   transition: opacity 0.6s cubic-bezier(0.155, 0.435, 0.125, 0.99) 0s;
 
   @media screen and (max-width: 1536px) {

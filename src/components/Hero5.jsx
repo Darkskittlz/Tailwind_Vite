@@ -1,5 +1,5 @@
 import React from 'react'
-
+import Hero5IMG from "../assets/hero5IMG.jpg"
 
 const Hero5 = () => {
   return (
@@ -8,7 +8,7 @@ const Hero5 = () => {
         <div className="reveal w-full flex justify-center align-top">
           <img
             className="rounded-3xl sm:h-full md:h-5/6 lg:h-5/6 xl:h-5/6"
-            src="https://images.ctfassets.net/1euybtmvarct/6C4L8HAY7Aylh819frxDSG/4e7aa454b2c13ae53ae31312394b2ed2/RCI_IC_Thrill_Island_Aerial_CGI37_Crop_RET__1_.jpg?w=1800&h=2075&q=50&fm=webp"
+            src={Hero5IMG}
             alt="cruiseimg" />
         </div>
         <div className="w-5/6 xl:pl-32 lg:pl-0 lg:ml-32 md:ml-0 xs:ml-0 md:pl-0 md:mt-10 xs:w-full xs:mt-5 pr-32 reveal">

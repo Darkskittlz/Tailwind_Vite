@@ -15,6 +15,24 @@ import Hero11 from "../components/Hero11"
 import Hero12 from "../components/Hero12"
 import Hero13 from "../components/Hero13"
 import Hero14 from "../components/Hero14"
+import Hero15 from "../components/Hero15"
+import Hero16 from "../components/Hero16"
+import Hero17 from "../components/Hero17"
+import Hero18 from "../components/Hero18"
+import Hero19 from "../components/Hero19"
+import Hero20 from "../components/Hero20"
+import Hero21 from "../components/Hero21"
+import Hero22 from "../components/Hero22"
+import Hero23 from "../components/Hero23"
+import Hero24 from "../components/Hero24"
+import Hero25 from "../components/Hero25"
+import Hero26 from "../components/Hero26"
+import Hero27 from "../components/Hero27"
+import Hero28 from "../components/Hero28"
+import Hero29 from "../components/Hero29"
+import Hero30 from "../components/Hero30"
+import Hero31 from "../components/Hero31"
+import Footer from "../components/Footer"
 
 
 const GridContainer = styled.div`
@@ -63,6 +81,24 @@ const Home = () => {
         <Hero12 />
         <Hero13 />
         <Hero14 />
+        <Hero15 />
+        <Hero16 />
+        <Hero17 />
+        <Hero18 />
+        <Hero19 />
+        <Hero20 />
+        <Hero21 />
+        <Hero22 />
+        <Hero23 />
+        <Hero24 />
+        <Hero25 />
+        <Hero26 />
+        <Hero27 />
+        <Hero28 />
+        <Hero29 />
+        <Hero30 />
+        <Hero31 />
+        <Footer />
       </article>
     </GridContainer>
   )
