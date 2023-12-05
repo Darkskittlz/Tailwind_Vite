@@ -65,7 +65,7 @@ const Navbar = () => {
   const DAYS_IN_MS = 24 * 60 * 60 * 1000; // milliseconds in a day
   const HOURS_IN_MS = 60 * 60 * 1000; // milliseconds in an hour
   const MINUTES_IN_MS = 60 * 1000; // milliseconds in a minute
-  const totalMilliseconds = 68 * DAYS_IN_MS + 1 * HOURS_IN_MS + 1 * MINUTES_IN_MS;
+  const totalMilliseconds = 45.0315 * DAYS_IN_MS + 1 * HOURS_IN_MS + 1 * MINUTES_IN_MS;
   const NOW_IN_MS = new Date().getTime();
   const dateTime = NOW_IN_MS + totalMilliseconds;
 

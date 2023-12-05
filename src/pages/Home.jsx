@@ -13,6 +13,8 @@ import Hero9 from "../components/Hero9"
 import Hero10 from "../components/Hero10"
 import Hero11 from "../components/Hero11"
 import Hero12 from "../components/Hero12"
+import Hero13 from "../components/Hero13"
+import Hero14 from "../components/Hero14"
 
 
 const GridContainer = styled.div`
@@ -59,6 +61,8 @@ const Home = () => {
         <Hero10 />
         <Hero11 />
         <Hero12 />
+        <Hero13 />
+        <Hero14 />
       </article>
     </GridContainer>
   )

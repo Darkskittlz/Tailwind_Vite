@@ -4,7 +4,7 @@ import React from 'react'
 const Hero5 = () => {
   return (
     <section>
-      <div className="lg:flex-row xs:flex-col md:flex-col xs:mt-60 md:mt-60 lg:mt-30 m-10 items-center flex">
+      <div className="lg:flex-row xs:flex-col md:flex-col m-10 items-center flex">
         <div className="reveal w-full flex justify-center align-top">
           <img
             className="rounded-3xl sm:h-full md:h-5/6 lg:h-5/6 xl:h-5/6"

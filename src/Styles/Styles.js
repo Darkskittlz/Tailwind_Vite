@@ -41,6 +41,8 @@ export const InnerContainer1 = styled.div`
   padding-left: 50px;
   width: 40%;
 
+
+
   @media screen and (max-width: 1530px) {
     width: 100%;
   }
