@@ -22,11 +22,10 @@
 }
 
 section {
-  background-color: #eeeeee;
-  /* background-color: #003732; */
+  /* background-color: #eeeeee; */
   /* scroll-snap-align: start; */
-  margin-top: 150px;
-  margin-bottom: 150px;
+  /* margin-top: 150px; */
+  /* margin-bottom: 150px; */
 }
 
 
@@ -232,6 +231,12 @@ section {
   }
 }
 
+.HeroGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  justify-items: baseline;
+}
 
 div.carousel-inner {
   display: flex;

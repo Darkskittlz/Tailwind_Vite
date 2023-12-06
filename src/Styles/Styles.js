@@ -29,6 +29,19 @@ export const EmblaGridContainer = styled.div`
   flex-direction: column;
 `
 
+export const EmblaGridContainer2 = styled.div`
+  --slide-spacing: 1rem;
+  --slide-size: 100%;
+  --slide-height: 22rem;
+  display: flex;
+  /* height: 100vh; */
+  justify-content: space-between;
+  flex-direction: column;
+  background-color: #4ae3f6;
+  padding-top: 150px;
+  padding-bottom: 150px;
+`
+
 export const IMGContainer = styled.div`
   display: flex;
   justify-content: space-between;
@@ -41,6 +54,10 @@ export const IMGContainer = styled.div`
 export const InnerContainer1 = styled.div`
   padding-left: 50px;
   width: 40%;
+
+  h4 {
+    font-style: italic;
+  }
 
   @media screen and (max-width: 1530px) {
     width: 100%;

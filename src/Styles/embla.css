@@ -1,6 +1,8 @@
 .embla__viewport {
   overflow: hidden;
 }
+
+
 .embla__container {
   backface-visibility: hidden;
   display: flex;
@@ -83,6 +85,7 @@
     }
   }
 }
+
 
 
 

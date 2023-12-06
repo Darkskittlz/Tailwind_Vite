@@ -14,7 +14,7 @@ const Hero19 = () => {
             alt="cruiseimg" />
         </div>
         <div className="w-5/6 xl:pl-32 lg:pl-0 lg:ml-32 md:ml-0 xs:ml-0 md:pl-0 md:mt-10 xs:w-full xs:mt-5 pr-32 reveal">
-          <h2 className="mb-10 xl:text-4xl lg:text-4xl xs:text-4xl font-bold text-black">The best family vacation in the world takes together time to another level on the all new Icon of the Seas<span className='sup'>SM</span>.</h2>
+          <h2 className="mb-10 xl:text-5xl lg:text-4xl xs:text-4xl font-bold text-black">The best family vacation in the world takes together time to another level on the all new <span className='italic'>Icon of the Seas</span><span className='sup'>SM</span>.</h2>
           <h3 className="text-2xl xl:text-4xl lg:text-3xl xs:text-3xl xl:mb-5 text-black">Shake up your living room dance parties and supersize your competitive spirit with larger-than-life games at high-energy SurfsideSM festivals for the whole family. Refuel between adventures with plenty of dining options for any age. And tuck in for nightly bedtime stories that’ll leave you feeling happily ever after. Older adventurers can swap screentime for scream time on six record-breaking waterslides at Category 6 waterpark, including two family raft slides. Then win one for the home team with laser tag battles and Royal Escape RoomSM riddles. However you play each day, your family will never forget the best week ever onboard The Icon of Vacations.</h3>
           <div className='flex flex-col mt-4'>
             <button
