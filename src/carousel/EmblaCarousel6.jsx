@@ -20,43 +20,72 @@ export const slides = [
     image: Embla1,
     heading: "BIG TIME PLAY TIME",
     caption: "LARGER THAN LIFE FAMILY FESTIVAL",
-    text: "When you’re a kid, bigger is always better. The Larger Than Life Family Festival supersizes friendly competition with giant versions of everyone’s favorites. Like colossal bowling pins, a towering ring toss target, giant darts and more. Between rounds, dance to live music and refuel with grab-and-go grub from your new faves across SurfsideSM. And it’s all hosted by everyone’s favorite host and new BFF, Admiral Awesome — for an afternoon that stacks up to their huge imaginations.",
+    Embla1Super: "SM",
+    Embla1Copywright: "®",
+    Embla1text: "When you’re a kid, bigger is always better. ",
+    Embla1text2: "The Larger Than Life Family Festival ",
+    Embla1text3: "supersizes friendly competition with giant versions of everyone’s favorites. Like colossal bowling pins, a towering ring toss target, giant darts and more. Between rounds, dance to live music and refuel with grab-and-go grub from your new faves across Surfside",
+    Embla1text4: ". And it’s all hosted by everyone’s favorite host and new BFF, Admiral Awesome — for an afternoon that stacks up to their huge imaginations."
   },
   {
     image: Embla2,
     heading: "FIN-FILLED FAMILY FUN",
     caption: "THE BIG SHARK BLOCK PARTY",
-    text: "Grab the fam and dive into a SurfsideSM block party that makes a splash — The Big Shark Block Party. Look out for Admiral Awesome and friends giving out fins for dress-up time and leading the dance party to all your favorite marine mashups. Get in on the motion high above the ocean and reef-rock out to all the coastal classics from Baby Shark to Baby Beluga and more.",
+    Embla2Super: "SM",
+    Embla2Copywright: "®",
+    Embla2text: "Grab the fam and dive into a Surfside",
+    Embla2text2: " block party that makes a splash — ",
+    Embla2text3: "The Big Shark Block Party ",
+    Embla2text4: ". Look out for Admiral Awesome and friends giving out fins for dress-up time and leading the dance party to all your favorite marine mashups. Get in on the motion high above the ocean and reef-rock out to all the coastal classics from Baby Shark to Baby Beluga and more."
   },
   {
     image: Embla3,
     heading: "SWEET DREAMS FROM SURFSIDE",
     caption: "BEDTIME STORY",
-    text: "Pack your plushie friends and your softest blankies for Once Upon a Bedtime Story — the coziest way to wind down after a day of family fun in SurfsideSM. Join Admiral Awesome under the stars and cue calm vibes with a sleepy-time stretch sesh and a new, original bedtime story every night that'll leave you feeling happily ever after.",
+    Embla3Super: "SM",
+    Embla3Copywright: "®",
+    Embla3text: "Pack your plushie friends and your softest blankies for ",
+    Embla3text2: "Once Upon a Bedtime Story ",
+    Embla3text3: " — the coziest way to wind down after a day of family fun in Surfside",
+    Embla3text4: ". Join Admiral Awesome under the stars and cue calm vibes with a sleepy-time stretch sesh and a new, original bedtime story every night that'll leave you feeling happily ever after."
   },
   {
     image: Embla4,
     heading: "A JAM FOR THE WHOLE FAM",
     caption: "STEEL PAN IMAGE",
-    text: "Drum up new memories — and melodies — together as you move and groove to your own tropical tunes. With kid-friendly sheet music and instructional instruments, the Steel Pan Family JamTM will have you playing fresh Caribbean rhythms in the key of sea in no time.",
+    Embla4Super: "TM",
+    Embla4Copywright: "®",
+    Embla4text: "Drum up new memories — and melodies — together as you move and groove to your own tropical tunes. With kid-friendly sheet music and instructional instruments, the ",
+    Embla4text2: "Steel Pan Family Jam",
+    Embla4text3: " will have you playing fresh Caribbean rhythms in the key of sea in no time."
   },
   {
     image: Embla5,
     heading: "THE LEADER OF LAUGHTER",
     caption: "ADMIRAL AWESOME",
-    text: "Introducing Admiral Awesome — the shipwide superstar who is commandeering camaraderie and setting a course for vacation victory. From moments big to small, Admiral Awesome will make each day onboard a forever family memory. As the host of the Larger than Life Family Festival, Once Upon a Bedtime Story, and The Big Shark Block Party — you can always count on Admiral Awesome to steer you in the direction of unforgettable fun.",
+    Embla5text: "Introducing ",
+    Embla5text2: "Admiral Awesome",
+    Embla5text3: " — the shipwide superstar who is commandeering camaraderie and setting a course for vacation victory. From moments big to small, Admiral Awesome will make each day onboard a forever family memory. As the host of the Larger than Life Family Festival, Once Upon a Bedtime Story, and The Big Shark Block Party — you can always count on Admiral Awesome to steer you in the direction of unforgettable fun.",
   },
   {
     image: Embla6,
     heading: "PLAYTIME REDEFINED",
     caption: "ADVENTURE OCEAN ICON",
-    text: "Designed with all ages in mind, the award-winning Adventure Ocean® onboard Icon of the SeasSM is going bigger on adventure than ever — and kids are in for the playtime of their lives. Little ones can let their imaginations guide the way with plenty of whimsical rooms to roam and climbable creations to explore. Tall tales at a magical starry night themed theater. Interactive tinker time at Workshop. Friendly foosball competition and cozy spaces to call their own at Hangout. Plus dedicated programs that will engage all the senses for babies and younger kids at AO Babies and AO Juniors. This is not paint by numbers — this is play outside the lines.",
+    Embla6Super: "SM",
+    Embla6Copywright: "®",
+    Embla6text: "Designed with all ages in mind, the award-winning Adventure Ocean",
+    Embla6text2: " onboard Icon of the Seas",
+    Embla6text3: " is going bigger on adventure than ever — and kids are in for the playtime of their lives. Little ones can let their imaginations guide the way with plenty of whimsical rooms to roam and climbable creations to explore. Tall tales at a magical starry night themed theater. Interactive tinker time at Workshop. Friendly foosball competition and cozy spaces to call their own at Hangout. Plus dedicated programs that will engage all the senses for babies and younger kids at AO Babies and AO Juniors. This is not paint by numbers — this is play outside the lines."
   },
   {
     image: Embla7,
     heading: "POST UP AND COOL DOWN",
     caption: "LEMON POST",
-    text: "Your next drink is never too far away from your pool day. The Lemon PostSM is an open-air hangout overlooking all the family fun of SurfsideSM. Cool down with two refreshing menus to choose from — one carefully crafted for grownups and another with kid-approved sips. With color changing drinks, unique souvenir cups and performative pours, this is not your ordinary lemonade stand.",
+    Embla7Super: "SM",
+    Embla7Copywright: "®",
+    Embla7text: "Your next drink is never too far away from your pool day. The Lemon Post",
+    Embla7text2: " is an open-air hangout overlooking all the family fun of Surfside",
+    Embla7text3: ". Cool down with two refreshing menus to choose from — one carefully crafted for grownups and another with kid-approved sips. With color changing drinks, unique souvenir cups and performative pours, this is not your ordinary lemonade stand."
   },
 ]
 
@@ -74,7 +103,7 @@ const EmblaCarousel6 = (props) => {
   return (
     <section>
       <EmblaGridContainer>
-        <div className="mb-20 embla__viewport" ref={emblaRef}>
+        <div className="embla__viewport" ref={emblaRef}>
           <div className="embla__container">
             {slides.map((slide, index) => (
               <div className="embla__slide" key={index}>
@@ -85,12 +114,53 @@ const EmblaCarousel6 = (props) => {
                   <InnerContainer1>
                     <div className="xs:mb-20">
                       <h5 className="text-3xl text-left font-semibold"><ul className="list-disc list-inside"><li className="listItem">ICONIC FAMILIES</li></ul></h5>
-                      <h1 className="mb-5 text-black text-base/6 mt-2">{slide.heading}</h1>
-                      <h3 className="text-1xl text-base/6 lg:w-full md:w-full text-black">{slide.text}</h3>
+                      <h1 className="mb-5 xl:text-5xl lg:text-5xl xs:text-4xl font-semibold text-black text-base/6 mt-2">{slide.heading}</h1>
+                      <h3 className="text-2xl xl:text-3xl lg:text-3xl xs:text-3xl xl:mb-5 text-black">
+
+                        {slide.Embla1text}
+                        <span className="font-bold">{slide.Embla1text2}</span>
+                        {slide.Embla1text3}
+                        <span className='sup'>{slide.Embla3Super}</span>
+                        {slide.Embla1text4}
+
+                        {slide.Embla2text}
+                        <span className='sup'>{slide.Embla2Super}</span>
+                        {slide.Embla2text2}
+                        <span className='font-bold'>{slide.Embla2text3}</span>
+                        {slide.Embla2text4}
+
+                        {slide.Embla3text}
+                        <span className='font-bold'>{slide.Embla3text2}</span>
+                        {slide.Embla3text3}
+                        <span className='sup'>{slide.Embla3Super}</span>
+                        {slide.Embla3text4}
+
+                        {slide.Embla4text}
+                        <span className='font-bold'>{slide.Embla4text2}</span>
+                        <span className='sup'>{slide.Embla4Super}</span>
+                        {slide.Embla4text3}
+
+                        {slide.Embla5text}
+                        <span className='font-bold'>{slide.Embla5text2}</span>
+                        {slide.Embla5text3}
+
+                        {slide.Embla6text}
+                        <span className='sup'>{slide.Embla6Copywright}</span>
+                        {slide.Embla6text2}
+                        <span className='sup'>{slide.Embla6Super}</span>
+                        {slide.Embla6text3}
+
+                        {slide.Embla7text}
+                        <span className='sup'>{slide.Embla7Super}</span>
+                        {slide.Embla7text2}
+                        <span className='sup'>{slide.Embla7Super}</span>
+                        {slide.Embla7text3}
+
+                      </h3>
                     </div>
                   </InnerContainer1>
                   <InnerContainer2>
-                    <h2><ul className="list-disc list-inside"><li>{slide.caption}</li></ul></h2>
+                    <h2><ul className="ml-5 list-disc list-inside"><li>{slide.caption}</li></ul></h2>
                     <img
                       className="embla__slide__img"
                       src={slide.image}

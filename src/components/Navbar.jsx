@@ -2,8 +2,6 @@ import React, { useState, useEffect } from 'react'
 import styled from "styled-components"
 import CountdownTimer from "./CountdownTimer"
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
-import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
-import ArrowOutwardIcon from '@mui/icons-material/ArrowOutward'
 import LoyalLogo from "../assets/LoyalPNG.png"
 import AnchorLogo from "../assets/AnchorIMG.png"
 
@@ -96,11 +94,11 @@ const Navbar = () => {
           </button>
         </GridContainer >
         {showAnchor ? (
-          <div className="w-full flex LoyalNav justify-between pl-3 items-center">
+          <div className="flex LoyalNav justify-between pl-3 items-center">
             <img src={LoyalLogo} className="h-16 m-10" alt="https://loading.io/license/#by-license" />
           </div>
         ) : (
-          <div className="w-full flex LoyalNav justify-between pl-3 items-center">
+          <div className="flex LoyalNav justify-between pl-3 items-center">
             <img src={AnchorLogo} className="h-16 m-10" alt="https://loading.io/license/#by-license" />
           </div>
         )}

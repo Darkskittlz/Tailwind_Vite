@@ -1,5 +1,6 @@
 import React from 'react'
 import EmblaCarousel8 from '../carousel/EmblaCarousel8'
+import { Margin2Container } from '../Styles/Styles'
 import '../Styles/base.css'
 import '../Styles/embla.css'
 
@@ -11,9 +12,9 @@ const Hero24 = () => {
   return (
     <main className="sandbox">
       <section className="sandbox__carousel">
-        <div>
+        <Margin2Container>
           <EmblaCarousel8 slides={SLIDES} options={OPTIONS} />
-        </div>
+        </Margin2Container>
       </section>
     </main>
   )

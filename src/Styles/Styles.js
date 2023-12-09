@@ -24,7 +24,6 @@ export const EmblaGridContainer = styled.div`
   --slide-size: 100%;
   --slide-height: 22rem;
   display: flex;
-  /* height: 100vh; */
   justify-content: space-between;
   flex-direction: column;
 `
@@ -38,8 +37,17 @@ export const EmblaGridContainer2 = styled.div`
   justify-content: space-between;
   flex-direction: column;
   background-color: #4ae3f6;
-  padding-top: 150px;
+  padding-top: 150px; 
   padding-bottom: 150px;
+`
+
+export const MarginContainer = styled.div`
+  margin-top: 100px;
+  margin-bottom: 100px;
+`
+
+export const Margin2Container = styled.div`
+  margin-top: 100px;
 `
 
 export const IMGContainer = styled.div`
@@ -53,14 +61,65 @@ export const IMGContainer = styled.div`
 
 export const InnerContainer1 = styled.div`
   padding-left: 50px;
+  width: 45%;
+
+  h4 {
+    font-style: italic;
+  }
+
+  h5 {
+    color: #3663ae;
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+
+  @media screen and (max-width: 1530px) {
+    width: 100%;
+
+    h5 {
+      margin-bottom: 15px;
+    }
+  }
+`
+
+export const InnerContainer3 = styled.div`
+  padding-left: 50px;
   width: 40%;
 
   h4 {
     font-style: italic;
   }
 
+  h3 {
+    width: 140%;
+  }
+
+  p {
+    width: 140%;
+  }
+
+  h5 {
+    color: #3663ae;
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+
+  
+
   @media screen and (max-width: 1530px) {
     width: 100%;
+
+    h5 {
+      margin-bottom: 15px;
+    }
+
+    h3 {
+      width: 100%;
+    }
+
+    p {
+      width: 100%;
+    }
   }
 `
 
@@ -79,6 +138,10 @@ export const InnerContainer2 = styled.div`
  
   @media screen and (max-width: 1530px) {
     width: 100%;
+
+    h2 {
+      margin-left: 30px;
+    }
   }
 `
 
