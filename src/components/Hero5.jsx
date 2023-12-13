@@ -6,7 +6,7 @@ const Hero5 = () => {
   return (
     <section>
       <Margin2Container>
-        <div className="lg:flex-row md:flex-col xs:m-10 justify-between flex">
+        <div className="lg:flex-row xs:flex-col xs:m-10 justify-between flex">
           <div className="reveal w-full flex justify-center align-top">
             <img
               className="rounded-3xl sm:h-full md:h-5/6 lg:h-5/6 xl:h-5/6"

@@ -59,6 +59,30 @@ export const IMGContainer = styled.div`
   }
 `
 
+export const ModalContainer = styled.div`
+  @media only screen and (min-width: 600px) and (max-width: 768px) {
+    .content {
+      width: 80%;
+    }
+  }
+
+  /* Media query for tablets (landscape) */
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .content {
+      width: 60%;
+    }
+  }
+
+  /* Media query for mobile devices */
+  @media only screen and (max-width: 600px) {
+    .content {
+      top: 20%;
+      width: 90%;
+      height: auto; /* Adjust height as needed for mobile */
+    }
+  }
+`
+
 export const InnerContainer1 = styled.div`
   padding-left: 50px;
   width: 45%;

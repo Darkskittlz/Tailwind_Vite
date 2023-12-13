@@ -6,6 +6,7 @@ import EmblaCarousel6 from '../carousel/EmblaCarousel6'
 import EmblaCarousel8 from '../carousel/EmblaCarousel8'
 import '../Styles/base.css'
 import '../Styles/embla.css'
+import { ModalContainer } from '../Styles/Styles';
 
 const OPTIONS = { align: 'start', loop: true }
 const SLIDE_COUNT = 5
@@ -90,12 +91,12 @@ const Hero3 = () => {
   return (
     <section>
       <div className="Hero3Container rounded-xl py-44 md:ml-20 md:mr-20 lg:mx-96 xs:mx-14">
-        <div className="reveal flex items-center flex-col pb-24 justify-center">
+        <div className="reveal flex items-center flex-col pb-32 justify-center">
           <h1 className="md:text-7xl xs:text-6xl font-semibold font-sans text-center text-white px-40">ICON OF THE SEAS MARKETING TOOLS</h1>
-          <h2 className="md:text-3xl mt-6 text-center px-34 font-semibold">Everything you need to market <span className="italic">Icon of the Seas</span></h2>
+          <h2 className="md:text-3xl text-white mt-6 text-center px-34 font-semibold">Everything you need to market <span className="italic">Icon of the Seas</span></h2>
         </div>
         <hr />
-        <div className="reveal flex items-center flex-col py-20 justify-center">
+        <div className="reveal flex items-center flex-col pt-40 justify-center">
           <div className="items-center justify-center text-center">
 
             {/* Modal 1 */}
@@ -112,13 +113,15 @@ const Hero3 = () => {
               style={customStyles}
               contentLabel="Example Modal"
             >
-              <main>
-                <EmblaCarousel5 slides={SLIDES} options={OPTIONS} />
-                <button
-                  className="top-5 xl:right-4 xs:top-0 xs:right-0 z-50 cursor-pointer absolute text-3xl text-black"
-                  onClick={close1Modal}
-                >x</button>
-              </main>
+              <ModalContainer>
+                <main>
+                  <EmblaCarousel5 slides={SLIDES} options={OPTIONS} />
+                  <button
+                    className="top-5 xl:right-4 xs:top-0 xs:right-0 z-50 cursor-pointer absolute text-3xl text-black"
+                    onClick={close1Modal}
+                  >x</button>
+                </main>
+              </ModalContainer>
             </Modal>
 
             {/* Modal 2 */}
@@ -167,27 +170,6 @@ const Hero3 = () => {
               </main>
             </Modal>
 
-          </div>
-        </div>
-        <hr />
-        <div className="flex items-center flex-col justify-center pt-28">
-          <h2 className="text-2xl font-sans font-semibold text-center">Start planning your clients' vacation with a personalized website</h2>
-          <div className="items-center pt-5 justify-center text-center">
-            <button
-              className="rounded-full text-3xl bg-white pl-5 pr-2 pt-3 pb-3 mr-2 text-black">
-              Create Now
-              <ArrowOutwardIcon className='mb-3 ml-1' style={{ color: "#3663ae" }} />
-            </button>
-            <button
-              className="rounded-full text-3xl bg-white pl-5 pr-2 pt-3 pb-3 mr-2 text-black">
-              How To
-              <ArrowOutwardIcon className="mb-2 ml-2" style={{ color: "#3663ae" }} />
-            </button>
-            <button
-              className="rounded-full text-3xl bg-white pl-5 pr-2 pt-3 pb-3 text-black">
-              Customizable Email
-              <ArrowOutwardIcon className="mb-2 ml-2" style={{ color: "#3663ae" }} />
-            </button>
           </div>
         </div>
       </div>

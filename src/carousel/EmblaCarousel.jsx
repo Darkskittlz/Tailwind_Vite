@@ -62,7 +62,7 @@ const EmblaCarousel = (props) => {
                     </div>
                   </InnerContainer1>
                   <InnerContainer2>
-                    <h2><ul className="list-disc list-inside"><li>{slide.caption}</li></ul></h2>
+                    <h2><ul className="list-disc text-white list-inside"><li>{slide.caption}</li></ul></h2>
                     <img
                       className="embla__slide__img"
                       src={slide.image}

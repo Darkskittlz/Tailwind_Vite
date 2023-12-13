@@ -1,9 +1,10 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, forwardRef } from 'react'
 import styled from "styled-components"
 import CountdownTimer from "./CountdownTimer"
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import LoyalLogo from "../assets/LoyalPNG.png"
 import AnchorLogo from "../assets/AnchorIMG.png"
+import PropTypes from 'prop-types';
 
 const GridContainer = styled.div`
   grid-template-columns: 1fr 1fr 2fr 150px;
@@ -58,7 +59,7 @@ const NavContainer = styled.div`
   top: 0;
 `
 
-const Navbar = () => {
+const Navbar = (({ section, scrollToSection }, ref) => {
   const [showAnchor, setShowAnchor] = useState(true);
   const DAYS_IN_MS = 24 * 60 * 60 * 1000; // milliseconds in a day
   const HOURS_IN_MS = 60 * 60 * 1000; // milliseconds in an hour
@@ -95,7 +96,14 @@ const Navbar = () => {
         </GridContainer >
         {showAnchor ? (
           <div className="flex LoyalNav justify-between pl-3 items-center">
-            <img src={LoyalLogo} className="h-16 m-10" alt="https://loading.io/license/#by-license" />
+            <img
+              onClick={() => {
+                scrollToSection('section1')
+              }}
+              src={LoyalLogo}
+              className="h-16 m-10 cursor-pointer"
+              alt="https://loading.io/license/#by-license"
+            />
           </div>
         ) : (
           <div className="flex LoyalNav justify-between pl-3 items-center">
@@ -105,7 +113,15 @@ const Navbar = () => {
       </NavContainer>
     </>
   )
-}
+});
+
+Navbar.propTypes = {
+  section: PropTypes.string.isRequired,
+  scrollToSection: PropTypes.func.isRequired,
+};
+
+Navbar.displayName = 'Navbar';
+
 
 export default Navbar
 

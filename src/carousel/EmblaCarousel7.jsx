@@ -222,8 +222,8 @@ const EmblaCarousel7 = (props) => {
                       </div>
                     </InnerContainer1>
                     <InnerContainer2>
-                      <h2><ul className="ml-5 list-disc list-inside"><li>{slide.caption}<span className='sup'>{slide.Embla2Super}</span></li></ul></h2>
-                      <h2><ul className="ml-5 list-disc list-inside"><li>{slide.caption}<span className='sup'>{slide.Embla4Super}</span></li></ul></h2>
+                      <h2><ul className="ml-5 list-disc list-inside text-white"><li>{slide.caption}<span className='sup'>{slide.Embla2Super}</span></li></ul></h2>
+                      <h2><ul className="ml-5 list-disc list-inside text-white"><li>{slide.caption}<span className='sup'>{slide.Embla4Super}</span></li></ul></h2>
                       <img
                         className="embla__slide__img"
                         src={slide.image}
