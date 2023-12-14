@@ -3,7 +3,7 @@ import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
 import PropTypes from 'prop-types';
 import Hero1Vid from "../assets/Hero1Vid.mp4"
 
-const Hero1 = forwardRef(({ section, scrollToSection }, ref) => {
+const Hero1 = forwardRef(({ scrollToSection }, ref) => {
   const [showExploreDetails, setShowExploreDetails] = useState(true);
 
 

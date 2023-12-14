@@ -71,6 +71,8 @@ const Home = forwardRef((_, ref) => {
 
   const getSectionRef = (section) => {
     switch (section) {
+      case 'nav':
+        return section1Ref;
       case 'section1':
         return section1Ref;
       case 'section4':
@@ -112,7 +114,7 @@ const Home = forwardRef((_, ref) => {
   reveal();
   return (
     <GridContainer ref={ref}>
-      <Navbar section="section1" ref={section1Ref} scrollToSection={executeScrollToSection} />
+      <Navbar section="nav" ref={section1Ref} scrollToSection={executeScrollToSection} />
       <article className="scroller">
         <Hero1 section="section1" ref={section1Ref} scrollToSection={executeScrollToSection} />
         <Hero2 />

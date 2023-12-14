@@ -7,14 +7,12 @@ import AnchorLogo from "../assets/AnchorIMG.png"
 import PropTypes from 'prop-types';
 
 const GridContainer = styled.div`
-  grid-template-columns: 1fr 1fr 2fr 150px;
+  display: flex;
   width: 100%;
   height: 100px;
-  display: grid;
   top: 0;
   left: 0;
   position: relative;
-  grid-gap: 20px;
   padding: 0px 5px 0px 5px;
   flex-direction: column;
   align-items: center;
@@ -23,24 +21,35 @@ const GridContainer = styled.div`
   background: linear-gradient(25deg, rgba(255,11,159,1) 0%, rgba(251,142,1,1) 85%, rgba(251,142,1,1) 88%);
 
   h1 {
-    font-size: 28px;
-    font-weight: 700;
+    font-size: 15px;
+    margin-left: 2%;
+    font-weight: 800;
     text-align: left;
 
-    @media screen and (max-width: 1451px) {
-      font-size: 35px;
+    @media screen and (max-width: 437px) {
+      width: 200px;
     }
 
-    @media screen and (max-width: 960px) {
-      font-size: 15px;
-    }
   }
 
   h3 {
-    font-size: 25px;
+    font-size: clamp(1.8rem, 1.8rem + 0vw, 1.8rem);
+    font-weight: 600;
+    width: 600px;
     text-align: left;
+    margin-left: 2%;
+    margin-right: 2%;
 
-    @media screen and (max-width: 1451px) {
+    @media screen and (max-width: 1033px) {
+      display: none;
+    }
+  }
+
+  button {
+    width: 20%;
+    margin-right: 2%;
+
+    @media screen and (max-width: 1033px) {
       display: none;
     }
   }
@@ -59,7 +68,7 @@ const NavContainer = styled.div`
   top: 0;
 `
 
-const Navbar = (({ section, scrollToSection }, ref) => {
+const Navbar = forwardRef(({ scrollToSection }, ref) => {
   const [showAnchor, setShowAnchor] = useState(true);
   const DAYS_IN_MS = 24 * 60 * 60 * 1000; // milliseconds in a day
   const HOURS_IN_MS = 60 * 60 * 1000; // milliseconds in an hour
@@ -84,12 +93,12 @@ const Navbar = (({ section, scrollToSection }, ref) => {
 
   return (
     <>
-      <NavContainer>
+      <NavContainer >
         <GridContainer>
-          <h1 className="text-white">ICON OF THE SEAS SETS SAIL IN</h1>
+          <h1 className="text-white cursor-pointer">ICON OF THE SEAS SETS SAIL IN</h1>
           <CountdownTimer targetDate={dateTime} />
-          <h3>We can't wait for Icon of the Seas, the very first ship in a revolutionary, all-new class - debuting in January 2024!</h3>
-          <button className="rounded-full p-2 bg-white text-black hidden xl:inline">
+          <h3 className='text-white'>We can't wait for Icon of the Seas, the very first ship in a revolutionary, all-new class - debuting in January 2024!</h3>
+          <button className="rounded-full p-5 bg-white text-black xl:inline">
             Learn More
             <ArrowForwardIcon />
           </button>
@@ -106,7 +115,7 @@ const Navbar = (({ section, scrollToSection }, ref) => {
             />
           </div>
         ) : (
-          <div className="flex LoyalNav justify-between pl-3 items-center">
+          <div className="flex cursor-pointer LoyalNav justify-between pl-3 items-center">
             <img src={AnchorLogo} className="h-16 m-10" alt="https://loading.io/license/#by-license" />
           </div>
         )}
