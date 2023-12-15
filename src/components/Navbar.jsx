@@ -17,7 +17,6 @@ const GridContainer = styled.div`
   position: relative;
   padding: 0px 5px 0px 5px;
   align-items: center;
-  justify-content: flex-start;
   background: rgb(255,11,159);
   background: linear-gradient(25deg, rgba(255,11,159,1) 0%, rgba(251,142,1,1) 85%, rgba(251,142,1,1) 88%);
 
@@ -46,7 +45,7 @@ const GridContainer = styled.div`
   }
 
   button {
-    width: 20%;
+    width: 15%;
     margin-right: 2%;
 
     @media screen and (max-width: 1033px) {
@@ -98,7 +97,7 @@ const Navbar = forwardRef(({ scrollToSection }) => {
           <h1 className="text-white cursor-pointer">ICON OF THE SEAS SETS SAIL IN</h1>
           <CountdownTimer targetDate={dateTime} />
           <h3 className='text-white'>We can't wait for Icon of the Seas, the very first ship in a revolutionary, all-new class - debuting in January 2024!</h3>
-          <button className="rounded-full p-5 bg-white text-black xl:inline">
+          <button className="rounded-full p-5 right-0 bg-white text-black xl:inline">
             Learn More
             <ArrowForwardIcon />
           </button>
