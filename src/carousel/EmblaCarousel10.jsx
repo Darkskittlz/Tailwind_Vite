@@ -72,7 +72,7 @@ const EmblaCarousel10 = (props) => {
                 </div>
                 <IMGContainer>
                   <InnerContainer1>
-                    <div className="xs:mb-20">
+                    <div className="md:mt-0 xs:w-full xs:pr-10 xs:mt-10">
                       <h5 className="text-3xl text-left font-semibold"><ul className="list-disc list-inside"><li className="listItem">AN ICONIC JOURNEY BEGINS</li></ul></h5>
                       <h1 className="mb-16 text-black w-5/6 text-6xl font-semibold">{slide.heading}</h1>
 
@@ -113,7 +113,7 @@ const EmblaCarousel10 = (props) => {
                     </div>
                   </InnerContainer1>
                   <InnerContainer2>
-                    <h2><ul className="ml-5 list-disc list-inside text-white"><li>{slide.caption}</li></ul></h2>
+                    <h2><ul className="md:ml-5 xs:ml-0 list-disc list-inside text-white"><li>{slide.caption}</li></ul></h2>
                     <img
                       className="embla__slide__img"
                       src={slide.image}

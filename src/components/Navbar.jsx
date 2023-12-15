@@ -8,28 +8,28 @@ import PropTypes from 'prop-types';
 
 const GridContainer = styled.div`
   display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   width: 100%;
   height: 100px;
   top: 0;
   left: 0;
   position: relative;
   padding: 0px 5px 0px 5px;
-  flex-direction: column;
   align-items: center;
   justify-content: flex-start;
   background: rgb(255,11,159);
   background: linear-gradient(25deg, rgba(255,11,159,1) 0%, rgba(251,142,1,1) 85%, rgba(251,142,1,1) 88%);
 
   h1 {
-    font-size: 15px;
+    font-size: 18px;
     margin-left: 2%;
-    font-weight: 800;
+    font-weight: 700;
     text-align: left;
 
     @media screen and (max-width: 437px) {
       width: 200px;
     }
-
   }
 
   h3 {
@@ -68,7 +68,7 @@ const NavContainer = styled.div`
   top: 0;
 `
 
-const Navbar = forwardRef(({ scrollToSection }, ref) => {
+const Navbar = forwardRef(({ scrollToSection }) => {
   const [showAnchor, setShowAnchor] = useState(true);
   const DAYS_IN_MS = 24 * 60 * 60 * 1000; // milliseconds in a day
   const HOURS_IN_MS = 60 * 60 * 1000; // milliseconds in an hour
@@ -116,7 +116,13 @@ const Navbar = forwardRef(({ scrollToSection }, ref) => {
           </div>
         ) : (
           <div className="flex cursor-pointer LoyalNav justify-between pl-3 items-center">
-            <img src={AnchorLogo} className="h-16 m-10" alt="https://loading.io/license/#by-license" />
+            <img
+              onClick={() => {
+                scrollToSection('section1')
+              }}
+              src={AnchorLogo} className="h-16 m-10"
+              alt="https://loading.io/license/#by-license"
+            />
           </div>
         )}
       </NavContainer>

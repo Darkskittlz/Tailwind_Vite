@@ -91,19 +91,19 @@ const EmblaCarousel9 = (props) => {
                 </div>
                 <IMGContainer>
                   <InnerContainer1>
-                    <div className="xs:mb-20">
+                    <div className="md:mt-0 xs:w-full xs:pr-10 xs:mt-10">
                       <h5 className="text-3xl text-left font-semibold"><ul className="list-disc list-inside"><li className="listItem">ICONIC ENTERTAINMENT</li></ul></h5>
                       <h1 className="mb-16 text-black w-2/3 text-6xl font-semibold">{slide.heading}</h1>
 
                       {/* Slide 1 */}
-                      <h3 className="text-3xl xs:text-3xl leading-10 lg:w-full md:w-full text-black">
+                      <h3 className="text-3xl xs:text-3xl xs:leading-0 leading-10 lg:w-full md:w-full text-black">
                         {slide.Embla1IOTS}
                         <span className='sup'>{slide.Embla1Super}</span>
                         {slide.Embla1text2}
                       </h3>
 
                       {/* Slide 2 */}
-                      <h3 className="mb-5 text-black text-3xl xs:text-3xl leading-10 mt-2">
+                      <h3 className="mb-5 text-black text-3xl xs:text-3xl xs:leading-0 leading-10 mt-2">
                         {slide.Embla2text}
                         {slide.Embla2OZ}
                         {slide.Embla2text2}
@@ -113,7 +113,7 @@ const EmblaCarousel9 = (props) => {
                       </h3>
 
                       {/* Slide 3 */}
-                      <h3 className="text-3xl xs:text-3xl leading-10 lg:w-full md:w-full text-black">
+                      <h3 className="text-3xl xs:text-3xl xs:leading-0 leading-10 lg:w-full md:w-full text-black">
                         {slide.Embla3text}
                         {slide.Embla3IOTS}
                         <span className='sup'>{slide.Embla3Super}</span>
@@ -121,7 +121,7 @@ const EmblaCarousel9 = (props) => {
                       </h3>
 
                       {/* Slide 4 */}
-                      <h3 className="text-3xl xs:text-3xl leading-10 lg:w-full md:w-full text-black">
+                      <h3 className="text-3xl xs:text-3xl xs:leading-0 leading-10 lg:w-full md:w-full text-black">
                         {slide.Embla4text}
                         <span className='sup'>{slide.Embla4Super}</span>
                         {slide.Embla4text2}
@@ -132,7 +132,7 @@ const EmblaCarousel9 = (props) => {
 
 
                       {/* Slide 5 */}
-                      <h3 className="text-3xl xs:text-3xl leading-10 lg:w-full md:w-full text-black">
+                      <h3 className="text-3xl xs:text-3xl xs:leading-0 leading-10 lg:w-full md:w-full text-black">
                         {slide.Embla5text}
                         {slide.Embla5IOTS}
                         <span className='sup'>{slide.Embla5Super}</span>
@@ -143,7 +143,7 @@ const EmblaCarousel9 = (props) => {
                     </div>
                   </InnerContainer1>
                   <InnerContainer2>
-                    <h2><ul className="ml-5 list-disc list-inside"><li>{slide.caption}</li></ul></h2>
+                    <h2><ul className="md:ml-5 xs:ml-0 list-disc list-inside text-white"><li>{slide.caption}</li></ul></h2>
                     <img
                       className="embla__slide__img"
                       src={slide.image}

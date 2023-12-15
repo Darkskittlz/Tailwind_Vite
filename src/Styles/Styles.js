@@ -44,6 +44,11 @@ export const EmblaGridContainer2 = styled.div`
 export const MarginContainer = styled.div`
   margin-top: 100px;
   margin-bottom: 100px;
+
+  h5 {
+    color: white;
+  }
+  
 `
 
 export const Margin2Container = styled.div`
@@ -84,7 +89,7 @@ export const ModalContainer = styled.div`
 `
 
 export const InnerContainer1 = styled.div`
-  padding-left: 50px;
+  padding-left: 20px;
   width: 45%;
 
   h4 {
@@ -100,6 +105,10 @@ export const InnerContainer1 = styled.div`
   @media screen and (max-width: 1530px) {
     width: 100%;
 
+    h1 {
+      margin-bottom: 20px;
+    }
+
     h5 {
       margin-bottom: 15px;
     }
@@ -107,15 +116,15 @@ export const InnerContainer1 = styled.div`
 `
 
 export const InnerContainer3 = styled.div`
-  padding-left: 50px;
-  width: 40%;
+  padding-left: 20px;
+  width: 54%;
 
   h4 {
     font-style: italic;
   }
 
   h3 {
-    width: 140%;
+    width: 100%;
   }
 
   p {

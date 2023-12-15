@@ -15,8 +15,8 @@ const Hero23 = () => {
               src={Hero23IMG}
               alt="cruiseimg" />
           </div>
-          <div className="w-5/6 xl:pl-32 lg:pl-0 lg:ml-32 md:ml-0 xs:ml-0 md:pl-0 md:mt-10 xs:w-full xs:mt-5 pr-32 reveal">
-            <h2 className="mb-10 xl:text-5xl lg:text-4xl xs:text-4xl font-semibold leading-4 text-black">With Over 20 ways to dine onboard, <strong className="italic font-semibold">Icon of the Seas<span className='sup'>SM</span></strong> </h2>
+          <div className="w-5/6 xl:pl-32 lg:pl-0 lg:ml-32 md:ml-0 xs:ml-0 md:pl-0 md:mt-10 xs:w-full xs:mt-5 md:pr-32 reveal">
+            <h2 className="mb-10 xl:text-5xl lg:text-4xl xs:text-4xl font-bold leading-4 text-black">With Over 20 ways to dine onboard, <strong className="italic font-semibold">Icon of the Seas<span className='sup'>SM</span> </strong>is proudly serving up more options for bonding over bites. </h2>
             <h3 className="text-2xl xl:text-3xl lg:text-3xl xs:text-3xl xl:mb-5 text-black">That means more to taste and discover on your culinary adventure together. Whether you’re craving the cheesy slice of the day, freshly made sushi rolls on the go, or a shareable smorgasbord for your whole crew — you’ll always find cuisine to satisfy any mood you’re in without having to wander too far. And every dish is designed to be a treat for the senses, delivered in captivating venues with photo-worthy plating and a side of live entertainment. Onboard The Icon of Vacations<span className='sup'>SM</span>, memorable moments are always on the menu.</h3>
             {/* <div className='HeroGrid'> */}
             {/*   <button */}

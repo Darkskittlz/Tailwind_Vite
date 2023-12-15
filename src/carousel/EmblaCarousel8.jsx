@@ -141,7 +141,7 @@ const EmblaCarousel8 = (props) => {
                 </div>
                 <IMGContainer>
                   <InnerContainer1>
-                    <div className="xs:mb-20">
+                    <div className="md:mt-0 xs:w-full xs:pr-10 xs:mt-10">
                       <h5 className="text-3xl text-left font-semibold"><ul className="list-disc list-inside"><li className="listItem">ICONIC DINING</li></ul></h5>
                       <h1 className="mb-16 text-black text-6xl font-semibold">{slide.heading}</h1>
 

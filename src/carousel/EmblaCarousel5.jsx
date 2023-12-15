@@ -107,9 +107,9 @@ const EmblaCarousel5 = (props) => {
                 </div>
                 <IMGContainer>
                   <InnerContainer1>
-                    <div className="xs:mb-20">
+                    <div className="md:mt-0 xs:w-full xs:pr-10 xs:mt-20">
                       <h5 className="text-3xl text-left font-semibold"><ul className="list-disc list-inside"><li className="listItem">ICONIC BARS & NIGHTLIFE</li></ul></h5>
-                      <h1 className="mb-5 text-5xl font-semibold text-black mt-2">{slide.heading}</h1>
+                      <h1 className="mb-0 text-5xl font-semibold text-black mt-2">{slide.heading}</h1>
                       <h3 className="text-2xl xs:text-3xl lg:w-full md:w-full text-black">
 
                         {slide.Embla1text}

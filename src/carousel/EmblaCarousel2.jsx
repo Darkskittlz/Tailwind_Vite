@@ -126,7 +126,7 @@ const EmblaCarousel2 = (props) => {
     <section>
       <Margin2Container>
         <EmblaGridContainer>
-          <div className="mb-20 embla__viewport" ref={emblaRef}>
+          <div className="md:mb-20 xs:mb-0 embla__viewport" ref={emblaRef}>
             <div className="embla__container">
               {slides.map((slide, index) => (
                 <div className="embla__slide" key={index}>
@@ -135,10 +135,10 @@ const EmblaCarousel2 = (props) => {
                   </div>
                   <IMGContainer>
                     <InnerContainer1>
-                      <div className="xs:mb-20">
-                        <h5 className="text-3xl text-left font-semibold"><ul className="list-disc list-inside"><li className="listItem">ICONIC CHILLS</li></ul></h5>
-                        <h1 className="mb-10 xl:text-6xl md:text-4xl font-bold leading-10 text-black mt-2">{slide.heading}</h1>
-                        <h3 className="lg:text-3xl xs:text-3xl mb-5 text-black">
+                      <div className="md:mt-0 xs:w-full xs:pr-10 xs:mt-20 xs:mb-20">
+                        <h5 className="text-left font-semibold"><ul className="list-disc list-inside"><li className="listItem">ICONIC CHILLS</li></ul></h5>
+                        <h1 className="mb-10 font-bold leading-10 text-black mt-2">{slide.heading}</h1>
+                        <h3 className="mb-5 text-black">
 
                           {/* Slide 1 */}
                           {slide.Embla1text}

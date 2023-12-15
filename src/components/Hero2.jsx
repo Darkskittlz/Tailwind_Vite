@@ -8,7 +8,7 @@ const Hero2 = () => {
     <section>
       <Margin2Container>
         <div className="lg:flex-row xs:flex-col-reverse md:flex-col-reverse justify-between flex">
-          <div className="w-5/6 xl:pl-32 lg:pl-0 ml-32 md:pl-0 pr-32 md:pb-32 reveal">
+          <div className="w-5/6 xl:pl-32 lg:pl-0 ml-32 md:pl-0 pr-32 xs:pr-0 xs:ml-10 md:pb-32 reveal">
             <h1 className="
               xl:text-8xl
               lg:text-6xl

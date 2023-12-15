@@ -139,10 +139,10 @@ const EmblaCarousel3 = (props) => {
                   </div>
                   <IMGContainer>
                     <InnerContainer3>
-                      <div className="xs:mb-20">
+                      <div className="md:mt-0 md:w-full xs:w-full xs:pr-10 xs:mt-10">
                         <h5 className="text-3xl text-white text-left font-semibold"><ul className="list-disc list-inside"><li className="listItem">ICONIC STAYS</li></ul></h5>
                         <h1 className="mb-10 text-7xl font-bold text-black mt-2">{slide.heading}</h1>
-                        <h3 className="lg:text-3xl xs:text-3xl mb-5 text-black">
+                        <h3 className="lg:text-3xl xs:text-1xl mb-5 text-black">
 
                           {/* Slide 1 */}
                           {slide.Embla1text}
@@ -177,17 +177,19 @@ const EmblaCarousel3 = (props) => {
                         {hideBullets ? (
                           <div></div>
                         ) : (
-                          <div className='grid-cols-2 grid lg:w-full md:w-5/6 mt-2 mb-2'>
+                          <div className='grid-cols-3 grid lg:w-full md:w-full mt-2 mb-2'>
                             <ul className="list-inside">
                               <li className="listItem mb-2 text-black">{slide.bullet1}</li>
                               <li className="listItem mb-2 text-black">{slide.bullet2}</li>
                               <li className="listItem mb-2 text-black">{slide.bullet3}</li>
-                              <li className="listItem mb-2 text-black">{slide.bullet4}</li>
                             </ul>
-                            <ul className="list-inside">
+                            <ul>
+                              <li className="listItem mb-2 text-black">{slide.bullet4}</li>
                               <li className="listItem mb-2 text-black">{slide.bullet3alt}</li>
                               <li className="listItem mb-2 text-black">{slide.bullet4alt}</li>
                               <li className="listItem mb-2 text-black">{slide.bullet5}</li>
+                            </ul>
+                            <ul className="list-inside">
                               <li className="listItem mb-2 text-black">{slide.bullet6}</li>
                               <li className="listItem mb-2 text-black">{slide.bullet7}</li>
                               <li className="listItem mb-2 text-black">{slide.bullet8}</li>
@@ -195,7 +197,7 @@ const EmblaCarousel3 = (props) => {
                           </div>
                         )}
 
-                        <button className='rounded-full font-semibold border-black text-2xl bg-white mt-12 p-7 text-black'>{slide.button}
+                        <button className='rounded-full font-semibold border-black text-2xl bg-white md:mt-0 p-7 text-black'>{slide.button}
                           <ArrowOutwardIcon className="mb-2 ml-2" style={{ color: "#3663ae" }} />
                         </button>
                       </div>
@@ -207,7 +209,7 @@ const EmblaCarousel3 = (props) => {
                         src={slide.image}
                         alt={`IMG${index + 1}`}
                       />
-                      <div className="embla__buttons pb-4 mt-12 flex absolute">
+                      <div className="embla__buttons md:mt-22 pb-2 flex absolute">
                         <PrevButton onClick={onPrevButtonClick} disabled={prevBtnDisabled} />
                         <NextButton onClick={onNextButtonClick} disabled={nextBtnDisabled} />
                       </div>

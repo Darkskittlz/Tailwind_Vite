@@ -10,7 +10,7 @@ const Hero1 = forwardRef(({ scrollToSection }, ref) => {
   useEffect(() => {
     const handleResize = () => {
       const viewportWidth = window.innerWidth;
-      setShowExploreDetails(viewportWidth >= 960);
+      setShowExploreDetails(viewportWidth >= 1021);
     };
 
     handleResize(); // Initial check
@@ -33,12 +33,12 @@ const Hero1 = forwardRef(({ scrollToSection }, ref) => {
         {
           showExploreDetails ? (
             <nav>
-              <div className="items-end justify-center IconContainer mb-10 z-10 text-center">
+              <div className="flex items-end flex-wrap justify-center IconContainer mb-10 z-10 text-center">
                 <a
                   onClick={() => {
                     scrollToSection('section1')
                   }}
-                  className="rounded-full relative cursor-pointer p-2 pl-5 pr-3 bg-white m-2 text-black">
+                  className="rounded-full flex items-center relative cursor-pointer p-2 pl-5 pr-3 bg-white m-2 text-black">
                   The Royal Shops
                   <ArrowDownwardIcon style={{ color: "#3663ae" }} />
                 </a>
@@ -46,7 +46,7 @@ const Hero1 = forwardRef(({ scrollToSection }, ref) => {
                   onClick={() => {
                     scrollToSection('section4')
                   }}
-                  className="rounded-full relative cursor-pointer p-2 pl-5 pr-3 bg-white m-2 text-black">
+                  className="rounded-full flex items-center relative cursor-pointer p-2 pl-5 pr-3 bg-white m-2 text-black">
                   Financial Terms
                   <ArrowDownwardIcon style={{ color: "#3663ae" }} />
                 </a>
@@ -54,7 +54,7 @@ const Hero1 = forwardRef(({ scrollToSection }, ref) => {
                   onClick={() => {
                     scrollToSection('section7')
                   }}
-                  className="rounded-full relative cursor-pointer p-2 pl-5 pr-3 bg-white m-2 text-black">
+                  className="rounded-full flex items-center relative cursor-pointer p-2 pl-5 pr-3 bg-white m-2 text-black">
                   Business Updates
                   <ArrowDownwardIcon style={{ color: "#3663ae" }} />
                 </a>
@@ -62,7 +62,7 @@ const Hero1 = forwardRef(({ scrollToSection }, ref) => {
                   onClick={() => {
                     scrollToSection('section10')
                   }}
-                  className="rounded-full relative cursor-pointer p-2 pl-5 pr-3 bg-white m-2 text-black">
+                  className="rounded-full flex items-center relative cursor-pointer p-2 pl-5 pr-3 bg-white m-2 text-black">
                   Legal Requirements
                   <ArrowDownwardIcon style={{ color: "#3663ae" }} />
                 </a>
@@ -70,7 +70,7 @@ const Hero1 = forwardRef(({ scrollToSection }, ref) => {
                   onClick={() => {
                     scrollToSection('section15')
                   }}
-                  className="rounded-full relative cursor-pointer pl-5 pr-3 p-2 bg-white m-2 text-black">
+                  className="rounded-full flex items-center relative cursor-pointer pl-5 pr-3 p-2 bg-white m-2 text-black">
                   Industry Experience
                   <ArrowDownwardIcon style={{ color: "#3663ae" }} />
                 </a>
@@ -78,7 +78,7 @@ const Hero1 = forwardRef(({ scrollToSection }, ref) => {
                   onClick={() => {
                     scrollToSection('section31')
                   }}
-                  className="rounded-full relative cursor-pointer pl-5 pr-3 p-2 bg-white m-2 text-black">
+                  className="rounded-full flex items-center relative cursor-pointer pl-5 pr-3 p-2 bg-white m-2 text-black">
                   Positioning
                   <ArrowDownwardIcon style={{ color: "#3663ae" }} />
                 </a>
@@ -86,7 +86,7 @@ const Hero1 = forwardRef(({ scrollToSection }, ref) => {
                   onClick={() => {
                     scrollToSection('section34')
                   }}
-                  className="rounded-full relative cursor-pointer pl-5 pr-3 p-2 bg-white m-2 text-black">
+                  className="rounded-full flex items-center relative cursor-pointer pl-5 pr-3 p-2 bg-white m-2 text-black">
                   References
                   <ArrowDownwardIcon style={{ color: "#3663ae" }} />
                 </a>
