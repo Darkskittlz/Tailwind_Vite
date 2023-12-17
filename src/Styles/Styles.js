@@ -51,6 +51,106 @@ export const MarginContainer = styled.div`
   
 `
 
+export const Margin3Container = styled.div`
+  margin-top: 25vh;
+  margin-bottom: 25vh;
+
+  h5 {
+    color: white;
+  }
+  
+`
+
+
+export const Hero1Header = styled.div`
+  display: flex;
+  align-items: center;
+  top: 0.2%;
+  position: relative;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+
+  h1 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 214px;
+  }
+
+  h2 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 95px;
+  }
+
+  @media only screen and (min-width: 1450px) and (max-width: 1536px) {
+    top: 0%;
+
+    h1 {
+      text-align: center;
+      font-weight: 700;
+      font-size: 204px;
+    }
+
+    h2 {
+      text-align: center;
+      font-weight: 700;
+      font-size: 95px;
+    }
+  }
+
+  @media only screen and (min-width: 1025px) and (max-width: 1449px) {
+    top: -0.5%;
+
+    h1 {
+      text-align: center;
+      font-weight: 700;
+      font-size: 154px;
+    }
+
+    h2 {
+      text-align: center;
+      font-weight: 700;
+      font-size: 55px;
+    }
+
+  }
+
+  /* Media query for tablets (landscape) */
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    top: 0%;
+
+    h1 {
+      text-align: center;
+      font-weight: 700;
+      font-size: 94px;
+    }
+
+    h2 {
+      text-align: center;
+      font-weight: 700;
+      font-size: 45px;
+    }
+  }
+
+  /* Media query for mobile devices */
+  @media only screen and (max-width: 767px) {
+    top: 0%;
+
+    h1 {
+      text-align: center;
+      font-weight: 700;
+      font-size: 64px;
+    }
+
+    h2 {
+      text-align: center;
+      font-weight: 700;
+      font-size: 35px;
+    }
+  }
+`
+
 export const Margin2Container = styled.div`
   margin-top: 100px;
 `
@@ -156,17 +256,14 @@ export const InnerContainer3 = styled.div`
   }
 `
 
-export const InnerContainer2 = styled.div`
-  width: 40%;
-  padding-bottom: 50px;
-  margin-right: 50px;
 
+export const CarouselContainer = styled.div`
   h2 {
-    width: 100%;
     position: fixed;
     font-size: 20px;
-    margin-left: 10px;
-    margin-top: 30px;
+    margin-left: 20px;
+    margin-top: 10px;
+    color: #536fb2;
   }
  
   @media screen and (max-width: 1530px) {
@@ -174,6 +271,79 @@ export const InnerContainer2 = styled.div`
 
     h2 {
       margin-left: 30px;
+    }
+  }
+`
+
+export const InnerContainer2 = styled.div`
+
+  h2 {
+    position: fixed;
+    font-size: 20px;
+    margin-left: 20px;
+    margin-top: 10px;
+  }
+ 
+  @media screen and (max-width: 1530px) {
+    width: 100%;
+
+    h2 {
+      margin-left: 30px;
+    }
+  }
+`
+
+export const MockShopContainer = styled.div`
+  width: 40%;
+  padding-bottom: 50px;
+  margin-right: 50px;
+
+  h2 {
+    position: fixed;
+    font-size: 20px;
+    margin-left: 10px;
+    margin-top: 30px;
+  }
+`
+
+export const BlueBulletContainer = styled.div`
+  padding-left: 20px;
+
+  h4 {
+    font-style: italic;
+  }
+
+  h3 {
+    width: 100%;
+  }
+
+  p {
+    width: 140%;
+  }
+
+  h1 {
+    color: #3663ae;
+    margin-top: 68px;
+  }
+
+  h5 {
+    color: #3663ae;
+    margin-bottom: 30px;
+  }
+
+  @media screen and (max-width: 1530px) {
+    width: 100%;
+
+    h5 {
+      margin-bottom: 15px;
+    }
+
+    h3 {
+      width: 100%;
+    }
+
+    p {
+      width: 100%;
     }
   }
 `

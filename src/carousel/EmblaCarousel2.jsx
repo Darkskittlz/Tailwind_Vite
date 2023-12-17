@@ -6,8 +6,8 @@ import {
   NextButton,
   usePrevNextButtons
 } from './EmblaCarouselArrowButtons'
-import { EmblaGridContainer, IMGContainer, InnerContainer1, InnerContainer2, Margin2Container } from "../Styles/Styles.js"
-import Embla1 from "../assets/embla2-1.jpg"
+import { CarouselContainer, EmblaGridContainer, IMGContainer, InnerContainer1, Margin2Container } from "../Styles/Styles.js"
+import Embla1 from "../assets/first_at_sea_chanel.png"
 import Embla2 from "../assets/embla2-2.jpg"
 import Embla3 from "../assets/embla2-3.jpg"
 import Embla4 from "../assets/embla2-4.jpg"
@@ -20,13 +20,16 @@ import Embla9 from "../assets/embla2-9.jpg"
 export const slides = [
   {
     image: Embla1,
-    heading: "CHOOSE YOUR POOLSIDE PARADISE",
-    caption: "THE HIDEAWAY",
+    heading: "FIRST AT SEA: CHANEL",
+    caption: "Introducing Chanel Watches & Jewelry",
+    SubHeader: "REVOLUTION",
     Embla1Super: "SM",
     Embla1Copywright: "®",
     Embla1IOTS: "𝘐𝘤𝘰𝘯 𝘰𝘧 𝘵𝘩𝘦 𝘚𝘦𝘢𝘴",
-    Embla1text: "Pool days aren’t just for kids on the new ",
-    Embla1text2: ". Shake up your sea day with ice-cold drinks and sun-drenched hangs. Like the suspended infinity pool that bumps beach club beats. A swim-up bar that doubles as a dance party. And an elevated retreat that's in another stratosphere of chic. Plus, each poolside vibe overflows with lively music, signature cocktail menus and infinite views.",
+    Embla1text: "An iconic brand with a long history of impeccable quality, timeless elegance, and classic style. We’re thrilled to introduce Chanel watches and jewelry to Icon II & III and proud to unveil a significant Royal Caribbean first at sea.",
+    Embla1text2: "As a new Central Park destination, the Chanel boutique will draw dedicated brand loyalists and encourage discovery for guests that will step into the world of Chanel for the first time.",
+    Embla1text3: "Chanel, the perfect compliment to Icon II and III.",
+    ButtonText: "Evolution"
   },
   {
     image: Embla2,
@@ -136,18 +139,16 @@ const EmblaCarousel2 = (props) => {
                   <IMGContainer>
                     <InnerContainer1>
                       <div className="md:mt-0 xs:w-full xs:pr-10 xs:mt-20 xs:mb-20">
-                        <h5 className="text-left font-semibold"><ul className="list-disc list-inside"><li className="listItem">ICONIC CHILLS</li></ul></h5>
+                        <h5 className="text-left font-semibold"><ul className="list-disc list-inside"><li className="listItem">{slide.SubHeader}</li></ul></h5>
                         <h1 className="mb-10 font-bold leading-10 text-black mt-2">{slide.heading}</h1>
                         <h3 className="mb-5 text-black">
 
                           {/* Slide 1 */}
                           {slide.Embla1text}
-                          <span className='tracking-tighter'>{slide.Embla1IOTS}</span>
                           {slide.Embla1text2}
 
                           {/* Slide 2 */}
                           {slide.Embla2text}
-                          <span className='sup'>{slide.Embla2Super}</span>
                           {slide.Embla2text2}
 
                           {/* Slide 3 */}
@@ -166,23 +167,17 @@ const EmblaCarousel2 = (props) => {
 
                           {/* Slide 6 */}
                           {slide.Embla6text}
-                          <span className='sup'>{slide.Embla6Super}</span>
                           {slide.Embla6text2}
-                          <span className='sup'>{slide.Embla6Super}</span>
                           {slide.Embla6text3}
 
                           {/* Slide 7 */}
                           {slide.Embla7text}
-                          <span className='sup'>{slide.Embla7Super}</span>
                           {slide.Embla7text2}
-                          <span className='sup'>{slide.Embla7Copywright}</span>
                           {slide.Embla7text3}
 
                           {/* Slide 8 */}
                           {slide.Embla8text}
-                          <span className='sup'>{slide.Embla8Super}</span>
                           {slide.Embla8text2}
-                          <span className='sup'>{slide.Embla8Super}</span>
                           {slide.Embla8text3}
 
                           {/* Slide 9 */}
@@ -191,20 +186,27 @@ const EmblaCarousel2 = (props) => {
                         </h3>
                       </div>
                     </InnerContainer1>
-                    <InnerContainer2>
-                      <h2><ul className="ml-5 list-disc text-white list-inside"><li>{slide.caption}</li></ul></h2>
-                      <h2><ul className="ml-5 list-disc text-white list-inside"><li>{slide.caption}<span className="sup">{slide.Embla7Super}</span></li></ul></h2>
-                      <h2><ul className="ml-5 list-disc text-white list-inside"><li>{slide.caption}<span className="sup">{slide.Embla8Super}</span></li></ul></h2>
+                    <CarouselContainer>
+                      <h2><ul className="ml-5 list-disc list-inside"><li>{slide.caption}</li></ul></h2>
                       <img
                         className="embla__slide__img"
                         src={slide.image}
                         alt={`IMG${index + 1}`}
                       />
-                      <div className="embla__buttons mt-18 pb-2 flex absolute">
+                      <div className="embla__buttons pb-20 flex absolute">
                         <PrevButton onClick={onPrevButtonClick} disabled={prevBtnDisabled} />
-                        <NextButton onClick={onNextButtonClick} disabled={nextBtnDisabled} />
+                        <button
+                          className='forwardButton'
+                          onClick={onNextButtonClick}
+                          disabled={nextBtnDisabled}
+                        >
+                          {slide.ButtonText}
+                          <NextButton
+                            className="pr-5 py-5 ml-3 items-center flex"
+                          />
+                        </button>
                       </div>
-                    </InnerContainer2>
+                    </CarouselContainer>
                   </IMGContainer>
                 </div>
               ))}

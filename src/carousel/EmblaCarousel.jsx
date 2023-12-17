@@ -68,7 +68,7 @@ const EmblaCarousel = (props) => {
                       src={slide.image}
                       alt={`IMG${index + 1}`}
                     />
-                    <div className="embla__buttons mt-18 pb-2 flex absolute">
+                    <div className="embla__buttons mt-18 pb-24 flex absolute">
                       <PrevButton onClick={onPrevButtonClick} disabled={prevBtnDisabled} />
                       <NextButton onClick={onNextButtonClick} disabled={nextBtnDisabled} />
                     </div>

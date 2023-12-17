@@ -9,7 +9,9 @@
   justify-content: center;
 }
 
-*, *::after, *::before {
+*,
+*::after,
+*::before {
   border: 0;
   margin: 0;
   padding: 0;
@@ -30,21 +32,21 @@ section {
 
 
 
-.reveal{
+.reveal {
   position: relative;
   transform: translateY(150px);
   opacity: 0;
   transition: 2s all ease;
 }
 
-.revealX{
+.revealX {
   position: relative;
   transform: translateX(150px);
   opacity: 0;
   transition: 2s all ease;
 }
 
-.reveal.active{
+.reveal.active {
   transform: translateY(0);
   opacity: 1;
 }
@@ -169,6 +171,15 @@ section {
   }
 }
 
+.forwardButton {
+  display: flex;
+  justify-items: center;
+  padding-left: 15px;
+  align-items: center;
+  border: 1px solid black;
+  border-radius: 90px;
+}
+
 
 
 .Hero4Container {
@@ -176,7 +187,8 @@ section {
   margin-top: 100px;
   /* background-image: url('../assets/HeroVid.mp4'); */
   background-size: cover;
-  background-position: left; /* Adjust the position as needed */
+  background-position: left;
+  /* Adjust the position as needed */
 }
 
 
@@ -187,7 +199,7 @@ section {
 
 
   @media screen and (max-width: 960px) {
-    padding-right: 0px; 
+    padding-right: 0px;
   }
 
   @media screen and (max-width: 1536px) {
@@ -250,7 +262,8 @@ div.carousel-inner img {
 
 /* Style to hide the scrollbar itself */
 ::-webkit-scrollbar {
-  width: 0; /* Set width to 0 */
+  width: 0;
+  /* Set width to 0 */
 }
 
 .scroller {
@@ -261,8 +274,7 @@ div.carousel-inner img {
   background-color: #eeeeee;
 }
 
-.scroller 
-.element {
+.scroller .element {
   width: 100%;
   border: 4px solid black;
   position: relative;
@@ -325,11 +337,11 @@ div.carousel-inner img {
   color: #ffffff;
 }
 
-.show-counter .countdown > p {
+.show-counter .countdown>p {
   margin: 0;
 }
 
-.show-counter .countdown > span {
+.show-counter .countdown>span {
   text-transform: uppercase;
   font-size: 0.75rem;
   line-height: 1rem;
@@ -367,5 +379,3 @@ h1 {
   position: relative;
   z-index: 5;
 }
-
-
