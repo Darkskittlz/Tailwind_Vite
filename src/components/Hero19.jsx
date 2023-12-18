@@ -1,38 +1,23 @@
 import React from 'react'
-import Hero19IMG from "../assets/HeroIMG19.jpg"
-import { Margin2Container } from '../Styles/Styles'
+import { MarginContainer } from '../Styles/Styles'
 
-const Hero19 = () => {
+const Hero11 = () => {
   return (
     <section>
-      <Margin2Container>
-        <div className="lg:flex-row xs:flex-col md:flex-col m-10 items-center flex">
+      <MarginContainer>
+        <div className="xl:h-full lg:flex-row md:flex-col xs:mt-32 xs:mx-10 xs:flex-col justify-between flex">
           <div className="reveal w-full flex justify-center align-top">
-            <img
-              className="rounded-3xl sm:h-full md:h-full lg:h-full xl:h-full"
-              src={Hero19IMG}
-              alt="cruiseimg" />
+            <h2><ul className="ml-4 absolute mt-5 font-semibold list-disc text-white list-inside"><li>Pavilions on 5</li></ul></h2>
+            {/* <img className="rounded-3xl object-cover xl:h-full xl:w-full lg:h-full md:h-full sm:h-full" src="https://images.ctfassets.net/1euybtmvarct/yWATVINSawiIKVdQmXkve/55c095c46ff97c44ecc21678ec9031f8/RCI_IC_Absolute_Zero_CGI26_RET__1_.jpg?w=3200&h=3689&q=50&fm=webp" alt="cruiseimg" /> */}
           </div>
-          <div className="w-5/6 xl:pl-32 lg:pl-0 lg:ml-32 md:ml-0 xs:ml-0 md:pl-0 md:mt-10 xs:w-full xs:mt-5 md:pr-32 reveal">
-            <h2 className="mb-10 xl:text-5xl lg:text-4xl xs:text-4xl font-bold text-black">The best family vacation in the world takes together time to another level on the all new <span className='italic'>Icon of the Seas</span><span className='sup'>SM</span>.</h2>
-            <h3 className="text-2xl xl:text-3xl lg:text-3xl xs:text-3xl font-semibold leading-2 xl:mb-5 text-black">Shake up your living room dance parties and supersize your competitive spirit with larger-than-life games at high-energy Surfside<span className='sup'>SM</span> festivals for the whole family. Refuel between adventures with plenty of dining options for any age. And tuck in for nightly bedtime stories that’ll leave you feeling happily ever after. Older adventurers can swap screentime for scream time on six record-breaking waterslides at Category 6 waterpark, including two family raft slides. Then win one for the home team with laser tag battles and Royal Escape Room<span className='sup'>SM</span> riddles. However you play each day, your family will never forget the best week ever onboard The Icon of Vacations.</h3>
-            {/* <div className='flex flex-col mt-4'> */}
-            {/*   <button */}
-            {/*     className="2xl:w-2/5 xl:w-2/4 xl:pl-8 xl:py-3 lg:w-3/5 lg:p-5 md:w-2/6 md:p-5 sm:w-2/5 xs:w-3/4 xs:p-4 rounded-full text-4xl bg-white mt-20 text-black"> */}
-            {/*     Consumer Flyer */}
-            {/*     <ArrowOutwardIcon className='mb-3 ml-5' style={{ color: "#3663ae" }} /> */}
-            {/*   </button> */}
-            {/*   <button */}
-            {/*     className="2xl:w-2/5 xl:w-2/4 lg:w-3/5 md:w-2/6 md:p-5 sm:w-fit xs:w-3/4 xs:p-4 rounded-full text-4xl mt-20 justify-center tracking-tight bg-white py-3 text-black"> */}
-            {/*     Customizable Email */}
-            {/*     <ArrowOutwardIcon className="mb-3 ml-5" style={{ color: "#3663ae" }} /> */}
-            {/*   </button> */}
-            {/* </div> */}
+          <div className="xl:w-full xl:pl-12 xl:m-36 lg:pl-0 md:w-full md:m-10 md:pr-6 md:pl-0 md:pb-32 md:mt-0 xs:mt-10 reveal">
+            <h2 className="mb-10 xl:text-5xl lg:text-4xl md:text-4xl leading-10 md:font-semibold md:mt-20 xs:text-4xl text-black">Subhead</h2>
+            <h3 className="text-3xl xl:text-3xl lg:text-3xl md:text-3xl text-black">Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit enim labore culpa sint ad nisi Lorem pariatur mollit ex esse exercitation amet. Nisi anim cupidatat excepteur officia. Reprehenderit nostrud nostrud ipsum Lorem est aliquip amet voluptate voluptate dolor minim nulla est proident. Nostrud officia pariatur ut officia. Sit irure elit esse ea nulla sunt ex occaecat reprehenderit commodo officia dolor Lorem duis laboris cupidatat officia voluptate. Culpa proident adipisicing id nulla nisi laboris ex in Lorem sunt duis officia eiusmod. Aliqua reprehenderit commodo ex non excepteur duis sunt velit enim. Voluptate laboris sint cupidatat ullamco ut ea consectetur et est culpa et culpa duis.</h3>
           </div>
         </div>
-      </Margin2Container>
-    </section >
+      </MarginContainer>
+    </section>
   )
 }
 
-export default Hero19
+export default Hero11

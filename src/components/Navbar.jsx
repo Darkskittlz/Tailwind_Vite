@@ -96,7 +96,7 @@ const Navbar = forwardRef(({ scrollToSection }) => {
         <GridContainer>
           <h1 className="text-white cursor-pointer">COUNTDOWN TO DECISION DAY</h1>
           <CountdownTimer targetDate={dateTime} />
-          <h3 className='text-white'>Unveiling the prestige of Icon II & III of the Seas - a shopping experience like never before</h3>
+          <h3 className='text-white'>We can't wait to show you our game changing Retail vision!</h3>
           <button className="rounded-full p-5 right-0 bg-white text-black xl:inline">
             Why Starboard
             <ArrowForwardIcon style={{ marginLeft: "5px", marginTop: "-2px" }} />

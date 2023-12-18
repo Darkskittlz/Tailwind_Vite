@@ -41,6 +41,7 @@ export const EmblaGridContainer2 = styled.div`
   padding-bottom: 150px;
 `
 
+
 export const MarginContainer = styled.div`
   margin-top: 100px;
   margin-bottom: 100px;
@@ -161,6 +162,16 @@ export const IMGContainer = styled.div`
 
   @media screen and (max-width: 1530px) {
     flex-direction: column-reverse;
+
+  }
+`
+
+export const IMG2Container = styled.div`
+  display: flex;
+  justify-content: space-around;
+
+  @media screen and (max-width: 1530px) {
+    flex-direction: column-reverse;
   }
 `
 
@@ -189,8 +200,17 @@ export const ModalContainer = styled.div`
 `
 
 export const InnerContainer1 = styled.div`
-  padding-left: 20px;
+  padding-left: 30px;
   width: 45%;
+
+
+  h2 {
+    font-size: 15px;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
 
   h4 {
     font-style: italic;
@@ -199,7 +219,7 @@ export const InnerContainer1 = styled.div`
   h5 {
     color: #3663ae;
     margin-top: 20px;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
   }
 
   @media screen and (max-width: 1530px) {
@@ -214,9 +234,26 @@ export const InnerContainer1 = styled.div`
     }
   }
 `
+export const InnerContainer2 = styled.div`
+  h2 {
+    position: fixed;
+    font-size: 20px;
+    width: 100%;
+    margin-left: 20px;
+    margin-top: 10px;
+  }
+ 
+  @media screen and (max-width: 1530px) {
+    width: 100%;
+
+    h2 {
+      margin-left: 30px;
+    }
+  }
+`
 
 export const InnerContainer3 = styled.div`
-  padding-left: 20px;
+  padding-left: 30px;
   width: 54%;
 
   h4 {
@@ -256,6 +293,12 @@ export const InnerContainer3 = styled.div`
   }
 `
 
+export const InnerCenterContainer = styled.div`
+  display: flex;
+  width: 100%;
+  justify-content: center;
+`
+
 
 export const CarouselContainer = styled.div`
   h2 {
@@ -263,6 +306,7 @@ export const CarouselContainer = styled.div`
     font-size: 20px;
     margin-left: 20px;
     margin-top: 10px;
+    width: 100%;
     color: #536fb2;
   }
  
@@ -275,23 +319,12 @@ export const CarouselContainer = styled.div`
   }
 `
 
-export const InnerContainer2 = styled.div`
-
+export const CaptionContainer = styled.div`
   h2 {
-    position: fixed;
-    font-size: 20px;
-    margin-left: 20px;
-    margin-top: 10px;
-  }
- 
-  @media screen and (max-width: 1530px) {
-    width: 100%;
-
-    h2 {
-      margin-left: 30px;
-    }
+    color: #536fb2;
   }
 `
+
 
 export const MockShopContainer = styled.div`
   width: 40%;

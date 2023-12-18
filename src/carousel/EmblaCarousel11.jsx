@@ -12,54 +12,45 @@ import Embla2 from "../assets/fashion2.png"
 // import Embla3 from "../assets/fashion1.png"
 
 
-const timelessEleganceIframe = (
-  <iframe
-    src="https://giphy.com/embed/eYOrzs9VdJWfWzkU7x"
-    width="480"
-    height="270"
-    className="giphy-embed"
-    allowFullScreen
-  ></iframe>
-);
-
-
-
 export const slides = [
   {
     // image: Embla1,
-    imgAlt: "Eduardo's renderings of marketplace and pavilions on 6",
+    imgAlt: "make gif from video: https://www.youtube.com/watch?v=ju1_T6yY4KA",
     heading: "Subhead",
     // caption: "Caption",
     SubHeader: "REVOLUTION",
     Embla1Br: <br />,
-    Embla1text: "Copy Direction: Icon Marketplace + Pavilions designs – this is how we envision execution of pop up on pavilions on 6",
-    Embla1text2: "",
-    Embla1text3: "",
+    Embla1text: "Step into the world of beauty with our new innovative offerings.",
+    Embla1text2: "Embrace the future of makeup exploration with our virtual Make-up Try-On, utilizing a virtual mirror that allows customers to experiment with various products without the need for traditional testers.",
+    Embla1text3: "Elevating skincare analysis, our Beauty Mirror scans a customer's skin, pinpointing potential concerns and offering tailored suggestions for effective skincare solutions",
+    Embla1text4: "It's not just beauty; it's a personalized, tech-enhanced journey to help you look and feel your best.",
     ButtonText: "EVOLUTION"
   },
   {
     // image: Embla2,
     imgAlt: "Insert Photo",
-    heading: "RESORT REVERIE",
+    heading: "SUBHEAD",
     // caption: "Caption",
     SubHeader: "EVOLUTION",
     Embla2Br: <br />,
-    Embla2text: "Copy Direction: Edited assortment, 'decluttering', elevated presentation, increase guest satisfaction onboard & amplify those products that guests voted for in 2023, continue to test/learn based on real time feedback loop from purchase patterns on, use data to steer us to product categories.",
+    Embla2text: "Copy Direction: intro of new trending brands: Kylie, Drunk Elephant, Super Goop, Olaplex",
+    Embla2Brands: "Kylie, Drunk Elephant, Super Goop, Olaplex",
     ButtonText: "TRIED & TRUE"
   },
   {
-    image: timelessEleganceIframe,
-    heading: "Timeless Elegance, Unmatched Value",
+    // image: timelessEleganceIframe,
+    heading: "Subhead",
+    imgAlt: "Insert Photo",
     caption: "Caption",
     SubHeader: "TRIED & TRUE",
     Embla3Br: <br />,
-    Embla3text: "Guests may indulge in the perfect blend of value and quality with our carefully selected collection of timeless watches and fashion jewelry. Guests with discerning tastes appreciate renowned brands such as Invicta, Citizen, Bulova, and our proprietary brand, Shae. Our commitment to offering these trusted names at affordable prices not only ensures satisfaction for our customers but also drives purchases across a diverse range of demographics, providing a valuable onboard shopping experience for everyone.",
-    Brands: "Citizen, Bulova, Shae, Invicta, IOG, Charms – guests like to shop in an environment out of shop that offers great value (40% of our revenue)",
+    Embla3text: "Copy Direction: Carrying all brands that guests love: dior, chanel, ysl (fragrance = 70% of beauty sales)",
+    Embla3Brands: "Dior, Chanel, YSL, Lancome, etc",
   },
 ]
 
 
-const EmblaCarousel = (props) => {
+const EmblaCarousel11 = (props) => {
   const { options } = props
   const [emblaRef, emblaApi] = useEmblaCarousel(options)
 
@@ -96,13 +87,25 @@ const EmblaCarousel = (props) => {
                       <h3 className="lg:text-3xl xs:text-3xl mb-5 text-black">
 
                         {slide.Embla1text}
+                        {slide.Embla1Br}
+                        {slide.Embla1Br}
+                        {slide.Embla1text2}
+                        {slide.Embla1Br}
+                        {slide.Embla1Br}
+                        {slide.Embla1text3}
+                        {slide.Embla1Br}
+                        {slide.Embla1Br}
+                        {slide.Embla1text4}
 
                         {slide.Embla2text}
+                        {slide.Embla2Br}
+                        {slide.Embla2Br}
+                        {slide.Embla2Brands}
 
                         {slide.Embla3text}
                         {slide.Embla3Br}
                         {slide.Embla3Br}
-                        {slide.Brands}
+                        {slide.Embla3Brands}
 
                       </h3>
                     </div>
@@ -116,7 +119,6 @@ const EmblaCarousel = (props) => {
                       src={slide.image}
                       alt={slide.imgAlt}
                     />
-                    <iframe src={slide.image} width="480" height="270" className='giphy-embed' allowFullScreen></iframe>
                     <div className="embla__buttons pb-20 flex absolute">
                       <PrevButton onClick={onPrevButtonClick} disabled={prevBtnDisabled} />
                       <button
@@ -142,6 +144,4 @@ const EmblaCarousel = (props) => {
   )
 }
 
-export default EmblaCarousel
-
-
+export default EmblaCarousel11

@@ -3,13 +3,13 @@ import Hero23IMG from "../assets/Hero23IMG.jpg"
 import "../Styles/App.css"
 import { Margin2Container } from '../Styles/Styles'
 
-const Hero23 = () => {
+const Hero58A = () => {
   return (
     <section>
       <Margin2Container>
         <div className="lg:flex-row xs:flex-col md:flex-col m-10 items-center flex">
           <div className="reveal w-full flex align-top">
-            <h5 className="text-3xl text-left mt-5 ml-5 absolute font-semibold text-white"><ul className="list-disc list-inside"><li className="listItem">ICONIC STAYS</li></ul></h5>
+            {/* <h5 className="text-3xl text-left mt-5 ml-5 absolute font-semibold text-white"><ul className="list-disc list-inside"><li className="listItem">ICONIC STAYS</li></ul></h5> */}
             {/*   <img */}
             {/*     className="rounded-3xl sm:h-full md:h-full lg:h-full xl:h-full" */}
             {/*     src={Hero23IMG} */}
@@ -25,4 +25,5 @@ const Hero23 = () => {
   )
 }
 
-export default Hero23
+export default Hero58A
+

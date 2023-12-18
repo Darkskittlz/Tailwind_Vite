@@ -152,6 +152,10 @@ section {
   background: linear-gradient(90deg, rgb(255, 13, 178) 0%, rgb(255, 165, 0) 100%);
 }
 
+.VaultIMGContainer {
+  right: 20%;
+}
+
 .HeroButton {
   margin-left: 5px;
   padding-top: 15px;

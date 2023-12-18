@@ -1,4 +1,4 @@
-import React, { forwardRef, useState } from 'react'
+import React, { forwardRef } from 'react'
 import ArrowOutwardIcon from '@mui/icons-material/ArrowOutward'
 import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
 import PropTypes from 'prop-types';
@@ -190,7 +190,7 @@ const Hero3 = forwardRef(({ scrollToSection }, ref) => {
               <main>
                 <EmblaCarousel6 slides={SLIDES} options={OPTIONS} />
                 <a
-                  className="rounded-full flex items-center relative cursor-pointer p-2 pl-5 pr-3 bg-white m-2 text-black">
+                  className="rounded-full flex items-center relative cursor-pointer p-2 pl-5 pr-3 bg-white m-2 text-black"
                   onClick={close2Modal}
                 >x</a>
               </main>

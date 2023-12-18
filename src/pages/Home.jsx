@@ -42,7 +42,6 @@ import Hero36 from '../components/Hero36';
 // import Hero38 from '../components/Hero38';
 // import Hero39 from '../components/Hero39';
 import Hero40 from '../components/Hero40';
-import Hero41 from '../components/Hero41';
 // import Hero42 from '../components/Hero42';
 import Hero43 from '../components/Hero43';
 // import Hero44 from '../components/Hero44';
@@ -88,6 +87,9 @@ import Hero18B from '../components/Hero18B';
 import Hero12A from '../components/Hero12A';
 import Hero22A from '../components/Hero22A';
 import Hero25A from '../components/Hero25A';
+import Hero55A from '../components/Hero55A';
+import Hero58A from '../components/Hero58A';
+import Hero58B from '../components/Hero58B';
 
 const useMountEffect = (fun) => useEffect(fun, []);
 
@@ -232,39 +234,40 @@ const Home = forwardRef((_, ref) => {
         <Hero8 />
         <Hero9 />
         <Hero43 section="section43" ref={section43Ref} scrollToSection={executeScrollToSection} />
-        <Hero46 section="section46" ref={section46Ref} scrollToSection={executeScrollToSection} />
-        <Hero49 section="section49" ref={section49Ref} scrollToSection={executeScrollToSection} />
-        <Hero52 section="section52" ref={section52Ref} scrollToSection={executeScrollToSection} />
-        <Hero55 section="section55" ref={section55Ref} scrollToSection={executeScrollToSection} />
-        <Hero58 section="section58" ref={section58Ref} scrollToSection={executeScrollToSection} />
-        <Hero61 section="section61" ref={section61Ref} scrollToSection={executeScrollToSection} />
-        <Hero64 section="section64" ref={section64Ref} scrollToSection={executeScrollToSection} />
         <Hero11 />
+        <Hero17 />
+        <Hero46 section="section46" ref={section46Ref} scrollToSection={executeScrollToSection} />
         <Hero13 />
         <Hero14 />
+        <Hero49 section="section49" ref={section49Ref} scrollToSection={executeScrollToSection} />
         <Hero16 />
-        <Hero17 />
-        <Hero19 />
         <Hero20 />
-        <Hero21 />
+        <Hero52 section="section52" ref={section52Ref} scrollToSection={executeScrollToSection} />
+        <Hero19 />
+        <Hero6 />
+        <Hero55 section="section55" ref={section55Ref} scrollToSection={executeScrollToSection} />
         <Hero23 />
-        <Hero24 />
-        <Hero26 />
-        <Hero27 />
-        <Hero28 />
-        <Hero29 />
-        <Hero30 />
-        <Hero31 />
-        <Hero32 />
-        <Hero33 />
-        <Hero34 />
-        <Hero35 />
-        <Hero36 />
-        {/* <Hero37 /> */}
+        <Hero55A />
+        <Hero58 section="section58" ref={section58Ref} scrollToSection={executeScrollToSection} />
+        <Hero58A />
+        <Hero58B />
+        <Hero61 section="section61" ref={section61Ref} scrollToSection={executeScrollToSection} />
+        <Hero64 section="section64" ref={section64Ref} scrollToSection={executeScrollToSection} />
+        {/* <Hero21 /> */}
+        {/* <Hero24 /> */}
+        {/* <Hero26 /> */}
+        {/* <Hero27 /> */}
+        {/* <Hero28 /> */}
+        {/* <Hero29 /> */}
+        {/* <Hero30 /> */}
+        {/* <Hero31 /> */}
+        {/* <Hero32 /> */}
+        {/* <Hero33 /> */}
+        {/* <Hero34 /> */}
+        {/* <Hero35 /> */}
+        {/* <Hero36 /> */}
         {/* <Hero38 /> */}
         {/* <Hero39 /> */}
-        <Hero41 />
-        <Hero6 />
       </article>
     </GridContainer>
   )
