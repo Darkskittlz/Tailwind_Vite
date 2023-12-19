@@ -1,10 +1,10 @@
 import React from 'react'
-import { Margin2Container } from '../Styles/Styles'
+import { Margin2Container, Margin3Container } from '../Styles/Styles'
 
 const Hero8 = () => {
   return (
     <section>
-      <Margin2Container>
+      <Margin3Container>
         <div className="lg:flex-row md:flex-col xs:mx-10 xs:flex-col justify-between flex">
           <div className="reveal w-full flex justify-center align-top">
             <img className="rounded-3xl xl:h-5/6 lg:h-full md:h-full sm:h-full" src="" alt="PhotoIMG" />
@@ -14,7 +14,7 @@ const Hero8 = () => {
             <h3 className="text-2xl xl:text-4xl lg:text-2xl md:text-4xl text-black">Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit enim labore culpa sint ad nisi Lorem pariatur mollit ex esse exercitation amet. Nisi anim cupidatat excepteur officia. Reprehenderit nostrud nostrud ipsum Lorem est aliquip amet voluptate voluptate dolor minim nulla est proident. Nostrud officia pariatur ut officia. Sit irure elit esse ea nulla sunt ex occaecat reprehenderit commodo officia dolor Lorem duis laboris cupidatat officia voluptate. Culpa proident adipisicing id nulla nisi laboris ex in Lorem sunt duis officia eiusmod. Aliqua reprehenderit commodo ex non excepteur duis sunt velit enim. Voluptate laboris sint cupidatat ullamco ut ea consectetur et est culpa et culpa duis.</h3>
           </div>
         </div>
-      </Margin2Container>
+      </Margin3Container>
     </section>
   )
 }

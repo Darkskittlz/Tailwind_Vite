@@ -230,28 +230,46 @@ const Home = forwardRef((_, ref) => {
         <Hero22A />
         <Hero25 />
         <Hero25A />
+
+        {/* Leading With Luxury */}
         <Hero40 section="section40" ref={section40Ref} scrollToSection={executeScrollToSection} />
         <Hero8 />
         <Hero9 />
+
+        {/* Bling It On */}
         <Hero43 section="section43" ref={section43Ref} scrollToSection={executeScrollToSection} />
         <Hero11 />
         <Hero17 />
+
+        {/* Handbag Haven */}
         <Hero46 section="section46" ref={section46Ref} scrollToSection={executeScrollToSection} />
         <Hero13 />
         <Hero14 />
+
+        {/* Beach to Bar */}
         <Hero49 section="section49" ref={section49Ref} scrollToSection={executeScrollToSection} />
         <Hero16 />
         <Hero20 />
+
+        {/* Popping Up Differently */}
         <Hero52 section="section52" ref={section52Ref} scrollToSection={executeScrollToSection} />
         <Hero19 />
         <Hero6 />
+
+        {/* Mirror, Mirror on the Wall */}
         <Hero55 section="section55" ref={section55Ref} scrollToSection={executeScrollToSection} />
         <Hero23 />
         <Hero55A />
+
+        {/* A Toast to an Icon */}
         <Hero58 section="section58" ref={section58Ref} scrollToSection={executeScrollToSection} />
         <Hero58A />
         <Hero58B />
+
+        {/* Headline */}
         <Hero61 section="section61" ref={section61Ref} scrollToSection={executeScrollToSection} />
+
+        {/* Adventure Awaits */}
         <Hero64 section="section64" ref={section64Ref} scrollToSection={executeScrollToSection} />
         {/* <Hero21 /> */}
         {/* <Hero24 /> */}

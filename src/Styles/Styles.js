@@ -52,6 +52,11 @@ export const MarginContainer = styled.div`
   
 `
 
+export const Margin2Container = styled.div`
+  margin-top: 15vh;
+`
+
+
 export const Margin3Container = styled.div`
   margin-top: 25vh;
   margin-bottom: 25vh;
@@ -61,7 +66,19 @@ export const Margin3Container = styled.div`
   }
   
 `
+export const Margin4Container = styled.div`
+  margin-bottom: 15vh;
+`
 
+export const IMGContainer = styled.div`
+  display: flex;
+  justify-content: space-between;
+
+  @media screen and (max-width: 1530px) {
+    flex-direction: column-reverse;
+
+  }
+`
 
 export const Hero1Header = styled.div`
   display: flex;
@@ -152,19 +169,6 @@ export const Hero1Header = styled.div`
   }
 `
 
-export const Margin2Container = styled.div`
-  margin-top: 100px;
-`
-
-export const IMGContainer = styled.div`
-  display: flex;
-  justify-content: space-between;
-
-  @media screen and (max-width: 1530px) {
-    flex-direction: column-reverse;
-
-  }
-`
 
 export const IMG2Container = styled.div`
   display: flex;

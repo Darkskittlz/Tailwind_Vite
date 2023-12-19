@@ -6,7 +6,7 @@ import {
   NextButton,
   usePrevNextButtons
 } from './EmblaCarouselArrowButtons'
-import { CaptionContainer, EmblaGridContainer, IMG2Container, IMGContainer, InnerContainer1, InnerContainer2, InnerContainer3, MarginContainer } from "../Styles/Styles.js"
+import { CaptionContainer, EmblaGridContainer, IMG2Container, IMGContainer, InnerContainer1, InnerContainer2, InnerContainer3, Margin3Container, MarginContainer } from "../Styles/Styles.js"
 import Embla1 from "../assets/little_treasures.png"
 import Embla2 from "../assets/fashion2.png"
 import Embla3 from "../assets/fashion1.png"

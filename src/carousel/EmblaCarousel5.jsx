@@ -6,7 +6,7 @@ import {
   NextButton,
   usePrevNextButtons
 } from './EmblaCarouselArrowButtons'
-import { EmblaGridContainer, IMGContainer, InnerCenterContainer, InnerContainer1, InnerContainer2 } from "../Styles/Styles.js"
+import { EmblaGridContainer, IMGContainer, InnerCenterContainer, InnerContainer1, InnerContainer2, Margin4Container } from "../Styles/Styles.js"
 import Embla1 from "../assets/embla4-1.jpg"
 import Embla2 from "../assets/embla4-2.jpg"
 import Embla3 from "../assets/embla4-3.jpg"
@@ -63,77 +63,78 @@ const EmblaCarousel5 = (props) => {
 
   return (
     <section>
-      <EmblaGridContainer>
-        <div className="embla__viewport" ref={emblaRef}>
-          <div className="embla__container">
-            {slides.map((slide, index) => (
-              <div className="embla__slide" key={index}>
-                <div className="embla__slide__number">
-                  <span>{index + 1}</span>
+      <Margin4Container>
+        <EmblaGridContainer>
+          <div className="embla__viewport" ref={emblaRef}>
+            <div className="embla__container">
+              {slides.map((slide, index) => (
+                <div className="embla__slide" key={index}>
+                  <div className="embla__slide__number">
+                    <span>{index + 1}</span>
+                  </div>
+                  <IMGContainer>
+                    <InnerContainer1>
+                      <div className="md:mt-0 xs:w-full xs:pr-10 xs:mt-20">
+                        <h5 className="text-3xl text-left font-semibold"><ul className="list-disc list-inside"><li className="listItem">{slide.SubHeader}</li></ul></h5>
+                        <h1 className="mb-0 text-5xl font-semibold text-black mt-0">{slide.heading}</h1>
+                        <h2 className="xs:text-3xl lg:w-full md:w-full text-black">
+
+                          {slide.Embla1text}
+                          {slide.Embla1Br}
+                          {slide.Embla1Br}
+                          {slide.Embla1text2}
+                          {slide.Embla1Br}
+                          {slide.Embla1Br}
+                          {slide.Embla1text3}
+                          {slide.Embla1Br}
+                          {slide.Embla1text4}
+                          {slide.Embla1Br}
+                          {slide.Embla1text5}
+
+                          {slide.Embla2text}
+
+                          {slide.Embla3text}
+                          {slide.Embla3Br}
+                          {slide.Embla3Br}
+                          {slide.Embla3text2}
+                          {slide.Embla3Br}
+                          {slide.Embla3Br}
+                          {slide.Embla3text3}
+                          {slide.Embla3Br}
+                          {slide.Embla3Br}
+                          {slide.Embla3text4}
+
+                        </h2>
+                      </div>
+                    </InnerContainer1>
+                    <InnerContainer2>
+                      <h2><ul className="ml-5 list-disc list-inside text-white"><li>{slide.caption}</li></ul></h2>
+                      <img
+                        className="embla__slide__img"
+                        src={slide.image}
+                        alt={`IMG${index + 1}`}
+                      />
+                      <div className="embla__buttons pb-20 flex absolute">
+                        <PrevButton onClick={onPrevButtonClick} disabled={prevBtnDisabled} />
+                        <button
+                          className='forwardButton'
+                          onClick={onNextButtonClick}
+                          disabled={nextBtnDisabled}
+                        >
+                          {slide.ButtonText}
+                          <NextButton
+                            className="pr-8 py-5 ml-3 items-center flex"
+                          />
+                        </button>
+                      </div>
+                    </InnerContainer2>
+                  </IMGContainer>
                 </div>
-                <IMGContainer>
-                  <InnerContainer1>
-                    <div className="md:mt-0 xs:w-full xs:pr-10 xs:mt-20">
-                      <h5 className="text-3xl text-left font-semibold"><ul className="list-disc list-inside"><li className="listItem">{slide.SubHeader}</li></ul></h5>
-                      <h1 className="mb-0 text-5xl font-semibold text-black mt-0">{slide.heading}</h1>
-                      <h2 className="xs:text-3xl lg:w-full md:w-full text-black">
-
-                        {slide.Embla1text}
-                        {slide.Embla1Br}
-                        {slide.Embla1Br}
-                        {slide.Embla1text2}
-                        {slide.Embla1Br}
-                        {slide.Embla1Br}
-                        {slide.Embla1text3}
-                        {slide.Embla1Br}
-                        {slide.Embla1text4}
-                        {slide.Embla1Br}
-                        {slide.Embla1text5}
-
-                        {slide.Embla2text}
-
-                        {slide.Embla3text}
-                        {slide.Embla3Br}
-                        {slide.Embla3Br}
-                        {slide.Embla3text2}
-                        {slide.Embla3Br}
-                        {slide.Embla3Br}
-                        {slide.Embla3text3}
-                        {slide.Embla3Br}
-                        {slide.Embla3Br}
-                        {slide.Embla3text4}
-
-                      </h2>
-                    </div>
-                  </InnerContainer1>
-                  <InnerContainer2>
-                    <h2><ul className="ml-5 list-disc list-inside text-white"><li>{slide.caption}</li></ul></h2>
-                    <img
-                      className="embla__slide__img"
-                      src={slide.image}
-                      alt={`IMG${index + 1}`}
-                    />
-                    <div className="embla__buttons pb-20 flex absolute">
-                      <PrevButton onClick={onPrevButtonClick} disabled={prevBtnDisabled} />
-                      <button
-                        className='forwardButton'
-                        onClick={onNextButtonClick}
-                        disabled={nextBtnDisabled}
-                      >
-                        {slide.ButtonText}
-                        <NextButton
-                          className="pr-8 py-5 ml-3 items-center flex"
-                        />
-                      </button>
-                    </div>
-                  </InnerContainer2>
-                </IMGContainer>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
-        </div>
-
-      </EmblaGridContainer>
+        </EmblaGridContainer>
+      </Margin4Container>
     </section >
   )
 }

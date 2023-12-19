@@ -6,7 +6,7 @@ import {
   NextButton,
   usePrevNextButtons
 } from './EmblaCarouselArrowButtons'
-import { CarouselContainer, EmblaGridContainer, IMGContainer, InnerContainer1, Margin2Container } from "../Styles/Styles.js"
+import { CarouselContainer, EmblaGridContainer, IMGContainer, InnerContainer1, Margin2Container, Margin3Container, Margin4Container } from "../Styles/Styles.js"
 import Embla1 from "../assets/first_at_sea_chanel.png"
 import Embla2 from "../assets/embla2-2.jpg"
 import Embla3 from "../assets/Central_Park.jpg"
@@ -65,7 +65,7 @@ const EmblaCarousel2 = (props) => {
 
   return (
     <section>
-      <Margin2Container>
+      <Margin4Container>
         <EmblaGridContainer>
           <div className="md:mb-20 xs:mb-0 embla__viewport" ref={emblaRef}>
             <div className="embla__container">
@@ -130,7 +130,7 @@ const EmblaCarousel2 = (props) => {
             </div>
           </div>
         </EmblaGridContainer>
-      </Margin2Container>
+      </Margin4Container>
     </section >
   )
 }
