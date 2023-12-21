@@ -95,7 +95,7 @@ const Hero3 = forwardRef(({ scrollToSection }, ref) => {
       <div className="Hero3Container rounded-xl pt-20 md:ml-20 md:mr-20 lg:mx-96 xs:mx-14 xs:mt-24">
         <div className="reveal flex items-center flex-col pb-24 justify-center">
           <h1 className="md:text-7xl xs:text-6xl font-semibold font-sans text-center text-white px-40">ICON OF THE SEAS MARKETING TOOLS</h1>
-          <h2 className="md:text-3xl text-white mt-6 text-center px-34 font-semibold">Everything you need to market <span className="italic">Icon of the Seas</span></h2>
+          <h2 className="md:text-3xl text-white mt-6 text-center px-34 font-semibold">Everything you need to market <span className="italic ">Icon of the Seas</span></h2>
         </div>
         <hr />
         <div className="reveal flex mt-20 justify-center">

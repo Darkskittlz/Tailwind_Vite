@@ -3,6 +3,9 @@ import "../Styles/App.css"
 import { Margin2Container } from '../Styles/Styles'
 
 
+{/* Head 12.5rem */ }
+// subhead: 4.9rem
+// 3.5rem h3
 const Hero2 = () => {
   return (
     <section>
@@ -20,12 +23,12 @@ const Hero2 = () => {
               lg:mt-0
               md:mt-10
               xs:mt-10
-              xs:mb-10"
+              xs:mb-10
+              HeroFontTest"
             >WHY STARBOARD?</h1>
-            <h2 className="mb-10 xl:text-5xl lg:text-4xl xs:text-4xl font-semibold text-black">Like you, we’re the leaders in our industry</h2>
-            <h3 className="xl:text-5xl md:text-3xl lg:mb-5 xs:mb-5 text-black">No other cruise retailer consistently delivers the best brands, custom & exclusive product, top sales staff, innovative shopping experiences, and global know-how – all with a dedicated account team 100% focused on Royal.
-              <br />
-              <br />
+            <h2 className="mb-10 xl:text-5xl lg:text-4xl xs:text-4xl font-semibold text-black">Like you, we’re the leaders in our industry.</h2>
+            <h3 className="xl:text-5xl md:text-3xl leading-5 lg:mb-5 xs:mb-5 text-black">No other cruise retailer consistently delivers the best brands, custom & exclusive product, top sales staff, innovative shopping experiences, and global know-how – all with a dedicated account team 100% focused on Royal.
+
               Read on to get the details on our vision for these game-changing ships.</h3>
             {/* <button */}
             {/*   className="rounded-full p-5 ml-2 w-56 px-3 bg-white mt-4 text-2xl font-semibold text-black"> */}

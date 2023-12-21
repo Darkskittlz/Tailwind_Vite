@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useCallback } from 'react'
 import useEmblaCarousel from 'embla-carousel-react'
 import "../Styles/App.css"
 import {
@@ -63,6 +63,16 @@ const EmblaCarousel2 = (props) => {
     onNextButtonClick
   } = usePrevNextButtons(emblaApi)
 
+
+  const scrollPrev = useCallback(() => {
+    if (emblaApi) emblaApi.scrollPrev
+  }, [emblaApi])
+
+  const scrollNext = useCallback(() => {
+    if (emblaApi) emblaApi.scrollNext()
+  }, [emblaApi])
+
+
   return (
     <section>
       <Margin4Container>
@@ -111,17 +121,23 @@ const EmblaCarousel2 = (props) => {
                         alt={`IMG${index + 1}`}
                       />
                       <div className="embla__buttons pb-20 flex absolute">
-                        <PrevButton onClick={onPrevButtonClick} disabled={prevBtnDisabled} />
-                        <button
-                          className='forwardButton'
-                          onClick={onNextButtonClick}
-                          disabled={nextBtnDisabled}
-                        >
-                          {slide.ButtonText}
-                          <NextButton
-                            className="pr-8 py-5 ml-3 items-center flex"
-                          />
+                        <button className="embla__prev mr-10" onClick={scrollPrev}>
+                          Prev
                         </button>
+                        <button className="embla__next" onClick={scrollNext}>
+                          Next
+                        </button>
+                        {/* <PrevButton onClick={onPrevButtonClick} disabled={prevBtnDisabled} /> */}
+                        {/* <button */}
+                        {/*   className='forwardButton' */}
+                        {/*   onClick={onNextButtonClick} */}
+                        {/*   disabled={nextBtnDisabled} */}
+                        {/* > */}
+                        {/*   {slide.ButtonText} */}
+                        {/*   <NextButton */}
+                        {/*     className="pr-8 py-5 ml-3 items-center flex" */}
+                        {/*   /> */}
+                        {/* </button> */}
                       </div>
                     </CarouselContainer>
                   </IMGContainer>

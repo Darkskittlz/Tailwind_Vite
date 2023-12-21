@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap');
 
 #root {
   max-width: 100%;
@@ -28,6 +28,12 @@ section {
   /* scroll-snap-align: start; */
   /* margin-top: 150px; */
   /* margin-bottom: 150px; */
+}
+
+
+.HeroFontTest {
+  font-family: 'Oswald';
+  font-weight: 400;
 }
 
 
