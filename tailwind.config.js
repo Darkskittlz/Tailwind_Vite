@@ -5,7 +5,32 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontSize: {
+        header: "12.5rem",
+        subheader: "4.9rem",
+        paragraph: "3.5rem"
+      },
+      lineHeight: {
+        loose: "46px",
+        tight: "40px"
+      },
+      fontFamily: {
+        'oswald': ['Oswald', 'Roboto']
+      },
+      zIndex: {
+        max: '999'
+      },
+      height: {
+        tall: '500px',
+        md: '400px',
+        semi_md: '368px',
+        sm: '300px'
+      },
+      borderRadius: {
+        img: '20px'
+      }
+    },
     screens: {
       'xs': '200px',
       'sm': '640px',

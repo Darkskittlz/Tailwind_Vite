@@ -90,6 +90,7 @@ import Hero25A from '../components/Hero25A';
 import Hero55A from '../components/Hero55A';
 import Hero58A from '../components/Hero58A';
 import Hero58B from '../components/Hero58B';
+import Hero3B from '../components/Hero3B';
 
 const useMountEffect = (fun) => useEffect(fun, []);
 
@@ -103,6 +104,7 @@ const GridContainer = styled.div`
 
 const Home = forwardRef((_, ref) => {
   const section1Ref = useRef(null);
+  const section2Ref = useRef(null);
   const section3Ref = useRef(null);
   const section4Ref = useRef(null);
   const section7Ref = useRef(null);
@@ -135,6 +137,8 @@ const Home = forwardRef((_, ref) => {
         return section1Ref;
       case 'section1':
         return section1Ref;
+      case 'section2':
+        return section2Ref;
       case 'section3':
         return section3Ref;
       case 'section4':
@@ -197,39 +201,39 @@ const Home = forwardRef((_, ref) => {
       <Navbar section="nav" ref={section1Ref} scrollToSection={executeScrollToSection} />
       <article className="scroller">
         <Hero1 section="section1" ref={section1Ref} scrollToSection={executeScrollToSection} />
-        <Hero2 />
-        <Hero3 section="section3" ref={section3Ref} scrollToSection={executeScrollToSection} />
-        <Hero4 section="section4" ref={section4Ref} scrollToSection={executeScrollToSection} />
-        <Hero5 />
-        <Hero7 section="section7" ref={section7Ref} scrollToSection={executeScrollToSection} />
-        <Hero6A />
-        <Hero6B />
-        <Hero6C />
-        <Hero6D />
-        <Hero6E />
-        <Hero6F />
-        <Hero6G />
-        <Hero6H />
-        <Hero6I />
-        <Hero6J />
-        <Hero6K />
-        <Hero6L />
-        <Hero10 section="section10" ref={section10Ref} scrollToSection={executeScrollToSection} />
-        <Hero10A />
-        <Hero10B />
-        <Hero10C />
-        <Hero15 section="section15" ref={section15Ref} scrollToSection={executeScrollToSection} />
-        <Hero15A />
-        <Hero15B />
-        <Hero18 section="section18" ref={section18Ref} scrollToSection={executeScrollToSection} />
-        <Hero18A />
-        <Hero18B section="section18B" ref={section18BRef} scrollToSection={executeScrollToSection} />
-        <Hero12 />
-        <Hero12A />
-        <Hero22 />
-        <Hero22A />
-        <Hero25 />
-        <Hero25A />
+        <Hero2 section="section2" ref={section2Ref} scrollToSection={executeScrollToSection} />
+        <Hero3 />
+        {/* <Hero4 /> */}
+        {/* <Hero5 /> */}
+        {/* <Hero7 /> */}
+        {/* <Hero6A /> */}
+        {/* <Hero6B /> */}
+        {/* <Hero6C /> */}
+        {/* <Hero6D /> */}
+        {/* <Hero6E /> */}
+        {/* <Hero6F /> */}
+        {/* <Hero6G /> */}
+        {/* <Hero6H /> */}
+        {/* <Hero6I /> */}
+        {/* <Hero6J /> */}
+        {/* <Hero6K /> */}
+        {/* <Hero6L /> */}
+        {/* <Hero10 /> */}
+        {/* <Hero10A /> */}
+        {/* <Hero10B /> */}
+        {/* <Hero10C /> */}
+        {/* <Hero15 /> */}
+        {/* <Hero15A /> */}
+        {/* <Hero15B /> */}
+        {/* <Hero18 /> */}
+        {/* <Hero18A /> */}
+        {/* <Hero18B /> */}
+        {/* <Hero12 /> */}
+        {/* <Hero12A /> */}
+        {/* <Hero22 /> */}
+        {/* <Hero22A /> */}
+        {/* <Hero25 /> */}
+        {/* <Hero25A /> */}
 
         {/* Leading With Luxury */}
         <Hero40 section="section40" ref={section40Ref} scrollToSection={executeScrollToSection} />
@@ -271,21 +275,8 @@ const Home = forwardRef((_, ref) => {
 
         {/* Adventure Awaits */}
         <Hero64 section="section64" ref={section64Ref} scrollToSection={executeScrollToSection} />
-        {/* <Hero21 /> */}
-        {/* <Hero24 /> */}
-        {/* <Hero26 /> */}
-        {/* <Hero27 /> */}
-        {/* <Hero28 /> */}
-        {/* <Hero29 /> */}
-        {/* <Hero30 /> */}
-        {/* <Hero31 /> */}
-        {/* <Hero32 /> */}
-        {/* <Hero33 /> */}
-        {/* <Hero34 /> */}
-        {/* <Hero35 /> */}
-        {/* <Hero36 /> */}
-        {/* <Hero38 /> */}
-        {/* <Hero39 /> */}
+
+        <Hero3B />
       </article>
     </GridContainer>
   )

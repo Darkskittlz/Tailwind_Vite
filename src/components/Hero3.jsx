@@ -8,7 +8,8 @@ import EmblaCarousel6 from '../carousel/EmblaCarousel6'
 import EmblaCarousel8 from '../carousel/EmblaCarousel8'
 import '../Styles/base.css'
 import '../Styles/embla.css'
-import { ModalContainer } from '../Styles/Styles';
+import { IMGContainer, Margin4Container, ModalContainer, ModalContainer2 } from '../Styles/Styles';
+import EmblaCarousel13 from '../carousel/EmblaCarousel13';
 
 const OPTIONS = { align: 'start', loop: true }
 const SLIDE_COUNT = 5
@@ -38,7 +39,7 @@ const customStyles2 = {
     right: 'auto',
     bottom: 'auto',
     marginRight: '-50%',
-    zIndex: '999',
+    zIndex: '20',
     transform: 'translate(-50%, -50%)',
   },
 };
@@ -64,6 +65,8 @@ const Hero3 = forwardRef(({ scrollToSection }, ref) => {
   const [modal1IsOpen, set1IsOpen] = React.useState(false);
   const [modal2IsOpen, set2IsOpen] = React.useState(false);
   const [modal3IsOpen, set3IsOpen] = React.useState(false);
+  const [modal4IsOpen, set4IsOpen] = React.useState(false);
+  const [modal5IsOpen, set5IsOpen] = React.useState(false);
 
   function open1Modal() {
     set1IsOpen(true);
@@ -77,6 +80,15 @@ const Hero3 = forwardRef(({ scrollToSection }, ref) => {
     set3IsOpen(true);
   }
 
+  function open4Modal() {
+    set3IsOpen(true);
+  }
+
+  function open5Modal() {
+    set3IsOpen(true);
+  }
+
+
   function close1Modal() {
     set1IsOpen(false);
   }
@@ -89,146 +101,163 @@ const Hero3 = forwardRef(({ scrollToSection }, ref) => {
     set3IsOpen(false);
   }
 
+  function close4Modal() {
+    set4IsOpen(false);
+  }
+
+  function close5Modal() {
+    set5IsOpen(false);
+  }
+
 
   return (
     <section>
-      <div className="Hero3Container rounded-xl pt-20 md:ml-20 md:mr-20 lg:mx-96 xs:mx-14 xs:mt-24">
-        <div className="reveal flex items-center flex-col pb-24 justify-center">
-          <h1 className="md:text-7xl xs:text-6xl font-semibold font-sans text-center text-white px-40">ICON OF THE SEAS MARKETING TOOLS</h1>
-          <h2 className="md:text-3xl text-white mt-6 text-center px-34 font-semibold">Everything you need to market <span className="italic ">Icon of the Seas</span></h2>
-        </div>
-        <hr />
-        <div className="reveal flex mt-20 justify-center">
-          <nav>
-            <div className="flex flex-wrap justify-center pb-12 z-10 text-center">
-              <a
-                onClick={() => {
-                  scrollToSection('section4')
-                }}
-                className="rounded-full flex items-center relative cursor-pointer p-2 pl-5 pr-3 bg-white m-2 text-black">
-                Financial Terms
-                <ArrowDownwardIcon style={{ color: "#3663ae" }} />
-              </a>
-              <a
-                onClick={() => {
-                  scrollToSection('section7')
-                }}
-                className="rounded-full flex items-center relative cursor-pointer p-2 pl-5 pr-3 bg-white m-2 text-black">
-                Cruise & Travel Business Updates
-                <ArrowDownwardIcon style={{ color: "#3663ae" }} />
-              </a>
-              <a
-                onClick={() => {
-                  scrollToSection('section10')
-                }}
-                className="rounded-full flex items-center relative cursor-pointer p-2 pl-5 pr-3 bg-white m-2 text-black">
-                Industry Experience
-                <ArrowDownwardIcon style={{ color: "#3663ae" }} />
-              </a>
-              <a
-                onClick={() => {
-                  scrollToSection('section15')
-                }}
-                className="rounded-full flex items-center relative cursor-pointer pl-5 pr-3 p-2 bg-white m-2 text-black">
-                Positioning
-                <ArrowDownwardIcon style={{ color: "#3663ae" }} />
-              </a>
-              <a
-                onClick={() => {
-                  scrollToSection('section18')
-                }}
-                className="rounded-full flex items-center relative cursor-pointer pl-5 pr-3 p-2 bg-white m-2 text-black">
-                References
-                <ArrowDownwardIcon style={{ color: "#3663ae" }} />
-              </a>
-            </div>
-          </nav>
-        </div>
-        <hr />
-        <div className="reveal flex items-center flex-col pt-24 pb-16 justify-center">
-          <div className="items-center justify-center text-center">
+      <Margin4Container>
+        <div className="Hero3Container rounded-xl pt-20 md:ml-20 md:mr-20 lg:mx-96 xs:mx-14 xs:mt-24">
+          <div className="flex items-center flex-col pb-24 justify-center">
+            <h1 className="md:text-7xl md:mb-7 xs:text-6xl font-semibold font-sans text-center text-white z-0 px-40">ICON II & III REINVENTION UNVEILED</h1>
+            <h2 className="md:text-3xl text-white mt-6 text-center px-34 font-semibold">Discover our responses to your RFP questions by navigating through the buttons below</h2>
+          </div>
+          <hr />
+          <div className="flex mt-20 justify-center">
+            <nav>
+              <div className="flex flex-wrap justify-center pb-12 z-10 text-center">
 
-            {/* Modal 1 */}
-            <a
-              className="rounded-full cursor-pointer bg-white m-2 pl-5 pr-2 pt-3 pb-3 text-black"
-              onClick={open1Modal}
-            >
-              MockShop
-              <ArrowOutwardIcon className='mb-3 ml-1' style={{ color: "#3663ae" }} />
-            </a>
-            <Modal
-              isOpen={modal1IsOpen}
-              onRequestClose={close1Modal}
-              style={customStyles}
-              contentLabel="Example Modal"
-            >
-              <ModalContainer>
-                <main>
-                  <EmblaCarousel5 slides={SLIDES} options={OPTIONS} />
-                  <a
-                    className="top-5 xl:right-4 xs:top-0 xs:right-0 z-50 cursor-pointer absolute text-black"
-                    onClick={close1Modal}
-                  >x</a>
-                </main>
-              </ModalContainer>
-            </Modal>
-
-            {/* Modal 2 */}
-            <a
-              className="rounded-full bg-white m-2 cursor-pointer pl-5 pr-2 pt-3 pb-3 text-black"
-              onClick={open2Modal}
-            >
-              First Insight
-              <ArrowOutwardIcon className='mb-3 ml-1' style={{ color: "#3663ae" }} />
-            </a>
-            <Modal
-              isOpen={modal2IsOpen}
-              onRequestClose={close2Modal}
-              style={customStyles2}
-              contentLabel="Example Modal"
-            >
-              <main>
-                <EmblaCarousel6 slides={SLIDES} options={OPTIONS} />
+                {/* Modal 1 */}
                 <a
-                  className="rounded-full flex items-center relative cursor-pointer p-2 pl-5 pr-3 bg-white m-2 text-black"
-                  onClick={close2Modal}
-                >x</a>
-              </main>
-            </Modal>
+                  onClick={open1Modal}
+                  className="rounded-full flex items-center relative cursor-pointer p-2 px-5 bg-white m-2 text-black"
+                >
+                  Show Me The Money
+                  <ArrowOutwardIcon style={{ color: '#3663ae' }} className="p-0 ml-3" />
+                </a>
+                <Modal
+                  isOpen={modal1IsOpen}
+                  onRequestClose={close1Modal}
+                  style={customStyles}
+                  contentLabel="Example Modal"
+                >
+                  <ModalContainer>
+                    <main>
+                      <IMGContainer>
+                        <ModalContainer2>
+                          <div className="md:mt-0 xs:w-full xs:pr-10 xs:mt-20">
+                            <h5 className="text-3xl text-left font-semibold"><ul className="list-disc list-inside"><li className="listItem">Financial Terms</li></ul></h5>
+                            <h2 className="xs:text-3xl lg:w-full md:w-full text-black">
+                              Financial terms have been sent under separate copy to: Irena Meyer and Cynthia Pintado in a password protected file.
+                            </h2>
+                          </div>
+                        </ModalContainer2>
+                      </IMGContainer>
+                      <a
+                        className="top-5 xl:right-4 xs:top-0 xs:right-0 z-50 cursor-pointer absolute text-black"
+                        onClick={close1Modal}
+                      >x</a>
+                    </main>
+                  </ModalContainer>
+                </Modal>
 
-            {/* Modal 3 */}
-            <a
-              className="rounded-full bg-white m-2 pl-5 pr-2 pt-3 pb-3 text-black"
-              onClick={open3Modal}
-            >
-              Autonomous Shopping
-              <ArrowOutwardIcon className='mb-3 ml-1' style={{ color: "#3663ae" }} />
-            </a>
-            <Modal
-              isOpen={modal3IsOpen}
-              onRequestClose={close3Modal}
-              style={customStyles3}
-              contentLabel="Example Modal"
-            >
-              <main>
-                <EmblaCarousel8 slides={SLIDES} options={OPTIONS} />
+                {/* Modal2 */}
                 <a
-                  className="top-5 xl:right-4 xs:top-0 xs:right-0 z-50 cursor-pointer absolute text-3xl text-black"
-                  onClick={close3Modal}
-                >x</a>
-              </main>
-            </Modal>
+                  onClick={open2Modal}
+                  className="rounded-full flex items-center relative cursor-pointer p-2 px-5 bg-white m-2 text-black"
+                >
+                  Cruise & Travel Business Updates
+                  <ArrowOutwardIcon style={{ color: '#3663ae' }} className="p-0 ml-3" />
+                </a>
+                <Modal
+                  isOpen={modal2IsOpen}
+                  onRequestClose={close2Modal}
+                  style={customStyles2}
+                  contentLabel="Example Modal"
+                >
+                  <main>
+                    <a
+                      className="rounded-full flex items-center absolute right-5 z-30 cursor-pointer pr-5 bg-white text-black"
+                      onClick={close2Modal}
+                    >x</a>
+                    <EmblaCarousel13 slides={SLIDES} options={OPTIONS} />
+                  </main>
+                </Modal>
+
+                {/* Modal 3 */}
+                <a
+                  onClick={open3Modal}
+                  className="rounded-full flex items-center relative cursor-pointer p-2 px-5 bg-white m-2 text-black"
+                >
+                  Industry Experience
+                  <ArrowOutwardIcon style={{ color: '#3663ae' }} className="p-0 ml-3" />
+                </a>
+
+                <Modal
+                  isOpen={modal3IsOpen}
+                  onRequestClose={close3Modal}
+                  style={customStyles3}
+                  contentLabel="Example Modal"
+                >
+                  <main>
+                    <EmblaCarousel8 slides={SLIDES} options={OPTIONS} />
+                    <a
+                      className="top-5 xl:right-4 xs:top-0 xs:right-0 z-max cursor-pointer relative cursor-pointer text-3xl text-black"
+                      onClick={close3Modal}
+                    >x</a>
+                  </main>
+                </Modal>
+
+                {/* Modal 4 */}
+                <a
+                  onClick={open4Modal}
+                  className="rounded-full flex items-center relative cursor-pointer px-5 p-2 bg-white m-2 text-black"
+                >
+                  Positioning
+                  <ArrowOutwardIcon style={{ color: '#3663ae' }} className="p-0 ml-3" />
+                </a>
+                <Modal
+                  isOpen={modal4IsOpen}
+                  onRequestClose={close4Modal}
+                  style={customStyles3}
+                  contentLabel="Example Modal"
+                >
+                  <main>
+                    <EmblaCarousel8 slides={SLIDES} options={OPTIONS} />
+                    <a
+                      className="top-5 xl:right-4 xs:top-0 xs:right-0 z-50 cursor-pointer absolute text-3xl text-black"
+                      onClick={close4Modal}
+                    >x</a>
+                  </main>
+                </Modal>
+
+                {/* Modal 5 */}
+                <a
+                  onClick={open5Modal}
+                  className="rounded-full flex items-center relative cursor-pointer px-5 p-2 bg-white m-2 text-black"
+                >
+                  References
+                  <ArrowOutwardIcon style={{ color: '#3663ae' }} className="p-0 ml-3" />
+                </a>
+                <Modal
+                  isOpen={modal5IsOpen}
+                  onRequestClose={close5Modal}
+                  style={customStyles3}
+                  contentLabel="Example Modal"
+                >
+                  <main>
+                    <EmblaCarousel8 slides={SLIDES} options={OPTIONS} />
+                    <a
+                      className="top-5 xl:right-4 xs:top-0 xs:right-0 z-50 cursor-pointer absolute text-3xl text-black"
+                      onClick={close5Modal}
+                    >x</a>
+                  </main>
+                </Modal>
+
+              </div>
+            </nav>
           </div>
         </div>
-      </div>
-    </section>
+      </Margin4Container >
+    </section >
   )
 })
-
-Hero3.propTypes = {
-  section: PropTypes.string.isRequired,
-  scrollToSection: PropTypes.func.isRequired,
-};
 
 Hero3.displayName = 'Hero3';
 

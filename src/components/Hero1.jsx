@@ -30,8 +30,8 @@ const Hero1 = forwardRef(({ scrollToSection }, ref) => {
         <video className="h-full" src={Hero1Vid} autoPlay loop muted />
         <div className="w-full items-center absolute lg:mt-64 xs:mt-20 md:mt-48 sm:mt-44 h-2/5 flex flex-col">
           <Hero1Header>
-            <h1 className='text-white italic'>ICON II & III </h1>
-            <h2 className='text-white italic'> OF THE SEAS</h2>
+            <h1 className='text-white italic'>ICON RETAIL </h1>
+            <h2 className='text-white italic'>ON ICON OF THE SEAS II & III</h2>
           </Hero1Header>
         </div>
         {
@@ -42,73 +42,64 @@ const Hero1 = forwardRef(({ scrollToSection }, ref) => {
                   onClick={() => {
                     scrollToSection('section40')
                   }}
-                  className="rounded-full flex items-center relative cursor-pointer p-2 pl-5 pr-3 bg-white m-2 text-black">
-                  LEADING WITH LUXURY
-                  <ArrowDownwardIcon style={{ color: "#3663ae" }} />
+                  className="rounded-full flex items-center relative cursor-pointer p-2 px-5 bg-white m-2 text-black">
+                  Luxe & Swiss
                 </a>
                 <a
                   onClick={() => {
                     scrollToSection('section43')
                   }}
-                  className="rounded-full flex items-center relative cursor-pointer p-2 pl-5 pr-3 bg-white m-2 text-black">
-                  BLING IT ON
-                  <ArrowDownwardIcon style={{ color: "#3663ae" }} />
+                  className="rounded-full flex items-center relative cursor-pointer p-2 px-5 bg-white m-2 text-black">
+                  Fine Jewelry
                 </a>
                 <a
                   onClick={() => {
                     scrollToSection('section46')
                   }}
-                  className="rounded-full flex items-center relative cursor-pointer p-2 pl-5 pr-3 bg-white m-2 text-black">
-                  HANDBAG HAVEN
-                  <ArrowDownwardIcon style={{ color: "#3663ae" }} />
+                  className="rounded-full flex items-center relative cursor-pointer p-2 px-5 bg-white m-2 text-black">
+                  Leather
                 </a>
                 <a
                   onClick={() => {
                     scrollToSection('section49')
                   }}
-                  className="rounded-full flex items-center relative cursor-pointer p-2 pl-5 pr-3 bg-white m-2 text-black">
-                  BEACH TO BAR
-                  <ArrowDownwardIcon style={{ color: "#3663ae" }} />
+                  className="rounded-full flex items-center relative cursor-pointer p-2 px-5 bg-white m-2 text-black">
+                  Fashion Apparel
                 </a>
                 <a
                   onClick={() => {
                     scrollToSection('section52')
                   }}
-                  className="rounded-full flex items-center relative cursor-pointer pl-5 pr-3 p-2 bg-white m-2 text-black">
-                  POPPING UP DIFFERENTLY
-                  <ArrowDownwardIcon style={{ color: "#3663ae" }} />
+                  className="rounded-full flex items-center relative cursor-pointer px-5 p-2 bg-white m-2 text-black">
+                  Marketplace & Pavilions
                 </a>
                 <a
                   onClick={() => {
                     scrollToSection('section55')
                   }}
-                  className="rounded-full flex items-center relative cursor-pointer pl-5 pr-3 p-2 bg-white m-2 text-black">
-                  MIRROR, MIRROR ON THE WALL
-                  <ArrowDownwardIcon style={{ color: "#3663ae" }} />
+                  className="rounded-full flex items-center relative cursor-pointer px-5 p-2 bg-white m-2 text-black">
+                  Beauty
                 </a>
                 <a
                   onClick={() => {
                     scrollToSection('section58')
                   }}
-                  className="rounded-full flex items-center relative cursor-pointer pl-5 pr-3 p-2 bg-white m-2 text-black">
-                  A TOAST TO AN ICON
-                  <ArrowDownwardIcon style={{ color: "#3663ae" }} />
+                  className="rounded-full flex items-center relative cursor-pointer px-5 p-2 bg-white m-2 text-black">
+                  Liquor
                 </a>
                 <a
                   onClick={() => {
                     scrollToSection('section61')
                   }}
-                  className="rounded-full flex items-center relative cursor-pointer pl-5 pr-3 p-2 bg-white m-2 text-black">
-                  HEADLINE
-                  <ArrowDownwardIcon style={{ color: "#3663ae" }} />
+                  className="rounded-full flex items-center relative cursor-pointer px-5 p-2 bg-white m-2 text-black">
+                  Logo
                 </a>
                 <a
                   onClick={() => {
                     scrollToSection('section64')
                   }}
-                  className="rounded-full flex items-center relative cursor-pointer pl-5 pr-3 p-2 bg-white m-2 text-black">
-                  ADVENTURE AWAITS
-                  <ArrowDownwardIcon style={{ color: "#3663ae" }} />
+                  className="rounded-full flex items-center relative cursor-pointer px-5 p-2 bg-white m-2 text-black">
+                  Kids & Family
                 </a>
               </div>
             </nav>

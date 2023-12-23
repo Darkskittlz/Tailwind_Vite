@@ -179,6 +179,15 @@ export const IMG2Container = styled.div`
   }
 `
 
+export const IMG3Container = styled.div`
+  display: flex;
+  justify-content: space-between;
+
+  @media screen and (max-width: 1530px) {
+    flex-direction: column-reverse;
+  }
+`
+
 export const ModalContainer = styled.div`
   @media only screen and (min-width: 600px) and (max-width: 768px) {
     .content {
@@ -203,9 +212,11 @@ export const ModalContainer = styled.div`
   }
 `
 
-export const InnerContainer1 = styled.div`
+export const ModalContainer2 = styled.div`
+  display: flex;
+  flex-direction: column;
   padding-left: 30px;
-  width: 45%;
+  width: 100%;
 
 
   h2 {
@@ -238,6 +249,51 @@ export const InnerContainer1 = styled.div`
     }
   }
 `
+
+export const ModalContainer3 = styled.div`
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+`
+
+export const InnerContainer1 = styled.div`
+  padding-left: 30px;
+  width: 45%;
+
+
+  h2 {
+    font-size: 15px;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+
+  h4 {
+    font-style: italic;
+  }
+
+  h5 {
+    color: #3663ae;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+
+  @media screen and (max-width: 1530px) {
+    width: 100%;
+
+    h1 {
+      margin-bottom: 20px;
+    }
+
+    h5 {
+      margin-bottom: 15px;
+    }
+  }
+`
+
 export const InnerContainer2 = styled.div`
   h2 {
     position: fixed;
@@ -257,7 +313,7 @@ export const InnerContainer2 = styled.div`
 `
 
 export const InnerContainer3 = styled.div`
-  padding-left: 30px;
+  padding-left: 20px;
   width: 54%;
 
   h4 {
@@ -278,8 +334,6 @@ export const InnerContainer3 = styled.div`
     margin-bottom: 30px;
   }
 
-  
-
   @media screen and (max-width: 1530px) {
     width: 100%;
 
@@ -296,6 +350,40 @@ export const InnerContainer3 = styled.div`
     }
   }
 `
+
+
+export const InnerIMGContainer = styled.div`
+  justify-items: center;
+  margin-top: 47px;
+  display: flex;
+  grid-gap: 25px;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  img {
+    display: flex;
+    object-fit: cover;
+    height: 50px;
+  }
+
+  #coach {
+    margin-top:-20px;
+    height: 90px;
+  }
+
+  #kateSpade {
+    margin-top:-27px;
+    margin-left: -31px;
+    height: 94px;
+  }
+`
+
+export const InnerIMG2Container = styled.div`
+  justify-content: center;
+  display: flex;
+  margin-top: 60px;
+`
+
 
 export const InnerCenterContainer = styled.div`
   display: flex;
@@ -324,11 +412,59 @@ export const CarouselContainer = styled.div`
 `
 
 export const CaptionContainer = styled.div`
+  position: absolute;
+
   h2 {
+    color: #536fb2;
+    font-size: 25px;
+  }
+`
+
+export const Caption2Container = styled.div`
+  position: absolute;
+  right: 0;
+  margin-right: 160px;
+
+  h2 {
+    font-size: 25px;
+    color: white;
+  }
+`
+
+export const Caption3Container = styled.div`
+  position: absolute;
+  right: 0;
+  margin-top: -40px;
+  margin-right: 210px;
+
+  h2 {
+    font-size: 25px;
     color: #536fb2;
   }
 `
 
+export const Caption4Container = styled.div`
+  position: absolute;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+
+  h2 {
+    font-size: 15px;
+    color: #536fb2;
+  }
+`
+
+export const Caption5Container = styled.div`
+  position: absolute;
+  right: 0;
+  margin-right: 424px;
+
+  h2 {
+    font-size: 25px;
+    color: white;
+  }
+`
 
 export const MockShopContainer = styled.div`
   width: 40%;
