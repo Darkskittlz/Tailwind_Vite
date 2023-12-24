@@ -22,10 +22,15 @@ export default {
         max: '999'
       },
       height: {
+        xtra_tall: '62vh',
         tall: '500px',
         md: '400px',
         semi_md: '368px',
-        sm: '300px'
+        sm: '300px',
+        chanelIMG: '70px'
+      },
+      margin: {
+        margin_1_75: "1.75rem",
       },
       borderRadius: {
         img: '20px'

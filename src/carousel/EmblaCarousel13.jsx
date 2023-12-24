@@ -6,7 +6,7 @@ import {
   NextButton,
   usePrevNextButtons
 } from './EmblaCarouselArrowButtons'
-import { Caption2Container, Caption3Container, Caption4Container, CaptionContainer, EmblaGridContainer, IMG3Container, IMGContainer, InnerContainer1, InnerContainer2, InnerContainer3, InnerIMG2Container, InnerIMGContainer, ModalContainer, ModalContainer2, ModalContainer3 } from "../Styles/Styles.js"
+import { Caption2Container, Caption3Container, Caption4Container, Caption6Container, Caption7Container, CaptionContainer, EmblaGridContainer, IMG3Container, IMGContainer, InnerContainer1, InnerContainer2, InnerContainer3, InnerIMG2Container, InnerIMG3Container, InnerIMGContainer, ModalContainer, ModalContainer2, ModalContainer3 } from "../Styles/Styles.js"
 import Embla2 from "../assets/productGIF.mp4"
 import Embla3 from "../assets/PopUp.png"
 import Embla4A from "../assets/Cartier.png"
@@ -35,7 +35,7 @@ import Embla8D from "../assets/Personalization.png"
 import Embla8E from "../assets/the_vault.png"
 import Embla9 from "../assets/Logistics.png"
 import Embla10 from "../assets/Infrastructure.png"
-import Embla11 from "../assets/TeamPhoto.jpg"
+import Embla11 from "../assets/Secret_Sauce.jpeg"
 import Embla12 from "../assets/Anchor_Standards.png"
 import Embla13A from "../assets/Azamara.png"
 import Embla13B from "../assets/Crystal.png"
@@ -45,11 +45,10 @@ import Embla13E from "../assets/Resorts World.jpg"
 import Embla13F from "../assets/Scenic.png"
 import Embla13G from "../assets/Silversea.png"
 import Embla13H from "../assets/Ritz Carlton.png"
-import Embla13I from "../assets/Carnival.png"
-import Embla13J from "../assets/Celebrity.png"
+import Embla13I from "../assets/carnival_asterisk.png"
+import Embla13J from "../assets/celebrity_asterisk.png"
 import Embla13K from "../assets/Costa.webp"
 import Embla13L from "../assets/Norwegian.png"
-import { ArrowRightRounded } from '@mui/icons-material'
 
 export const slides = [
   {
@@ -161,7 +160,7 @@ export const slides = [
   },
   {
     Embla10image: Embla10,
-    heading: "HEY NEIGHBOR!",
+    Embla10heading: "HEY NEIGHBOR!",
     Embla10SubHeader: "CRUISE & TRAVEL BUSINESS UPDATES - INFRASTRUCTURE",
     Embla10Br: <br />,
     Embla10text: `Need a cup of sugar? How about immediate proximity to your dedicated Royal account team as well as our entire merchant organization, marketing and visual merchandising experts, training resources, as well as our video content creation team?`,
@@ -183,7 +182,7 @@ export const slides = [
     Embla11text8: `Next up?`,
     Embla11text9: `• Accreditation for our Port Merchants team from the Whiskey Council of America`,
     Embla11text10: `• British Butler Institute Training for Swiss and Luxury brand specialists`,
-    Embla11text11: `• No one does it better!`,
+    Embla11text11: `No one does it better!`,
   },
   {
     Embla12image: Embla12,
@@ -196,18 +195,21 @@ export const slides = [
     Embla12text4: "We’re Starboard proud and can’t wait to deliver mind-blowing results on Icon II & III."
   },
   {
-    EmblaImage13A: Embla13A,
-    EmblaImage13B: Embla13B,
-    EmblaImage13C: Embla13C,
-    EmblaImage13D: Embla13D,
-    EmblaImage13E: Embla13E,
-    EmblaImage13F: Embla13F,
-    EmblaImage13G: Embla13G,
-    EmblaImage13H: Embla13H,
-    EmblaImage13I: Embla13I,
-    EmblaImage13J: Embla13J,
-    EmblaImage13K: Embla13K,
-    EmblaImage13L: Embla13L,
+    Embla13image:
+    {
+      1: Embla13A,
+      2: Embla13B,
+      3: Embla13C,
+      4: Embla13D,
+      5: Embla13E,
+      6: Embla13F,
+      7: Embla13G,
+      8: Embla13H,
+      9: Embla13I,
+      10: Embla13J,
+      11: Embla13K,
+      12: Embla13L
+    },
     heading: "OPERATING 100 SHIPS ACROSS THE GLOBE",
     Embla13SubHeader: "CRUISE & TRAVEL BUSINESS UPDATES - RECRUITMENT, TRAINING & DEVELOPMENT",
     Embla13Br: <br />,
@@ -230,7 +232,6 @@ export const slides = [
 const EmblaCarousel13 = (props) => {
   const { options } = props
   const [emblaRef, emblaApi] = useEmblaCarousel(options)
-  const [showIMG, setShowIMG] = useState(false)
 
   const {
     prevBtnDisabled,
@@ -314,56 +315,6 @@ const EmblaCarousel13 = (props) => {
                     </div>
                   </InnerContainer3>
 
-                  {slide.Embla7Caption && (
-                    <CaptionContainer>
-                      <h2>
-                        <ul className="ml-5 list-disc list-inside">
-                          <li>
-                            {slide.Embla7caption}
-                            {slide.Embla8caption1}
-                            {slide.Embla8caption2}
-                            {slide.Embla8caption3}
-                            {slide.Embla8caption4}
-                            {slide.Embla8caption5}
-                            {slide.Embla9caption1}
-                            {slide.Embla11caption1}
-                          </li>
-                        </ul>
-                      </h2>
-                    </CaptionContainer>
-                  )}
-
-                  {slide.Embla8Caption1 && (
-                    <CaptionContainer>
-                      <h2>
-                        <ul className="ml-5 list-disc list-inside">
-                          <li>
-                            {slide.Embla8caption1}
-                            {slide.Embla8caption2}
-                            {slide.Embla8caption3}
-                            {slide.Embla8caption4}
-                            {slide.Embla8caption5}
-                            {slide.Embla11caption1}
-                          </li>
-                        </ul>
-                      </h2>
-                    </CaptionContainer>
-                  )}
-
-
-                  {slide.Embla11caption1 && (
-                    <CaptionContainer>
-                      <h2>
-                        <ul className="ml-5 list-disc list-inside">
-                          <li>
-                            {slide.Embla11caption1}
-                          </li>
-                        </ul>
-                      </h2>
-                    </CaptionContainer>
-                  )}
-
-
                   {slide.Embla2image && (
                     <InnerContainer2>
                       <video
@@ -402,7 +353,9 @@ const EmblaCarousel13 = (props) => {
                   <ModalContainer3>
                     <InnerContainer2>
                       <div className='ml-8'>
-                        {slide.Embla4text}
+                        <h3 className="xs:text-1xl mb-5 text-black">
+                          {slide.Embla4text}
+                        </h3>
                       </div>
                     </InnerContainer2>
                     <InnerIMGContainer>
@@ -430,12 +383,14 @@ const EmblaCarousel13 = (props) => {
                 {slide.Embla5text && (
                   <div className='w-full flex'>
                     <div className='w-2/4 ml-2.5 -mt-24 p-5'>
-                      {slide.Embla5Br}
-                      {slide.Embla5Br}
-                      {slide.Embla5text}
-                      {slide.Embla5Br}
-                      {slide.Embla5Br}
-                      {slide.Embla5text2}
+                      <h3 className="xs:text-1xl mb-5 text-black">
+                        {slide.Embla5Br}
+                        {slide.Embla5Br}
+                        {slide.Embla5text}
+                        {slide.Embla5Br}
+                        {slide.Embla5Br}
+                        {slide.Embla5text2}
+                      </h3>
                     </div>
                     <Caption2Container>
                       <h2>
@@ -463,16 +418,18 @@ const EmblaCarousel13 = (props) => {
                 {slide.Embla7text && (
                   <div className='w-full flex'>
                     <div className='w-2/4 ml-2.5 -mt-24 p-5'>
-                      {slide.Embla7Br}
-                      {slide.Embla7Br}
-                      {slide.Embla7text}
-                      {slide.Embla7Br}
-                      {slide.Embla7Br}
-                      {slide.Embla7text2}
-                      {slide.Embla7Br}
-                      {slide.Embla7text3}
-                      {slide.Embla7Br}
-                      {slide.Embla7text4}
+                      <h3 className="xs:text-1xl mb-5 text-black">
+                        {slide.Embla7Br}
+                        {slide.Embla7Br}
+                        {slide.Embla7text}
+                        {slide.Embla7Br}
+                        {slide.Embla7Br}
+                        {slide.Embla7text2}
+                        {slide.Embla7Br}
+                        {slide.Embla7text3}
+                        {slide.Embla7Br}
+                        {slide.Embla7text4}
+                      </h3>
                     </div>
                     <Caption3Container>
                       <h2>
@@ -494,7 +451,9 @@ const EmblaCarousel13 = (props) => {
                   <ModalContainer3>
                     <InnerContainer2>
                       <div className='ml-8'>
-                        {slide.Embla8text}
+                        <h3 className="xs:text-1xl mb-5 text-black">
+                          {slide.Embla8text}
+                        </h3>
                       </div>
                     </InnerContainer2>
                     <InnerIMG2Container>
@@ -531,15 +490,17 @@ const EmblaCarousel13 = (props) => {
                     <h1 className="mb-10 text-3xl font-bold text-black mt-2">{slide.Embla9heading}</h1>
                     <div className='w-full flex justify-center flex-col'>
                       <div>
-                        {slide.Embla9text}
-                        {slide.Embla9Br}
-                        {slide.Embla9Br}
-                        {slide.Embla9text2}
-                        {slide.Embla9Br}
-                        {slide.Embla9Br}
+                        <h3 className="xs:text-1xl mb-5 text-black">
+                          {slide.Embla9text}
+                          {slide.Embla9Br}
+                          {slide.Embla9Br}
+                          {slide.Embla9text2}
+                          {slide.Embla9Br}
+                          {slide.Embla9Br}
+                        </h3>
                       </div>
                       <div className='flex items-center flex-col'>
-                        <Caption4Container>
+                        <Caption6Container>
                           <h2>
                             <ul className="ml-5 list-disc list-inside">
                               <li>
@@ -547,14 +508,163 @@ const EmblaCarousel13 = (props) => {
                               </li>
                             </ul>
                           </h2>
-                        </Caption4Container>
+                        </Caption6Container>
                         <img src={slide.Embla9image} className="object-cover h-sm w-2/4 rounded-img" key={`image-${index}-27`} />
                       </div>
                     </div>
                   </ModalContainer3>
                 )}
 
+                {/* Slide 10 */}
+                {slide.Embla10image && (
+                  <ModalContainer3>
+                    <h1 className="mb-5 ml-10 font-bold text-black mt-2">{slide.Embla10heading}</h1>
+                    <div className='w-full flex ml-10 justify-center flex-col'>
+                      <div>
+                        <h3 className="xs:text-1xl text-black">
+                          {slide.Embla10text}
+                          {slide.Embla10Br}
+                          {slide.Embla10Br}
+                          {slide.Embla10text2}
+                          {slide.Embla10Br}
+                          {slide.Embla10Br}
+                        </h3>
+                      </div>
+                      <div className='flex items-center flex-col'>
+                        <img src={slide.Embla10image} className="object-cover h-sm w-2/4 rounded-img" key={`image-${index}-28`} />
+                      </div>
+                    </div>
+                  </ModalContainer3>
+                )}
 
+                {/* Slide 11 */}
+                {slide.Embla11text && (
+                  <div className='w-full flex justify-between'>
+                    <div className='w-2/4 ml-2.5 -mt-24 p-5'>
+                      {slide.Embla11Br}
+                      {slide.Embla11Br}
+                      {slide.Embla11text}
+                      {slide.Embla11Br}
+                      {slide.Embla11text2}
+                      {slide.Embla11Br}
+                      {slide.Embla11text3}
+                      {slide.Embla11Br}
+                      {slide.Embla11Br}
+                      {slide.Embla11text4}
+                      {slide.Embla11Br}
+                      {slide.Embla11text5}
+                      {slide.Embla11Br}
+                      {slide.Embla11text6}
+                      {slide.Embla11Br}
+                      {slide.Embla11text7}
+                      {slide.Embla11Br}
+                      {slide.Embla11Br}
+                      {slide.Embla11text8}
+                      {slide.Embla11Br}
+                      {slide.Embla11text9}
+                      {slide.Embla11Br}
+                      {slide.Embla11text10}
+                      {slide.Embla11Br}
+                      {slide.Embla11Br}
+                      {slide.Embla11text11}
+                    </div>
+                    <Caption7Container>
+                      <h2>
+                        <ul className="ml-5 list-disc list-inside">
+                          <li>
+                            {slide.Embla11caption1}
+                          </li>
+                        </ul>
+                      </h2>
+                    </Caption7Container>
+                    <div>
+                      <img src={slide.Embla11image} className="h-tall object-cover rounded-img" key={`image-${index}-29`} />
+                    </div>
+                  </div>
+                )}
+
+
+                {/* Slide 12 */}
+                {slide.Embla12text && (
+                  <div className='w-full flex justify-between'>
+                    <div className='w-2/4 ml-2.5 -mt-24 p-5'>
+                      <h3 className="xs:text-1xl mb-5 text-black">
+                        {slide.Embla12Br}
+                        {slide.Embla12Br}
+                        {slide.Embla12text}
+                        {slide.Embla12Br}
+                        {slide.Embla12Br}
+                        {slide.Embla12text2}
+                        {slide.Embla12Br}
+                        {slide.Embla12Br}
+                        {slide.Embla12text3}
+                        {slide.Embla12Br}
+                        {slide.Embla12Br}
+                        {slide.Embla12text4}
+                      </h3>
+                    </div>
+                    <div>
+                      <img src={slide.Embla12image} className="h-tall -mt-32 mr-12 object-cover rounded-img" key={`image-${index}-30`} />
+                    </div>
+                  </div>
+                )}
+
+
+                {/* Slide 13 */}
+                {slide.Embla13text && (
+                  <ModalContainer3>
+                    <InnerContainer2>
+                      <div className='ml-8'>
+                        <h3 className="xs:text-1xl mb-5 text-black">
+                          {slide.Embla13text}
+                        </h3>
+                      </div>
+                    </InnerContainer2>
+                    <InnerIMG3Container>
+                      <img src={slide.Embla13image['1']} className="" key={`image-${index}-3`} />
+                      <img src={slide.Embla13image['2']} className="" key={`image-${index}-4`} />
+                      <img src={slide.Embla13image['3']} className="" key={`image-${index}-5`} />
+                      <img src={slide.Embla13image['4']} className="" key={`image-${index}-6`} />
+                      <img src={slide.Embla13image['5']} className="" key={`image-${index}-7`} />
+                      <img src={slide.Embla13image['6']} className="" key={`image-${index}-8`} />
+                      <img src={slide.Embla13image['7']} className="" key={`image-${index}-9`} />
+                      <img src={slide.Embla13image['8']} className="" key={`image-${index}-10`} />
+                      <img src={slide.Embla13image['9']} className="" key={`image-${index}-11`} />
+                      <img src={slide.Embla13image['10']} className="" key={`image-${index}-12`} />
+                      <img src={slide.Embla13image['11']} className="" key={`image-${index}-13`} />
+                      <img src={slide.Embla13image['12']} className="" key={`image-${index}-14`} />
+                      <img src={slide.Embla13image['13']} key={`image-${index}-15`} />
+                      <img src={slide.Embla13image['14']} key={`image-${index}-16`} />
+                      <img src={slide.Embla13image['15']} key={`image-${index}-17`} />
+                      <img src={slide.Embla13image['16']} key={`image-${index}-18`} />
+                      <h3 className='ml-10 -mt-8'>* Indicates Expansion</h3>
+                    </InnerIMG3Container>
+                  </ModalContainer3>
+                )}
+
+
+                {/* Slide 14 */}
+                {slide.Embla14text && (
+                  <ModalContainer3>
+                    <h1 className="mb-10 text-3xl font-bold text-black mt-2">{slide.Embla9heading}</h1>
+                    <div className='w-full ml-10 flex justify-center flex-col'>
+                      <div>
+                        <h3 className="xs:text-1xl mb-5 text-black">
+                          {slide.Embla14text}
+                          {slide.Embla14Br}
+                          {slide.Embla14Br}
+                          {slide.Embla14text2}
+                          {slide.Embla14Br}
+                          {slide.Embla14text3}
+                          {slide.Embla14Br}
+                          {slide.Embla14text4}
+                          {slide.Embla14Br}
+                          {slide.Embla14text5}
+                        </h3>
+                      </div>
+                    </div>
+                  </ModalContainer3>
+                )}
 
 
 

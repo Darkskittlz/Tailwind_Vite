@@ -277,7 +277,7 @@ div.carousel-inner img {
   /* overflow-y: scroll; */
   /* scroll-snap-type: y mandatory; */
 
-  background-color: #eeeeee;
+  background-color: white;
 }
 
 .scroller .element {

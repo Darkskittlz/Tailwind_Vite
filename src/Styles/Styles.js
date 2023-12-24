@@ -351,10 +351,124 @@ export const InnerContainer3 = styled.div`
   }
 `
 
+export const InnerContainer4 = styled.div`
+  padding-left: 20px;
+  width: 100%;
+
+  h4 {
+    font-style: italic;
+  }
+
+  h3 {
+    width: 100%;
+  }
+
+  p {
+    width: 140%;
+  }
+
+  h5 {
+    color: #3663ae;
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+
+  @media screen and (max-width: 1530px) {
+    width: 100%;
+
+    h5 {
+      margin-bottom: 15px;
+    }
+
+    h3 {
+      width: 100%;
+    }
+
+    p {
+      width: 100%;
+    }
+  }
+`
+
+export const InnerContainer5 = styled.div`
+  width: 100%;
+
+  h4 {
+    font-style: italic;
+  }
+
+  h3 {
+    width: 100%;
+  }
+
+  p {
+    width: 140%;
+  }
+
+  h5 {
+    color: #3663ae;
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+
+  @media screen and (max-width: 1530px) {
+    width: 100%;
+
+    h5 {
+      margin-bottom: 15px;
+    }
+
+    h3 {
+      width: 100%;
+    }
+
+    p {
+      width: 100%;
+    }
+  }
+`
+
+export const InnerContainer6 = styled.div`
+  padding-left: 30px;
+  width: 45%;
+
+
+  h2 {
+    font-size: 15px;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+
+  h4 {
+    font-style: italic;
+  }
+
+  h5 {
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+
+  @media screen and (max-width: 1530px) {
+    width: 100%;
+
+    h1 {
+      margin-bottom: 20px;
+    }
+
+    h5 {
+      margin-bottom: 15px;
+    }
+  }
+`
+
 
 export const InnerIMGContainer = styled.div`
   justify-items: center;
-  margin-top: 47px;
+  margin-top: 131px;
   display: flex;
   grid-gap: 25px;
   justify-content: center;
@@ -384,6 +498,26 @@ export const InnerIMG2Container = styled.div`
   margin-top: 60px;
 `
 
+export const InnerIMG3Container = styled.div`
+  justify-items: center;
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 15px;
+  justify-content: center;
+  /* flex-wrap: wrap; */
+
+  img {
+    display: flex;
+    object-fit: cover;
+    height: 50px;
+  }
+
+  h3 {
+    font-weight: 500;
+  }
+`
+
 
 export const InnerCenterContainer = styled.div`
   display: flex;
@@ -400,6 +534,25 @@ export const CarouselContainer = styled.div`
     margin-top: 10px;
     width: 100%;
     color: #536fb2;
+  }
+ 
+  @media screen and (max-width: 1530px) {
+    width: 100%;
+
+    h2 {
+      margin-left: 30px;
+    }
+  }
+`
+
+export const Carousel2Container = styled.div`
+  h2 {
+    position: fixed;
+    font-size: 20px;
+    margin-left: 20px;
+    margin-top: 10px;
+    width: 100%;
+    color: white;
   }
  
   @media screen and (max-width: 1530px) {
@@ -434,11 +587,11 @@ export const Caption2Container = styled.div`
 export const Caption3Container = styled.div`
   position: absolute;
   right: 0;
-  margin-top: -40px;
-  margin-right: 210px;
+  margin-top: -30px;
+  margin-right: 280px;
 
   h2 {
-    font-size: 25px;
+    font-size: 20px;
     color: #536fb2;
   }
 `
@@ -463,6 +616,80 @@ export const Caption5Container = styled.div`
   h2 {
     font-size: 25px;
     color: white;
+  }
+`
+
+export const Caption6Container = styled.div`
+  position: absolute;
+  margin-right: 160px;
+
+  h2 {
+    font-size: 25px;
+    color: white;
+  }
+`
+
+export const Caption7Container = styled.div`
+  position: absolute;
+  margin-right: -16px;
+  margin-top: 5px;
+  right: 0;
+
+  h2 {
+    font-size: 15px;
+    color: white;
+  }
+`
+
+export const Caption8Container = styled.div`
+  position: absolute;
+  right: 0;
+  bottom: 68px;
+  width: 381px;
+  display: flex;
+
+  h2 {
+    color: white;
+    font-size: 15px;
+    margin-left: -59px;
+  }
+
+  h3 {
+    color: white;
+    font-size: 15px;
+    margin-right: 39x;
+  }
+`
+
+export const Caption9Container = styled.div`
+  position: absolute;
+  margin-right: 76px;
+  margin-top: 5px;
+  right: 0;
+
+  h2 {
+    font-size: 15px;
+    color: white;
+  }
+`
+
+export const Caption10Container = styled.div`
+  position: absolute;
+  right: 0;
+  bottom: 55px;
+  width: 381px;
+  display: flex;
+
+  h2 {
+    color: white;
+    font-size: 15px;
+    margin-left: -35px;
+  }
+
+  h3 {
+    color: white;
+    font-size: 15px;
+    margin-right: 39x;
   }
 `
 

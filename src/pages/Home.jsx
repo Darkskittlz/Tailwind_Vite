@@ -203,71 +203,33 @@ const Home = forwardRef((_, ref) => {
         <Hero1 section="section1" ref={section1Ref} scrollToSection={executeScrollToSection} />
         <Hero2 section="section2" ref={section2Ref} scrollToSection={executeScrollToSection} />
         <Hero3 />
-        {/* <Hero4 /> */}
-        {/* <Hero5 /> */}
-        {/* <Hero7 /> */}
-        {/* <Hero6A /> */}
-        {/* <Hero6B /> */}
-        {/* <Hero6C /> */}
-        {/* <Hero6D /> */}
-        {/* <Hero6E /> */}
-        {/* <Hero6F /> */}
-        {/* <Hero6G /> */}
-        {/* <Hero6H /> */}
-        {/* <Hero6I /> */}
-        {/* <Hero6J /> */}
-        {/* <Hero6K /> */}
-        {/* <Hero6L /> */}
-        {/* <Hero10 /> */}
-        {/* <Hero10A /> */}
-        {/* <Hero10B /> */}
-        {/* <Hero10C /> */}
-        {/* <Hero15 /> */}
-        {/* <Hero15A /> */}
-        {/* <Hero15B /> */}
-        {/* <Hero18 /> */}
-        {/* <Hero18A /> */}
-        {/* <Hero18B /> */}
-        {/* <Hero12 /> */}
-        {/* <Hero12A /> */}
-        {/* <Hero22 /> */}
-        {/* <Hero22A /> */}
-        {/* <Hero25 /> */}
-        {/* <Hero25A /> */}
 
         {/* Leading With Luxury */}
         <Hero40 section="section40" ref={section40Ref} scrollToSection={executeScrollToSection} />
-        <Hero8 />
         <Hero9 />
 
         {/* Bling It On */}
         <Hero43 section="section43" ref={section43Ref} scrollToSection={executeScrollToSection} />
-        <Hero11 />
         <Hero17 />
 
         {/* Handbag Haven */}
         <Hero46 section="section46" ref={section46Ref} scrollToSection={executeScrollToSection} />
-        <Hero13 />
         <Hero14 />
 
         {/* Beach to Bar */}
         <Hero49 section="section49" ref={section49Ref} scrollToSection={executeScrollToSection} />
-        <Hero16 />
         <Hero20 />
 
         {/* Popping Up Differently */}
         <Hero52 section="section52" ref={section52Ref} scrollToSection={executeScrollToSection} />
-        <Hero19 />
         <Hero6 />
 
         {/* Mirror, Mirror on the Wall */}
         <Hero55 section="section55" ref={section55Ref} scrollToSection={executeScrollToSection} />
-        <Hero23 />
         <Hero55A />
 
         {/* A Toast to an Icon */}
         <Hero58 section="section58" ref={section58Ref} scrollToSection={executeScrollToSection} />
-        <Hero58A />
         <Hero58B />
 
         {/* Headline */}

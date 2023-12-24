@@ -2,7 +2,7 @@ import React, { useState, useEffect, forwardRef } from 'react'
 import styled from "styled-components"
 import CountdownTimer from "./CountdownTimer"
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
-import LoyalLogo from "../assets/LoyalPNG.png"
+import LoyalLogo from "../assets/LoyalEternallyLogo.png"
 import AnchorLogo from "../assets/AnchorIMG.png"
 import PropTypes from 'prop-types';
 

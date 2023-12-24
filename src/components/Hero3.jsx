@@ -10,6 +10,9 @@ import '../Styles/base.css'
 import '../Styles/embla.css'
 import { IMGContainer, Margin4Container, ModalContainer, ModalContainer2 } from '../Styles/Styles';
 import EmblaCarousel13 from '../carousel/EmblaCarousel13';
+import EmblaCarousel14 from '../carousel/EmblaCarousel14';
+import EmblaCarousel16 from '../carousel/EmblaCarousel16';
+import EmblaCarousel15 from '../carousel/EmblaCarousel15';
 
 const OPTIONS = { align: 'start', loop: true }
 const SLIDE_COUNT = 5
@@ -48,12 +51,12 @@ const customStyles3 = {
   content: {
     top: '46%',
     width: '70%',
-    height: '85%',
+    height: '70%',
     left: '50%',
     right: 'auto',
     bottom: 'auto',
     marginRight: '-50%',
-    zIndex: '999',
+    zIndex: '20',
     transform: 'translate(-50%, -50%)',
   },
 };
@@ -81,11 +84,11 @@ const Hero3 = forwardRef(({ scrollToSection }, ref) => {
   }
 
   function open4Modal() {
-    set3IsOpen(true);
+    set4IsOpen(true);
   }
 
   function open5Modal() {
-    set3IsOpen(true);
+    set5IsOpen(true);
   }
 
 
@@ -143,9 +146,9 @@ const Hero3 = forwardRef(({ scrollToSection }, ref) => {
                         <ModalContainer2>
                           <div className="md:mt-0 xs:w-full xs:pr-10 xs:mt-20">
                             <h5 className="text-3xl text-left font-semibold"><ul className="list-disc list-inside"><li className="listItem">Financial Terms</li></ul></h5>
-                            <h2 className="xs:text-3xl lg:w-full md:w-full text-black">
+                            <h3 className="xs:text-3xl lg:w-full md:w-full text-black">
                               Financial terms have been sent under separate copy to: Irena Meyer and Cynthia Pintado in a password protected file.
-                            </h2>
+                            </h3>
                           </div>
                         </ModalContainer2>
                       </IMGContainer>
@@ -196,9 +199,9 @@ const Hero3 = forwardRef(({ scrollToSection }, ref) => {
                   contentLabel="Example Modal"
                 >
                   <main>
-                    <EmblaCarousel8 slides={SLIDES} options={OPTIONS} />
+                    <EmblaCarousel14 slides={SLIDES} options={OPTIONS} />
                     <a
-                      className="top-5 xl:right-4 xs:top-0 xs:right-0 z-max cursor-pointer relative cursor-pointer text-3xl text-black"
+                      className="rounded-full flex items-center absolute right-5 top-0 mt-10 z-30 cursor-pointer mr-10 bg-white text-black"
                       onClick={close3Modal}
                     >x</a>
                   </main>
@@ -219,7 +222,7 @@ const Hero3 = forwardRef(({ scrollToSection }, ref) => {
                   contentLabel="Example Modal"
                 >
                   <main>
-                    <EmblaCarousel8 slides={SLIDES} options={OPTIONS} />
+                    <EmblaCarousel15 slides={SLIDES} options={OPTIONS} />
                     <a
                       className="top-5 xl:right-4 xs:top-0 xs:right-0 z-50 cursor-pointer absolute text-3xl text-black"
                       onClick={close4Modal}
@@ -242,7 +245,7 @@ const Hero3 = forwardRef(({ scrollToSection }, ref) => {
                   contentLabel="Example Modal"
                 >
                   <main>
-                    <EmblaCarousel8 slides={SLIDES} options={OPTIONS} />
+                    <EmblaCarousel16 slides={SLIDES} options={OPTIONS} />
                     <a
                       className="top-5 xl:right-4 xs:top-0 xs:right-0 z-50 cursor-pointer absolute text-3xl text-black"
                       onClick={close5Modal}
