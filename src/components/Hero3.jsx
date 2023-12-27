@@ -23,7 +23,7 @@ const customStyles = {
   content: {
     top: '46%',
     width: '70%',
-    height: '70%',
+    height: '60%',
     left: '50%',
     right: 'auto',
     bottom: 'auto',
@@ -37,7 +37,7 @@ const customStyles2 = {
   content: {
     top: '46%',
     width: '70%',
-    height: '70%',
+    height: '65%',
     left: '50%',
     right: 'auto',
     bottom: 'auto',
@@ -218,7 +218,7 @@ const Hero3 = forwardRef(({ scrollToSection }, ref) => {
                 <Modal
                   isOpen={modal4IsOpen}
                   onRequestClose={close4Modal}
-                  style={customStyles3}
+                  style={customStyles}
                   contentLabel="Example Modal"
                 >
                   <main>
@@ -241,7 +241,7 @@ const Hero3 = forwardRef(({ scrollToSection }, ref) => {
                 <Modal
                   isOpen={modal5IsOpen}
                   onRequestClose={close5Modal}
-                  style={customStyles3}
+                  style={customStyles2}
                   contentLabel="Example Modal"
                 >
                   <main>

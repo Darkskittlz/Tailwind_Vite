@@ -1,23 +1,19 @@
 import React, { forwardRef } from 'react'
 import ArrowOutwardIcon from '@mui/icons-material/ArrowOutward'
 import Modal from 'react-modal';
-import EmblaCarousel5 from '../carousel/EmblaCarousel5'
-import EmblaCarousel6 from '../carousel/EmblaCarousel6'
-import EmblaCarousel8 from '../carousel/EmblaCarousel8'
 import '../Styles/base.css'
 import '../Styles/embla.css'
-import { Margin4Container, ModalContainer } from '../Styles/Styles';
+import { IMGContainer, Margin4Container, ModalContainer } from '../Styles/Styles';
+import FirstInsight from "../assets/firstInsight.png"
+import Trunk from "../assets/Trunk.png"
 
-const OPTIONS = { align: 'start', loop: true }
-const SLIDE_COUNT = 5
-const SLIDES = Array.from(Array(SLIDE_COUNT).keys())
 
 
 const customStyles = {
   content: {
     top: '46%',
     width: '70%',
-    height: '70%',
+    height: '50%',
     left: '50%',
     right: 'auto',
     bottom: 'auto',
@@ -31,7 +27,7 @@ const customStyles2 = {
   content: {
     top: '46%',
     width: '70%',
-    height: '70%',
+    height: '60%',
     left: '50%',
     right: 'auto',
     bottom: 'auto',
@@ -45,7 +41,7 @@ const customStyles3 = {
   content: {
     top: '46%',
     width: '70%',
-    height: '85%',
+    height: '50%',
     left: '50%',
     right: 'auto',
     bottom: 'auto',
@@ -75,15 +71,6 @@ const Hero3B = forwardRef(({ scrollToSection }, ref) => {
     set3IsOpen(true);
   }
 
-  function open4Modal() {
-    set3IsOpen(true);
-  }
-
-  function open5Modal() {
-    set3IsOpen(true);
-  }
-
-
   function close1Modal() {
     set1IsOpen(false);
   }
@@ -102,7 +89,7 @@ const Hero3B = forwardRef(({ scrollToSection }, ref) => {
       <Margin4Container>
         <div className="Hero3Container rounded-xl pt-20 md:ml-20 md:mr-20 lg:mx-96 xs:mx-14 xs:mt-24">
           <div className="flex items-center flex-col pb-24 justify-center">
-            <h1 className="md:text-7xl xs:text-6xl font-semibold font-sans text-center text-white px-40">Big Ideas</h1>
+            <h1 className="md:text-7xl xs:text-6xl font-semibold font-sans z-0 text-center text-white px-40">Big Ideas</h1>
           </div>
           <hr />
           <div className="flex mt-20 justify-center">
@@ -125,7 +112,28 @@ const Hero3B = forwardRef(({ scrollToSection }, ref) => {
                 >
                   <ModalContainer>
                     <main>
-                      <EmblaCarousel5 slides={SLIDES} options={OPTIONS} />
+                      <IMGContainer>
+                        <div className="flex">
+                          <div className="md:mt-0 h-md xs:w-2/4 xs:pr-10 xs:mt-20">
+                            <h5 className="text-3xl text-left font-semibold text-SB_Blue"><ul className="list-disc list-inside"><li className="listItem">REVOLUTIONIZING CUSTOMER INSIGHT</li></ul></h5>
+                            <h1 className="md:text-6xl mt-10 md:mb-7 text-black xs:text-6xl text-left font-semibold font-sans z-0">VOICE OF THE CUSTOMER</h1>
+                            <h3 className="xs:text-3xl lg:w-full md:w-full text-black">
+                              With First Insights, Starboard will take guest engagement to the next level.
+                              <br />
+                              <br />
+                              The voice of the customer is key to guest satisfaction and revenue growth.  If only we could tap into consumer preferences during the design or selection phase of future collections.  Well, that day has arrived.
+                              <br />
+                              <br />
+                              With First Insight we can invite feedback in-shop via a QR code or interactive screen.  More broadly, we can crowdsource ideas and preferences from like-demographics.
+                              <br />
+                              <br />
+                              We’re ready to listen, learn, and refine.
+                            </h3>
+                          </div>
+                          <h5 className="text-1xl absolute right-0 mr-thirty_nine mt-9 font-semibold text-SB_Blue"><ul className="list-disc list-inside"><li className="listItem">First Insight Platform</li></ul></h5>
+                          <img src={FirstInsight} className='mt-14 w-2/4' alt="First Insight Platform" />
+                        </div>
+                      </IMGContainer>
                       <a
                         className="top-5 xl:right-4 xs:top-0 xs:right-0 z-50 cursor-pointer absolute text-black"
                         onClick={close1Modal}
@@ -133,6 +141,7 @@ const Hero3B = forwardRef(({ scrollToSection }, ref) => {
                     </main>
                   </ModalContainer>
                 </Modal>
+
 
                 {/* Modal2 */}
                 <a
@@ -148,13 +157,47 @@ const Hero3B = forwardRef(({ scrollToSection }, ref) => {
                   style={customStyles2}
                   contentLabel="Example Modal"
                 >
-                  <main>
-                    <EmblaCarousel6 slides={SLIDES} options={OPTIONS} />
-                    <a
-                      className="rounded-full flex items-center relative cursor-pointer p-2 pl-5 pr-3 bg-white m-2 text-black"
-                      onClick={close2Modal}
-                    >x</a>
-                  </main>
+                  <ModalContainer>
+                    <main>
+                      <IMGContainer>
+                        <div className="flex">
+                          <div className="md:mt-0 h-md xs:w-2/4 xs:pr-10 xs:mt-20">
+                            <h5 className="text-3xl text-left font-semibold text-SB_Blue"><ul className="list-disc list-inside"><li className="listItem">REVOLUTIONIZING INSTORE MERCHANDISING</li></ul></h5>
+                            <h1 className="md:text-6xl mt-10 md:mb-7 text-black xs:text-6xl text-left font-semibold font-sans z-0">MERCHANDISING TRANSFORMATION</h1>
+                            <h3 className="xs:text-3xl lg:w-full md:w-full text-black">
+                              Once again Starboard brings the tech with Mockshop.
+                              <br />
+                              <br />
+                              We’ll have the power to optimize each shop’s floor plan and design by dragging and dropping assortments into virtual, 3D replicas of our shops.
+                              <br />
+                              <br />
+                              MockShop's automated planogram feature makes it faster than ever to create beautiful, easy to follow visual merchandising guidelines for our shipboard teams.
+                              <br />
+                              <br />
+                              The tech syncs up with sales data and produces heat maps so we can analyze performance at product, fixture and store zone levels.
+                              <br />
+                              <br />
+                              Icing on the cake?  Continuous learning to drive improved sell through, revenue growth, and guest satisfaction.
+                            </h3>
+                          </div>
+                          <h5 className="text-1xl absolute right-0 mr-thirty_nine mt-9 font-semibold text-SB_Blue"><ul className="list-disc list-inside"><li className="listItem">MockShop</li></ul></h5>
+                          <iframe
+                            src="https://starboardcruise-my.sharepoint.com/personal/claudia_king-mcwilliams_starboardcruise_com/_layouts/15/embed.aspx?UniqueId=41a501e3-75dd-406a-b2e9-10be341870cf&embed=%7B%22ust%22%3Atrue%2C%22hv%22%3A%22CopyEmbedCode%22%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create"
+                            width="640"
+                            height="360"
+                            allowfullscreen
+                            title="20231218 MOCKSHOP CMW cutdown.MOV"
+                            className='mt-14 w-2/4'
+                            alt="MockShop"
+                          ></iframe>
+                        </div>
+                      </IMGContainer>
+                      <a
+                        className="top-5 xl:right-4 xs:top-0 xs:right-0 z-50 cursor-pointer absolute text-black"
+                        onClick={close1Modal}
+                      >x</a>
+                    </main>
+                  </ModalContainer>
                 </Modal>
 
                 {/* Modal 3 */}
@@ -171,20 +214,39 @@ const Hero3B = forwardRef(({ scrollToSection }, ref) => {
                   style={customStyles3}
                   contentLabel="Example Modal"
                 >
-                  <main>
-                    <EmblaCarousel8 slides={SLIDES} options={OPTIONS} />
-                    <a
-                      className="top-5 xl:right-4 xs:top-0 xs:right-0 z-50 cursor-pointer absolute text-3xl text-black"
-                      onClick={close3Modal}
-                    >x</a>
-                  </main>
+                  <ModalContainer>
+                    <main>
+                      <IMGContainer>
+                        <div className="flex">
+                          <div className="md:mt-0 h-md xs:w-2/4 xs:pr-10 xs:mt-20">
+                            <h5 className="text-3xl text-left font-semibold text-SB_Blue"><ul className="list-disc list-inside"><li className="listItem">SUITE SPOT</li></ul></h5>
+                            <h1 className="md:text-6xl mt-10 md:mb-7 text-black xs:text-6xl text-left font-semibold font-sans z-0">LUXURY PERSONAL STYLIST</h1>
+                            <h3 className="xs:text-3xl lg:w-full md:w-full text-black">
+                              Imagine having a world-class personal shopper available in your suite and at your convenience.
+                              <br />
+                              <br />
+                              Star class guests can request the services of our Luxury Personal Stylist through their Royal Genie. Our stylist will meet with each client to understand their interests, preferences, and unique style. Whether they’re looking to elevate their wardrobe, accessorize with timeless pieces, or invest in luxury goods, our stylist will curate selections for a private showing in their suite.
+                              <br />
+                              <br />
+                              Expert advice and exceptional service to enhance the Royal Suite Class guest experience.
+                            </h3>
+                          </div>
+                          <img src={Trunk} className='mt-14 w-2/4' alt="SUITE SPOT" />
+                        </div>
+                      </IMGContainer>
+                      <a
+                        className="top-5 xl:right-4 xs:top-0 xs:right-0 z-50 cursor-pointer absolute text-black"
+                        onClick={close1Modal}
+                      >x</a>
+                    </main>
+                  </ModalContainer>
                 </Modal>
               </div>
             </nav>
           </div>
         </div>
-      </Margin4Container>
-    </section>
+      </Margin4Container >
+    </section >
   )
 })
 

@@ -323,7 +323,7 @@ div.carousel-inner img {
   justify-content: center;
   align-items: center;
   font-weight: 700;
-  font-size: 1.25rem;
+  font-size: 2.4rem;
   line-height: 1.75rem;
   padding: 0.5rem;
   text-decoration: none;
@@ -331,7 +331,7 @@ div.carousel-inner img {
 }
 
 .show-counter .countdown {
-  line-height: 1.25rem;
+  line-height: 3.2rem;
   padding-left: 9px;
   padding-right: 9px;
   align-items: center;

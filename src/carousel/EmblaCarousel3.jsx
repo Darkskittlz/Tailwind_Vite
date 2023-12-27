@@ -7,34 +7,36 @@ import {
   usePrevNextButtons
 } from './EmblaCarouselArrowButtons'
 import ArrowOutwardIcon from '@mui/icons-material/ArrowOutward'
-import { CaptionContainer, EmblaGridContainer, IMG2Container, IMGContainer, InnerCenterContainer, InnerContainer2, InnerContainer3, Margin2Container, Margin3Container, Margin4Container, MarginContainer } from "../Styles/Styles.js"
+import { CaptionContainer, EmblaGridContainer, IMG2Container, IMGContainer, IMGContainer2, InnerCenterContainer, InnerContainer2, InnerContainer3, InnerIMG3Container, InnerIMG4Container, Margin2Container, Margin3Container, Margin4Container, MarginContainer } from "../Styles/Styles.js"
 import Embla1 from "../assets/the_vault.png"
 import Embla2 from "../assets/little_treasures.png"
 import Embla3 from "../assets/the_collection.png"
+import Embla3A from "../assets/ItsInTheBag/Kate Spade.png"
+import Embla3B from "../assets/ItsInTheBag/WGACA.png"
+import Embla3C from "../assets/ItsInTheBag/Marc Jacobs.png"
+import Embla3D from "../assets/ItsInTheBag/Mary Frances.svg"
+import Embla3E from "../assets/ItsInTheBag/Coach.png"
+import Embla3F from "../assets/ItsInTheBag/Karl Lagerfeld.png"
+import Embla3G from "../assets/ItsInTheBag/Guess.png"
+import Embla3H from "../assets/ItsInTheBag/Swarovski.png"
+import Embla3I from "../assets/ItsInTheBag/Kendra Scott.png"
+import Embla3J from "../assets/ItsInTheBag/Coeur de Lion.webp"
 
 export const slides = [
   {
-    image: Embla1,
+    Emblaimage1: Embla1,
     heading: "THE VAULT",
-    caption: "The Vault",
+    caption1: "The Vault",
     SubHeader: "REVOLUTION",
     Embla1Br: <br />,
-    Embla1text: "On Icon II & III we will introduce The Vault, a virtual shopping experience that unlocks access to an extended range of handbags and accessories that are onboard yet not on display in The Collection.",
-    Embla1text2: "Browse our full assortment of pristine, pre-loved styles from Chanel, Christian Dior, Fendi, Gucci, Louis Vuitton, and Hermes.  View new collections from Marc Jacobs, Kurt Geiger and more. See detailed handbag descriptions and request a personal shopping appointment – we'll have your favorite pieces ready with a complimentary glass of bubbles.  Convenience and personalized service means our guests will never miss out on their dream handbag.",
-    // bullet1: '• Infinite Ocean View Balcony',
-    // bullet2: '• Family Infinite Ocean View Balcony',
-    // bullet3: '• Infinite Central Park View Balcony',
-    // bullet4: '• Ocean View Large Balcony',
-    // bullet5: '• Connecting Ocean View Balcony',
-    // bullet6: '• Ocean View Balcony',
-    // bullet7: '• Central Park View Balcony',
-    // bullet8: '• Surfside Family View Balcony',
+    Embla1text: "On Icon II & III we will unveil The Vault, a virtual shopping experience that unlocks access to an extended range of handbags and accessories that are onboard yet not on display in The Collection. Momentous change is coming.",
+    Embla1text2: "Browse our stunning assortment of pristine, pre-loved styles from Chanel, Christian Dior, Fendi, Gucci, Louis Vuitton, and Hermes. View new collections from Marc Jacobs, Kurt Geiger and more. See detailed handbag descriptions and request a personal shopping appointment – we'll have your favorite pieces ready with a complimentary glass of bubbles.  Convenience and personalized service means our guests will always find their dream handbag.",
     ButtonText: "EVOLUTION"
   },
   {
-    image: Embla2,
+    Emblaimage2: Embla2,
     heading: "THE COLLECTION WELCOMES LITTLE TREASURES",
-    caption: "Little Treasures",
+    caption2: "Little Treasures",
     SubHeader: "EVOLUTION",
     Embla2Br: <br />,
     Embla2text: "Find the perfect balance of style and affordability with Little Treasures, our carefully curated bridge jewelry collection.",
@@ -42,13 +44,25 @@ export const slides = [
     ButtonText: "TRIED & TRUE"
   },
   {
-    image: Embla3,
+    Emblaimage3: Embla3,
     heading: "THE COLLECTION",
-    caption: "The Collection, Allure of the Seas",
+    caption3: "The Collection, Allure of the Seas",
     SubHeader: "TRIED & TRUE",
     Embla3Br: <br />,
     Embla3text: "This highly successful strategy, seamlessly incorporates our proven 'good, better, best' merchandising approach.  The Collection is a stylish and expansive boutique offering styles and brands that deliver a wide range of price points. Guests will find fashion jewelry, trending sunglasses, accessories, and handbags from trendy to artisanal, and contemporary to pre-loved vintage. This winning shopping experience is a Royal Caribbean 'fashion fan favorite'.",
-    Brands: "Swarovski, Kendra Scott, Uno, Coeur de Lion, Guess, Mary Francis, Coach, Kate Spade, Karl Lagerfeld, and WGACA"
+    Brands:
+    {
+      1: Embla3A,
+      2: Embla3B,
+      3: Embla3C,
+      4: Embla3D,
+      5: Embla3E,
+      6: Embla3F,
+      7: Embla3G,
+      8: Embla3H,
+      9: Embla3I,
+      10: Embla3J,
+    },
   },
 ]
 
@@ -110,51 +124,75 @@ const EmblaCarousel3 = (props) => {
                             {slide.Embla2text2}
 
                             {/* Slide 3 */}
-                            {slide.Embla3text}
-                            {slide.Embla3Br}
-                            {slide.Embla3Br}
-                            {slide.Brands}
+                            {slide.Embla3text && (
+                              <>
+                                {slide.Embla3text}
+                                {slide.Embla3Br}
+                                {slide.Embla3Br}
+                                <InnerIMG4Container>
+                                  <img src={slide.Brands['1']} id="kateSpade" key={`image-${index}-1`} />
+                                  <img src={slide.Brands['2']} id="WGACA" key={`image-${index}-2`} />
+                                  <img src={slide.Brands['3']} id="MJ" key={`image-${index}-3`} />
+                                  <img src={slide.Brands['4']} id="MF" key={`image-${index}-4`} />
+                                  <img src={slide.Brands['5']} id="Coach" key={`image-${index}-5`} />
+                                  <img src={slide.Brands['6']} id="KL" key={`image-${index}-6`} />
+                                  <img src={slide.Brands['7']} id="Guess" key={`image-${index}-7`} />
+                                  <img src={slide.Brands['8']} id="Swarovski" key={`image-${index}-8`} />
+                                  <br />
+                                  <img src={slide.Brands['9']} id="KS" key={`image-${index}-9`} />
+                                  <img src={slide.Brands['10']} id="CDL" key={`image-${index}-10`} />
+                                </InnerIMG4Container>
+                              </>
+                            )}
 
 
                           </h3>
-
-                          {/* {hideBullets ? ( */}
-                          {/*   <div></div> */}
-                          {/* ) : ( */}
-                          {/*   <div className='grid-cols-3 grid lg:w-full md:w-full mt-2 mb-2'> */}
-                          {/*     <ul className="list-inside"> */}
-                          {/*       <li className="listItem mb-2 text-black">{slide.bullet1}</li> */}
-                          {/*       <li className="listItem mb-2 text-black">{slide.bullet2}</li> */}
-                          {/*       <li className="listItem mb-2 text-black">{slide.bullet3}</li> */}
-                          {/*     </ul> */}
-                          {/*     <ul> */}
-                          {/*       <li className="listItem mb-2 text-black">{slide.bullet4}</li> */}
-                          {/*       <li className="listItem mb-2 text-black">{slide.bullet3alt}</li> */}
-                          {/*       <li className="listItem mb-2 text-black">{slide.bullet4alt}</li> */}
-                          {/*       <li className="listItem mb-2 text-black">{slide.bullet5}</li> */}
-                          {/*     </ul> */}
-                          {/*     <ul className="list-inside"> */}
-                          {/*       <li className="listItem mb-2 text-black">{slide.bullet6}</li> */}
-                          {/*       <li className="listItem mb-2 text-black">{slide.bullet7}</li> */}
-                          {/*       <li className="listItem mb-2 text-black">{slide.bullet8}</li> */}
-                          {/*     </ul> */}
-                          {/*   </div> */}
-                          {/* )} */}
-
-                          {/* <button className='rounded-full font-semibold border-black text-2xl bg-white md:mt-0 p-7 text-black'>{slide.button} */}
-                          {/*   <ArrowOutwardIcon className="mb-2 ml-2" style={{ color: "#3663ae" }} /> */}
-                          {/* </button> */}
                         </div>
                       </InnerContainer3>
                       <InnerContainer2>
                         <CaptionContainer>
-                          <h2><ul className="ml-5 list-disc list-inside"><li>{slide.caption}</li></ul></h2>
+
+
+                          {/* Captions */}
+                          {slide.caption1 && (
+                            <h2><ul className="ml-5 -mt-5 list-disc list-inside text-SB_Blue"><li>{slide.caption1}</li></ul></h2>
+                          )}
+                          {slide.caption2 && (
+                            <h2><ul className="ml-5 list-disc list-inside text-white"><li>{slide.caption2}</li></ul></h2>
+                          )}
+                          {slide.caption3 && (
+                            <h2><ul className="ml-5 list-disc list-inside text-white"><li>{slide.caption3}</li></ul></h2>
+                          )}
+
+
                         </CaptionContainer>
-                        <img
-                          className="embla__slide__img"
-                          src={slide.image}
-                          alt={`IMG${index + 1}`}
-                        />
+                        {slide.Emblaimage1 && (
+                          <div className="mr-96">
+                            <img
+                              className="embla__slide__img"
+                              src={slide.Emblaimage1}
+                              alt={`IMG${index + 1}`}
+                            />
+                          </div>
+                        )}
+                        {slide.Emblaimage2 && (
+                          <div className="mr-24">
+                            <img
+                              className="embla__slide__img"
+                              src={slide.Emblaimage2}
+                              alt={`IMG${index + 2}`}
+                            />
+                          </div>
+                        )}
+                        {slide.Emblaimage3 && (
+                          <div className="mr-56">
+                            <img
+                              className="embla__slide__img"
+                              src={slide.Emblaimage3}
+                              alt={`IMG${index + 3}`}
+                            />
+                          </div>
+                        )}
                         <div className="embla__buttons pb-20 flex absolute">
                           <PrevButton onClick={onPrevButtonClick} disabled={prevBtnDisabled} />
                           <button

@@ -42,6 +42,7 @@ export const EmblaGridContainer2 = styled.div`
 `
 
 
+
 export const MarginContainer = styled.div`
   margin-top: 100px;
   margin-bottom: 100px;
@@ -73,6 +74,16 @@ export const Margin4Container = styled.div`
 export const IMGContainer = styled.div`
   display: flex;
   justify-content: space-between;
+
+  @media screen and (max-width: 1530px) {
+    flex-direction: column-reverse;
+
+  }
+`
+
+export const IMGContainer2 = styled.div`
+  display: flex;
+  justify-content: space-around;
 
   @media screen and (max-width: 1530px) {
     flex-direction: column-reverse;
@@ -465,6 +476,61 @@ export const InnerContainer6 = styled.div`
   }
 `
 
+export const InnerContainer7 = styled.div`
+  padding-left: 30px;
+  width: 50%;
+
+
+  h2 {
+    font-size: 15px;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+
+  h4 {
+    font-style: italic;
+  }
+
+  h5 {
+    color: #3663ae;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+
+  @media screen and (max-width: 1530px) {
+    width: 100%;
+
+    h1 {
+      margin-bottom: 20px;
+    }
+
+    h5 {
+      margin-bottom: 15px;
+    }
+  }
+`
+
+export const InnerContainer8 = styled.div`
+  h2 {
+    position: fixed;
+    font-size: 25px;
+    width: 100%;
+    margin-left: 20px;
+    margin-top: 10px;
+  }
+ 
+  @media screen and (max-width: 1530px) {
+    width: 100%;
+
+    h2 {
+      margin-left: 30px;
+    }
+  }
+`
+
 
 export const InnerIMGContainer = styled.div`
   justify-items: center;
@@ -503,7 +569,7 @@ export const InnerIMG3Container = styled.div`
   margin-top: 50px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-gap: 15px;
+  grid-gap: 25px;
   justify-content: center;
   /* flex-wrap: wrap; */
 
@@ -515,6 +581,103 @@ export const InnerIMG3Container = styled.div`
 
   h3 {
     font-weight: 500;
+  }
+`
+
+export const InnerIMG4Container = styled.div`
+  justify-items: center;
+  margin-top: -1px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr 1fr;
+  grid-gap: 15px;
+  justify-content: center;
+  /* flex-wrap: wrap; */
+
+  img {
+    display: flex;
+    object-fit: cover;
+    height: 50px;
+  }
+
+
+  #kateSpade {
+    margin-top:-27px;
+    margin-left: -31px;
+    height: 94px;
+  }
+
+  #WGACA {
+    height: 127px;
+    margin-top: -36px;
+  }
+
+  #MJ {
+    height: 17px;
+    margin-top: 18px;
+  }
+
+  #MF {
+    height: 54px;
+  }
+
+  #Coach {
+    margin-top:-52px;
+    height: 90px;
+  }
+
+  #KL {
+    height: 25px;
+    margin-top: -20px;
+  }
+
+  #Guess {
+    height: 40px;
+    margin-top: -29px;
+  }
+
+  #Swarovski {
+    height: 20px;
+    margin-top: -20px;
+  }
+
+  #KS {
+    height: 81px;
+    margin-top: -25px;
+  }
+
+  #CDL {
+    height: 75px;
+    margin-top: -23px;
+  }
+`
+
+export const InnerIMG5Container = styled.div`
+  justify-items: space-between;
+  margin-top: 131px;
+  display: flex;
+  grid-gap: 25px;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  img {
+    display: flex;
+    object-fit: cover;
+    height: 100px;
+  }
+
+  #Dior {
+    height: 50px;
+    margin-top: 30px;
+  }
+
+  #Chanel {
+    height: 200px;
+    margin-top: -45px;
+  }
+
+  #Lancome {
+    height: 60px;
+    margin-top: 23px;
   }
 `
 
@@ -690,6 +853,13 @@ export const Caption10Container = styled.div`
     color: white;
     font-size: 15px;
     margin-right: 39x;
+  }
+`
+export const Caption11Container = styled.div`
+  position: absolute;
+
+  h2 {
+    font-size: 19px;
   }
 `
 

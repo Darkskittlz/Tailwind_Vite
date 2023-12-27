@@ -91,6 +91,9 @@ import Hero55A from '../components/Hero55A';
 import Hero58A from '../components/Hero58A';
 import Hero58B from '../components/Hero58B';
 import Hero3B from '../components/Hero3B';
+import Hero54A from '../components/Hero54';
+import Hero56 from '../components/Hero56';
+import Letter from '../components/Letter';
 
 const useMountEffect = (fun) => useEffect(fun, []);
 
@@ -232,13 +235,16 @@ const Home = forwardRef((_, ref) => {
         <Hero58 section="section58" ref={section58Ref} scrollToSection={executeScrollToSection} />
         <Hero58B />
 
-        {/* Headline */}
+        {/* Its Iconic - Logo */}
         <Hero61 section="section61" ref={section61Ref} scrollToSection={executeScrollToSection} />
+        <Hero54A />
 
         {/* Adventure Awaits */}
         <Hero64 section="section64" ref={section64Ref} scrollToSection={executeScrollToSection} />
+        <Hero56 />
 
         <Hero3B />
+        <Letter />
       </article>
     </GridContainer>
   )
