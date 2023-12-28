@@ -16,7 +16,7 @@ import Emblaimage6 from "../assets/ItsIconic/Soft_Apparel_Growth.png"
 export const slides = [
   {
     Emblaimage1: Emblaimage1,
-    heading: "PERSONALIZING RETAIL MANAGEMENT",
+    heading: "PERSONALIZING RETAIL",
     SubHeader: "REVOLUTION",
     caption1: "Peronalization Station",
     Embla1Br: <br />,
@@ -28,7 +28,7 @@ export const slides = [
     ButtonText: "EVOLUTION"
   },
   {
-    heading: "FLAGSHIP LOGO ASSORTMNET",
+    heading: "FLAGSHIP LOGO ASSORTMENT",
     SubHeader: "EVOLUTION",
     Embla2Br: <br />,
     Embla2text: "With our eye on quality and fabrication, we are combining the sophistication you love with a contemporary twist, expanding our assortment to include Lounge, Polo shirts and Linen. We're partnering with new and existing manufacturers to create a Flagship Royal Caribbean assortment. This resort-like capsule will marry timeless classic with discreet logos, ensuring an elevated aesthetic that guests will want to wear on board and at home.",
@@ -36,7 +36,7 @@ export const slides = [
   },
   {
     Emblaimage3: Emblaimage3,
-    heading: "DISCOVER OUR PERFECT LOUNGWEAR TO VACATION IN STYLE",
+    heading: "DISCOVER OUR PERFECT LOUNGEWEAR TO VACATION IN STYLE",
     SubHeader: "EVOLUTION",
     Embla3Br: <br />,
     ButtonText: "EVOLUTION"

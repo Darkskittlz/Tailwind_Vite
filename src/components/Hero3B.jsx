@@ -5,6 +5,7 @@ import '../Styles/base.css'
 import '../Styles/embla.css'
 import { IMGContainer, Margin4Container, ModalContainer } from '../Styles/Styles';
 import FirstInsight from "../assets/firstInsight.png"
+// import Transformation from "../assets/MockShop.MOV"
 import Trunk from "../assets/Trunk.png"
 
 
@@ -90,11 +91,12 @@ const Hero3B = forwardRef(({ scrollToSection }, ref) => {
         <div className="Hero3Container rounded-xl pt-20 md:ml-20 md:mr-20 lg:mx-96 xs:mx-14 xs:mt-24">
           <div className="flex items-center flex-col pb-24 justify-center">
             <h1 className="md:text-7xl xs:text-6xl font-semibold z-0 text-center font-oswald uppercase text-white px-40">Big Ideas</h1>
+            <h2 className="font-semibold lg:text-4xl md:text-3xl mt-5 uppercase font-oswald text-white">Lorem Ipsum</h2>
           </div>
           <hr />
-          <div className="flex mt-20 justify-center">
+          <div className="flex pt-24 justify-center">
             <nav>
-              <div className="flex flex-wrap justify-center pb-12 z-10 text-center">
+              <div className="flex flex-wrap justify-center pb-24 z-10 text-center">
 
                 {/* Modal 1 */}
                 <a
@@ -118,7 +120,7 @@ const Hero3B = forwardRef(({ scrollToSection }, ref) => {
                             <h5 className="text-3xl text-left font-semibold text-SB_Blue"><ul className="list-disc list-inside"><li className="listItem">REVOLUTIONIZING CUSTOMER INSIGHT</li></ul></h5>
                             <h1 className="md:text-6xl mt-10 md:mb-7 text-black xs:text-6xl text-left font-semibold font-sans z-0">VOICE OF THE CUSTOMER</h1>
                             <h3 className="xs:text-3xl lg:w-full md:w-full text-black">
-                              With First Insights, Starboard will take guest engagement to the next level.
+                              With First Insight, Starboard will take guest engagement to the next level.
                               <br />
                               <br />
                               The voice of the customer is key to guest satisfaction and revenue growth.  If only we could tap into consumer preferences during the design or selection phase of future collections.  Well, that day has arrived.
@@ -163,8 +165,7 @@ const Hero3B = forwardRef(({ scrollToSection }, ref) => {
                         <div className="flex">
                           <div className="md:mt-0 h-md xs:w-2/4 xs:pr-10 xs:mt-20">
                             <h5 className="text-3xl text-left font-semibold text-SB_Blue"><ul className="list-disc list-inside"><li className="listItem">REVOLUTIONIZING INSTORE MERCHANDISING</li></ul></h5>
-                            <h1 className="md:text-6xl mt-10 md:mb-7 text-black xs:text-6xl text-left font-semibold font-sans z-0">MERCHANDISING TRANSFORMATION</h1>
-                            <h3 className="xs:text-3xl lg:w-full md:w-full text-black">
+                            <h1 className="md:text-6xl mt-10 md:mb-7 text-black xs:text-6xl text-left font-semibold font-sans z-0">MERCHANDISING TRANSFORMATION</h1> <h3 className="xs:text-3xl lg:w-full md:w-full text-black">
                               Once again Starboard brings the tech with Mockshop.
                               <br />
                               <br />
@@ -181,15 +182,13 @@ const Hero3B = forwardRef(({ scrollToSection }, ref) => {
                             </h3>
                           </div>
                           <h5 className="text-1xl absolute right-0 mr-thirty_nine mt-9 font-semibold text-SB_Blue"><ul className="list-disc list-inside"><li className="listItem">MockShop</li></ul></h5>
-                          <iframe
-                            src="https://starboardcruise-my.sharepoint.com/personal/claudia_king-mcwilliams_starboardcruise_com/_layouts/15/embed.aspx?UniqueId=41a501e3-75dd-406a-b2e9-10be341870cf&embed=%7B%22ust%22%3Atrue%2C%22hv%22%3A%22CopyEmbedCode%22%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create"
-                            width="640"
-                            height="360"
-                            allowfullscreen
-                            title="20231218 MOCKSHOP CMW cutdown.MOV"
-                            className='mt-14 w-2/4'
-                            alt="MockShop"
-                          ></iframe>
+                          {/* <video */}
+                          {/*   className="w-5/6 right-0 rounded" */}
+                          {/*   src={Transformation} */}
+                          {/*   loop */}
+                          {/*   autoPlay */}
+                          {/*   muted */}
+                          {/* /> */}
                         </div>
                       </IMGContainer>
                       <a

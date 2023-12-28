@@ -19,6 +19,7 @@
     "@mui/material": "^5.14.18",
     "embla-carousel-react": "^8.0.0-rc15",
     "netlify-cli": "^16.9.3",
+    "perfect-scrollbar": "^1.5.5",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-modal": "^3.16.1",

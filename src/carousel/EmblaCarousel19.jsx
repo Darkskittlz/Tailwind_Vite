@@ -16,7 +16,7 @@ export const slides = [
   {
     image: Embla1,
     imgAlt: "",
-    heading: "PERSONALIZING RETAIL MANAGEMENT",
+    heading: "PERSONALIZING RETAIL",
     SubHeader: "REVOLUTION",
     Embla1Br: <br />,
     Embla1text: "Guests can stand out from the crowd and take their cruise experience to the next level at Starboard’s personalization station located within Port Merchants.",
@@ -42,9 +42,8 @@ export const slides = [
     SubHeader: "TRIED & TRUE",
     Embla3Br: <br />,
     Embla3text: "Port Merchants will continue to offer our guests' favorite brands with the bonus of larger bottles (1L vs 750ml), duty-free savings and special promotions. ",
-    Embla3text2: "Looking for bragging rights back home?  Highly sought after travel retail exclusives are our specialty.  Everything from Hennessy White, Johnny Walker, Angel's Envy, Jack Daniels, Macallan and more!",
-    Embla3text3: "And, to keep your memories flooding back to your  favorite port of call, we hand select unique brands guests have discovered on a shore excursion or a beachfront hideaway.",
-    Embla3text4: "Salud! Cin Cin! Cheers!",
+    Embla3text2: "Looking for bragging rights back home?  Highly sought after travel retail exclusives are our specialty.  Everything from Hennessy White, Johnnie Walker, Angel's Envy, Jack Daniels, Macallan and more!",
+    Embla3text3: "Salud! Cin Cin! Cheers!",
   },
 ]
 
@@ -114,9 +113,6 @@ const EmblaCarousel19 = (props) => {
                           {slide.Embla3Br}
                           {slide.Embla3Br}
                           {slide.Embla3text3}
-                          {slide.Embla3Br}
-                          {slide.Embla3Br}
-                          {slide.Embla3text4}
                         </h3>
 
                       </div>

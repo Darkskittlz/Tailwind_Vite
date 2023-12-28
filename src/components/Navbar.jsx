@@ -2,7 +2,7 @@ import React, { useState, useEffect, forwardRef } from 'react'
 import styled from "styled-components"
 import CountdownTimer from "./CountdownTimer"
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
-import LoyalLogo from "../assets/LoyalEternallyLogo.png"
+import LoyalLogo from "../assets/Royal_Loyal_logo.png"
 import AnchorLogo from "../assets/AnchorIMG.png"
 import PropTypes from 'prop-types';
 
@@ -45,7 +45,7 @@ const GridContainer = styled.div`
   }
 
   button {
-    width: 15%;
+    width: 10%;
     margin-right: 2%;
 
     @media screen and (max-width: 1033px) {
@@ -96,15 +96,15 @@ const Navbar = forwardRef(({ scrollToSection }) => {
         <GridContainer>
           <h1 className="text-white font-oswald cursor-pointer">COUNTDOWN TO DECISION DAY</h1>
           <CountdownTimer targetDate={dateTime} />
-          <h3 className='text-white font-oswald'>We can't wait to show you our game changing Retail vision!</h3>
+          <h3 className='text-white font-roboto'>We can't wait to show you our game changing Retail vision!</h3>
           <button
-            className="rounded-full text-2xl p-5 right-0 bg-white text-black xl:inline"
+            className="rounded-full text-2xl py-5 right-0 bg-white text-black xl:inline"
             onClick={() => {
               scrollToSection('section2')
             }}
           >
             Why Starboard
-            <ArrowForwardIcon style={{ marginLeft: "10px", marginTop: "-2px" }} />
+            <ArrowForwardIcon style={{ color: '#3663ae', fontSize: '20px', marginLeft: "10px", marginTop: "-2px" }} />
           </button>
         </GridContainer >
         {showAnchor ? (

@@ -24,7 +24,6 @@ export const slides = [
     Embla1IOTS: "𝘐𝘤𝘰𝘯 𝘰𝘧 𝘵𝘩𝘦 𝘚𝘦𝘢𝘴",
     Embla1text: "An iconic brand with a long history of impeccable quality, timeless elegance, and classic style. A First at Sea, we’re thrilled to introduce Chanel watches and fine jewelry to Royal Caribbean Icon II & III.",
     Embla1text2: "Chanel enjoys significant popularity with their brand loyalists and new customers alike.  Both  will step into our world of Chanel and be smitten with our newest wanderlust in Central Park.",
-    Embla1text3: "Chanel's iconic jewelry designs and delicate timepieces are the dream compliment to the assortments of BVLGARI, Cartier and other Swiss Luxury brands of Icon II & III.",
     ButtonText: "Evolution"
   },
   {
@@ -42,7 +41,7 @@ export const slides = [
   },
   {
     image: Embla3,
-    heading: "A TIMELESS LINEUP,  A TEAM WORTHY OF THE MISSION.",
+    heading: "A TIMELESS LINEUP,  A TEAM WORTHY OF THE MISSION",
     Embla3caption: "Central Park, Harmony of the Seas",
     SubHeader: "TRIED & TRUE",
     Embla3Super: "SM",
@@ -51,7 +50,7 @@ export const slides = [
     Embla3IOTS: "𝘐𝘤𝘰𝘯 𝘰𝘧 𝘵𝘩𝘦 𝘚𝘦𝘢𝘴",
     Embla3text: "Starboard remains dedicated to an exquisite collection of timeless, trusted brands that have graced our luxury lineup for years.",
     Embla3text2: "Each brand has an aura of prestige and distinct hallmarks of heritage, craftsmanship, precision, and exceptional quality.",
-    Embla3text3: "Starboard’s Swiss and Lux Ambassadors take pride in their expert ability to showcase each brand, pass on their knowledge and establish a personal connection to guide guests in their selection of a piece that will become a cherished part of their journey through time.",
+    Embla3text3: "Starboard’s Swiss and Luxe Ambassadors take pride in their expert ability to showcase each brand, pass on their knowledge and establish a personal connection to guide guests in their selection of a piece that will become a cherished part of their journey through time.",
   },
 ]
 
@@ -108,25 +107,27 @@ const EmblaCarousel2 = (props) => {
 
 
                           {/* Slide 2 */}
-                          <ModalContainer3>
-                            <InnerContainer2>
-                              <div className='ml-8'>
-                                <h3 className="xs:text-1xl mb-5 text-black">
-                                  {slide.Embla4text}
-                                </h3>
-                              </div>
-                            </InnerContainer2>
-                            <InnerIMGContainer>
-                              <img
-                                className="embla__slide__img"
-                                src={slide.Embla2Brands}
-                                alt={`IMG${index + 1}`}
-                              />
-                            </InnerIMGContainer>
-                          </ModalContainer3>
+                          {slide.Embla2Brands && (
+                            <ModalContainer3>
+                              <InnerContainer2>
+                                <div className='ml-8'>
+                                  <h3 className="xs:text-1xl mb-5 text-black">
+                                    {slide.Embla4text}
+                                  </h3>
+                                </div>
+                              </InnerContainer2>
+                              <InnerIMGContainer>
+                                <img
+                                  className="embla__slide__img"
+                                  src={slide.Embla2Brands}
+                                  alt={`IMG${index + 1}`}
+                                />
+                              </InnerIMGContainer>
+                            </ModalContainer3>
+                          )}
 
                           {/* Slide 3 */}
-                          <div className='-mt-96'>
+                          <div className='-mt-20'>
                             {slide.Embla3Br}
                             {slide.Embla3Br}
                             {slide.Embla3text}
@@ -145,7 +146,6 @@ const EmblaCarousel2 = (props) => {
                       <img
                         className="embla__slide__img"
                         src={slide.image}
-                        alt={`IMG${index + 1}`}
                       />
                       <div className="embla__buttons pb-20 flex absolute">
                         <PrevButton onClick={onPrevButtonClick} disabled={prevBtnDisabled} />

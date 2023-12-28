@@ -27,10 +27,10 @@ const Hero1 = forwardRef(({ scrollToSection }, ref) => {
   return (
     <>
       <div className="flex flex-col z-10 xs:mb-28" ref={ref} >
-        <video className="" src={Hero1Vid} autoPlay loop muted />
+        <video className="brightness-75" src={Hero1Vid} autoPlay loop muted />
         <div className="w-full absolute items-center lg:mt-64 xs:mt-20 md:mt-48 sm:mt-44 h-2/5 flex flex-col">
           <Hero1Header>
-            <h1 className='text-white font-family italic'>ICON RETAIL </h1>
+            <h1 className='text-white font-family italic'>ICONIC RETAIL </h1>
             <h2 className='text-white font-family italic'>ON ICON OF THE SEAS II & III</h2>
           </Hero1Header>
         </div>
@@ -44,7 +44,7 @@ const Hero1 = forwardRef(({ scrollToSection }, ref) => {
                   }}
                   className="rounded-full flex items-center relative cursor-pointer p-2 px-5 bg-white m-2 text-black">
                   Luxe & Swiss
-                  <ArrowDownwardIcon className='ml-2' />
+                  <ArrowDownwardIcon style={{ color: '#3663ae', fontSize: '20px' }} className='ml-2' />
                 </a>
                 <a
                   onClick={() => {
@@ -52,7 +52,7 @@ const Hero1 = forwardRef(({ scrollToSection }, ref) => {
                   }}
                   className="rounded-full flex items-center relative cursor-pointer p-2 px-5 bg-white m-2 text-black">
                   Fine Jewelry
-                  <ArrowDownwardIcon className='ml-2' />
+                  <ArrowDownwardIcon style={{ color: '#3663ae', fontSize: '20px' }} className='ml-2' />
                 </a>
                 <a
                   onClick={() => {
@@ -60,7 +60,7 @@ const Hero1 = forwardRef(({ scrollToSection }, ref) => {
                   }}
                   className="rounded-full flex items-center relative cursor-pointer p-2 px-5 bg-white m-2 text-black">
                   Leather
-                  <ArrowDownwardIcon className='ml-2' />
+                  <ArrowDownwardIcon style={{ color: '#3663ae', fontSize: '20px' }} className='ml-2' />
                 </a>
                 <a
                   onClick={() => {
@@ -68,7 +68,7 @@ const Hero1 = forwardRef(({ scrollToSection }, ref) => {
                   }}
                   className="rounded-full flex items-center relative cursor-pointer p-2 px-5 bg-white m-2 text-black">
                   Fashion Apparel
-                  <ArrowDownwardIcon className='ml-2' />
+                  <ArrowDownwardIcon style={{ color: '#3663ae', fontSize: '20px' }} className='ml-2' />
                 </a>
                 <a
                   onClick={() => {
@@ -76,7 +76,7 @@ const Hero1 = forwardRef(({ scrollToSection }, ref) => {
                   }}
                   className="rounded-full flex items-center relative cursor-pointer px-5 p-2 bg-white m-2 text-black">
                   Marketplace & Pavilions
-                  <ArrowDownwardIcon className='ml-2' />
+                  <ArrowDownwardIcon style={{ color: '#3663ae', fontSize: '20px' }} className='ml-2' />
                 </a>
                 <a
                   onClick={() => {
@@ -84,7 +84,7 @@ const Hero1 = forwardRef(({ scrollToSection }, ref) => {
                   }}
                   className="rounded-full flex items-center relative cursor-pointer px-5 p-2 bg-white m-2 text-black">
                   Beauty
-                  <ArrowDownwardIcon className='ml-2' />
+                  <ArrowDownwardIcon style={{ color: '#3663ae', fontSize: '20px' }} className='ml-2' />
                 </a>
                 <a
                   onClick={() => {
@@ -92,7 +92,7 @@ const Hero1 = forwardRef(({ scrollToSection }, ref) => {
                   }}
                   className="rounded-full flex items-center relative cursor-pointer px-5 p-2 bg-white m-2 text-black">
                   Liquor
-                  <ArrowDownwardIcon className='ml-2' />
+                  <ArrowDownwardIcon style={{ color: '#3663ae', fontSize: '20px' }} className='ml-2' />
                 </a>
                 <a
                   onClick={() => {
@@ -100,7 +100,7 @@ const Hero1 = forwardRef(({ scrollToSection }, ref) => {
                   }}
                   className="rounded-full flex items-center relative cursor-pointer px-5 p-2 bg-white m-2 text-black">
                   Logo
-                  <ArrowDownwardIcon className='ml-2' />
+                  <ArrowDownwardIcon style={{ color: '#3663ae', fontSize: '20px' }} className='ml-2' />
                 </a>
                 <a
                   onClick={() => {
@@ -108,7 +108,7 @@ const Hero1 = forwardRef(({ scrollToSection }, ref) => {
                   }}
                   className="rounded-full flex items-center relative cursor-pointer px-5 p-2 bg-white m-2 text-black">
                   Kids & Family
-                  <ArrowDownwardIcon className='ml-2' />
+                  <ArrowDownwardIcon style={{ color: '#3663ae', fontSize: '20px' }} className='ml-2' />
                 </a>
               </div>
             </nav>

@@ -8,8 +8,8 @@ export default {
     extend: {
       fontSize: {
         header: "10.5rem",
-        subheader: "4.9rem",
-        paragraph: "3.5rem",
+        subheader: "4.4rem",
+        paragraph: "3.2rem",
         caption: "20px"
       },
       lineHeight: {

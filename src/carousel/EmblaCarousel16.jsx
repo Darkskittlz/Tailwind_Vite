@@ -82,7 +82,7 @@ const EmblaCarousel16 = (props) => {
 
                         {/* Slide 2 */}
                         {slide.Embla2text && (
-                          <div className='w-full grid-cols-2 justify-around flex'>
+                          <div className='w-full grid-cols-2 ml-10 flex-col justify-around flex'>
                             <div>
                               <h3 className="xs:text-1xl mb-5 align-top text-black">
                                 {slide.Embla2text}

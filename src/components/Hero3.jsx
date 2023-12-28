@@ -116,9 +116,9 @@ const Hero3 = forwardRef(({ scrollToSection }, ref) => {
             <h2 className="md:text-3xl text-white mt-6 text-center px-34 font-semibold">Discover our responses to your RFP questions by navigating through the buttons below</h2>
           </div>
           <hr />
-          <div className="flex mt-20 justify-center">
+          <div className="flex pt-24 justify-center">
             <nav>
-              <div className="flex flex-wrap justify-center pb-12 z-10 text-center">
+              <div className="flex flex-wrap justify-center pb-24 z-10 text-center">
 
                 {/* Modal 1 */}
                 <a
@@ -126,7 +126,7 @@ const Hero3 = forwardRef(({ scrollToSection }, ref) => {
                   className="rounded-full flex items-center relative cursor-pointer p-2 px-5 bg-white m-2 text-black"
                 >
                   Show Me The Money
-                  <ArrowOutwardIcon style={{ color: '#3663ae' }} className="p-0 ml-3" />
+                  <ArrowOutwardIcon style={{ color: '#3663ae', fontSize: '20px' }} className="p-0 ml-3" />
                 </a>
                 <Modal
                   isOpen={modal1IsOpen}
@@ -139,7 +139,7 @@ const Hero3 = forwardRef(({ scrollToSection }, ref) => {
                       <IMGContainer>
                         <ModalContainer2>
                           <div className="md:mt-0 xs:w-full xs:pr-10 xs:mt-20">
-                            <h5 className="text-3xl text-left font-semibold"><ul className="list-disc list-inside"><li className="listItem">Financial Terms</li></ul></h5>
+                            <h5 className="text-3xl text-left font-semibold"><ul className="list-disc list-inside"><li className="listItem">FINANCIAL TERMS</li></ul></h5>
                             <h3 className="xs:text-3xl lg:w-full md:w-full text-black">
                               Financial terms have been sent under separate copy to: Irena Meyer and Cynthia Pintado in a password protected file.
                             </h3>
@@ -160,7 +160,7 @@ const Hero3 = forwardRef(({ scrollToSection }, ref) => {
                   className="rounded-full flex items-center relative cursor-pointer p-2 px-5 bg-white m-2 text-black"
                 >
                   Cruise & Travel Business Updates
-                  <ArrowOutwardIcon style={{ color: '#3663ae' }} className="p-0 ml-3" />
+                  <ArrowOutwardIcon style={{ color: '#3663ae', fontSize: '20px' }} className="p-0 ml-3" />
                 </a>
                 <Modal
                   isOpen={modal2IsOpen}
@@ -183,7 +183,7 @@ const Hero3 = forwardRef(({ scrollToSection }, ref) => {
                   className="rounded-full flex items-center relative cursor-pointer p-2 px-5 bg-white m-2 text-black"
                 >
                   Industry Experience
-                  <ArrowOutwardIcon style={{ color: '#3663ae' }} className="p-0 ml-3" />
+                  <ArrowOutwardIcon style={{ color: '#3663ae', fontSize: '20px' }} className="p-0 ml-3" />
                 </a>
 
                 <Modal
@@ -207,7 +207,7 @@ const Hero3 = forwardRef(({ scrollToSection }, ref) => {
                   className="rounded-full flex items-center relative cursor-pointer px-5 p-2 bg-white m-2 text-black"
                 >
                   Positioning
-                  <ArrowOutwardIcon style={{ color: '#3663ae' }} className="p-0 ml-3" />
+                  <ArrowOutwardIcon style={{ color: '#3663ae', fontSize: '20px' }} className="p-0 ml-3" />
                 </a>
                 <Modal
                   isOpen={modal4IsOpen}
@@ -230,7 +230,7 @@ const Hero3 = forwardRef(({ scrollToSection }, ref) => {
                   className="rounded-full flex items-center relative cursor-pointer px-5 p-2 bg-white m-2 text-black"
                 >
                   References
-                  <ArrowOutwardIcon style={{ color: '#3663ae' }} className="p-0 ml-3" />
+                  <ArrowOutwardIcon style={{ color: '#3663ae', fontSize: '20px' }} className="p-0 ml-3" />
                 </a>
                 <Modal
                   isOpen={modal5IsOpen}

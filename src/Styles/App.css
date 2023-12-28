@@ -278,11 +278,11 @@ div.carousel-inner img {
   object-fit: cover;
 }
 
-/* Style to hide the scrollbar itself */
 ::-webkit-scrollbar {
-  width: 0;
-  /* Set width to 0 */
+  width: 2;
 }
+
+
 
 .scroller {
   /* height: 80vh; */

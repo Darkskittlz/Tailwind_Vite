@@ -133,7 +133,7 @@ const Home = forwardRef((_, ref) => {
   return (
     <GridContainer ref={ref}>
       <Navbar section="nav" ref={section1Ref} scrollToSection={executeScrollToSection} />
-      <article className="scroller">
+      <article className="scroller" data-mdb-perfect-scrollbar='true'>
         <Hero1 section="section1" ref={section1Ref} scrollToSection={executeScrollToSection} />
         <Hero2 section="section2" ref={section2Ref} scrollToSection={executeScrollToSection} />
         <Hero3 />
