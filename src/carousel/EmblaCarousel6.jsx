@@ -8,7 +8,7 @@ import {
 } from './EmblaCarouselArrowButtons'
 import { CaptionContainer, Caption11Container, EmblaGridContainer, IMG2Container, IMGContainer, InnerContainer1, InnerContainer2, InnerContainer3, Margin3Container, MarginContainer } from "../Styles/Styles.js"
 import Embla1Video from "../assets/BeachToBar/FashionTrendsetter.mp4"
-import Embla2 from "../assets/BeachToBar/athleticCapsule.png"
+import Embla2 from "../assets/BeachToBar/athletic_capsule.png"
 import Embla3 from "../assets/BeachToBar/ThreePhotoCollage.png"
 import Embla4 from "../assets/BeachToBar/princeGreen.jpg"
 
@@ -128,9 +128,9 @@ const EmblaCarousel6 = (props) => {
                     </InnerContainer3>
                     <InnerContainer2>
                       <Caption11Container>
-                        {slide.caption2 && (
-                          <h2><ul className="list-disc list-inside text-white"><li>{slide.caption2}</li></ul></h2>
-                        )}
+                        {/* {slide.caption2 && ( */}
+                        {/*   <h2><ul className="list-disc list-inside text-white"><li>{slide.caption2}</li></ul></h2> */}
+                        {/* )} */}
                         {slide.caption3 && (
                           <h2><ul className="list-disc list-inside text-SB_Blue"><li>{slide.caption3}</li></ul></h2>
                         )}
