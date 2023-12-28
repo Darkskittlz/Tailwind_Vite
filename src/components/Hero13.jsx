@@ -8,8 +8,7 @@ const Hero13 = () => {
       <Margin2Container>
         <div className="xl:h-full lg:flex-row md:flex-col xs:mt-32 xs:mx-10 xs:flex-col justify-between flex">
           <div className="reveal w-full flex justify-center align-top">
-            {/* <h2><ul className="ml-4 absolute mt-5 font-semibold list-disc text-white list-inside"><li>Infinite Grand Suite</li></ul></h2> */}
-            <img className="rounded-3xl object-cover xl:h-full xl:w-full lg:h-full md:h-full sm:h-full" src={LeatherIMG} alt="cruiseimg" />
+            <img className="rounded-3xl object-cover" src={LeatherIMG} alt="cruiseimg" />
           </div>
           <div className="xl:w-full xl:pl-12 xl:m-36 lg:pl-0 md:w-full md:m-10 md:pr-6 md:pl-0 md:pb-32 md:mt-0 xs:mt-10 reveal">
             <h2 className="mb-10 xl:text-6xl lg:text-4xl md:text-4xl leading-10 md:font-semibold md:mt-20 xs:text-4xl text-black">Improving Our ‘Good, Better, Best’ Strategy</h2>

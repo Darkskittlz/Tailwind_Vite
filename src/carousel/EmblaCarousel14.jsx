@@ -33,7 +33,7 @@ export const slides = [
     Embla1text2: "Starboard industry expertise",
   },
   {
-    Embla2SubHeader: "CRUISE & TRAVEL BUSINESS UPDATES - NEW BUSINESS SINCE 2019",
+    Embla2SubHeader: "INDUSTRY EXPERIENCE",
     heading: "WE WORK WITH THE BEST",
     Embla2Br: <br />,
     Embla2text: "Our cruise line partners offer every type of cruise vacation experience out there – from the Caribbean to the farthest reaches on the planet. From families looking for adventure and fun to ultra-luxury – and everything in between.",
@@ -68,15 +68,18 @@ export const slides = [
     Embla4image: Embla4,
     Embla4Caption: "Caryl Capeci, SVP of Fine Jewelry & Watches",
     Embla4SubHeader: "INDUSTRY EXPERIENCE",
+    copywright: "®",
     heading: "INVESTING IN FINE JEWELRY, SWISS, AND LUXE TALENT",
     Embla4Br: <br />,
     Embla4text: "With CEO Lisa Bauer, and Claudia King-McWilliams, VP & General Manager of the Royal Caribbean account, we have two senior leaders that honed their expertise with Royal Caribbean.  They get you, your guests, and how to maximize results and guest experience on a deeper level than any other cruise retail leadership team.",
-    Embla4text2: "Transitioning from her advisory role, Caryl brings a wealth of experience and leadership, having previously served as the CEO of Hearts on Fire®, The World's Most Perfectly Cut Diamond®.",
-    Embla4text3: "Industry Boards/Involvement:",
-    Embla4text4: "Diamonds Do Good",
-    Embla4text5: "The American Gem Society, AGS",
-    Embla4text6: "Jewelers of America",
-    Embla4text7: "Distinguished member of the 24 Karat Club, NYC",
+    Embla4text2: "Transitioning from her advisory role, Caryl brings a wealth of experience and leadership, having previously served as the CEO of Hearts on Fire",
+    Embla4text3: `, The World's Most Perfectly Cut Diamond`,
+    Embla4text4: ".",
+    Embla4text5: "Industry Boards/Involvement:",
+    Embla4text6: "Diamonds Do Good",
+    Embla4text7: "The American Gem Society, AGS",
+    Embla4text8: "Jewelers of America",
+    Embla4text9: "Distinguished member of the 24 Karat Club, NYC",
   },
   {
     Embla5image: Embla5,
@@ -86,7 +89,7 @@ export const slides = [
     Embla5Br: <br />,
     Embla5text: "Starboard is thrilled to introduce Sara Loiselle, our new Toy, Plush, and Game Buyer.  Sarah will be solely dedicated to delivering offerings for kids and families that are exciting, relevant and profitable.",
     Embla5text2: "With a remarkable background in the industry, Sara brings over 15 years of kid’s, tweens, and teens experience to the table.  She is perfectly positioned to  find and onboard the latest irresistible toys, plush and collectibles, plus viral and trending must-haves across all ages to Icon II & III.",
-    Embla5text3: "Expect a step change in guest satisfaction, revenue generation, and overall onboard happiness."
+    Embla5text3: "Expect a steep change in guest satisfaction, revenue generation, and overall onboard happiness."
   },
 ]
 
@@ -133,10 +136,10 @@ const EmblaCarousel14 = (props) => {
                         {/* Slide 1 */}
                         {slide.Embla1text && (
                           <h3 className="xs:text-1xl mb-5 text-black">
-                            {slide.Embla1text}
-                            {slide.Embla1Br}
-                            {slide.Embla1Br}
-                            {slide.Embla1text2}
+                            <ul className="list-disc list-inside">
+                              <li className='listItem'>{slide.Embla1text}</li>
+                              <li className='listItem'>{slide.Embla1text2}</li>
+                            </ul>
                           </h3>
                         )}
 
@@ -199,18 +202,22 @@ const EmblaCarousel14 = (props) => {
                               {slide.Embla4Br}
                               {slide.Embla4Br}
                               {slide.Embla4text2}
-                              {slide.Embla4Br}
-                              {slide.Embla4Br}
+                              <span className='sup'>{slide.copywright}</span>
                               {slide.Embla4text3}
-                              {slide.Embla4Br}
+                              <span className='sup'>{slide.copywright}</span>
                               {slide.Embla4text4}
+                              {slide.Embla4Br}
                               {slide.Embla4Br}
                               {slide.Embla4text5}
                               {slide.Embla4Br}
                               {slide.Embla4text6}
                               {slide.Embla4Br}
-                              {slide.Embla4Br}
                               {slide.Embla4text7}
+                              {slide.Embla4Br}
+                              {slide.Embla4text8}
+                              {slide.Embla4Br}
+                              {slide.Embla4Br}
+                              {slide.Embla4text9}
                             </div>
                             <Caption9Container>
                               <h2>

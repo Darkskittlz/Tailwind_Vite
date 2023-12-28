@@ -8,16 +8,8 @@ import {
 } from './EmblaCarouselArrowButtons'
 import { CaptionContainer, EmblaGridContainer, IMGContainer, InnerContainer1, InnerContainer2, InnerIMG5Container, InnerIMGContainer, Margin2Container, Margin4Container } from "../Styles/Styles.js"
 import EmblaVid from "../assets/MirrorMirror/sephoraVid.mp4"
-import Brand1 from "../assets/MirrorMirror/Kylie.jpg"
-import Brand2 from "../assets/MirrorMirror/Olaplex.png"
-import Brand3 from "../assets/MirrorMirror/Supergoop.svg"
-import Brand4 from "../assets/MirrorMirror/Iconic.png"
-import Brand5 from "../assets/MirrorMirror/Drunk Elephant.png"
-import Brand6 from "../assets/MirrorMirror/Dior.png"
-import Brand7 from "../assets/MirrorMirror/Chanel.jpg"
-import Brand8 from "../assets/MirrorMirror/YSL.jpg"
-import Brand9 from "../assets/MirrorMirror/Lancome.png"
-import Brand10 from "../assets/MirrorMirror/Clinique.svg"
+import Embla2image from "../assets/MirrorMirror/BeautyLogos.png"
+import Embla3image from "../assets/MirrorMirror/BeautyLogosTT.png"
 
 export const slides = [
   {
@@ -32,13 +24,7 @@ export const slides = [
     ButtonText: "EVOLUTION"
   },
   {
-    Brands: {
-      1: Brand1,
-      2: Brand2,
-      3: Brand3,
-      4: Brand4,
-      5: Brand5
-    },
+    Embla2image: Embla2image,
     heading: "TRENDSETTING BREAUTY BRANDS",
     SubHeader: "EVOLUTION",
     Embla2Br: <br />,
@@ -46,13 +32,7 @@ export const slides = [
     ButtonText: "TRIED & TRUE"
   },
   {
-    Brands2: {
-      1: Brand6,
-      2: Brand7,
-      3: Brand8,
-      4: Brand9,
-      5: Brand10
-    },
+    Embla3image: Embla3image,
     heading: "TIMELESS BEAUTY AND FRAGRANCE BRANDS",
     SubHeader: "TRIED & TRUE",
     Embla3Br: <br />,
@@ -111,8 +91,9 @@ const EmblaCarousel11 = (props) => {
                               </h3>
                             </div>
                           </InnerContainer1>
-                          <div className="h-tall flex justify-end mr-10 relative">
+                          <div className="flex justify-end mr-10 relative">
                             <video
+                              loop
                               className="w-5/6 right-0 rounded"
                               src={slide.EmblaVid}
                               autoPlay
@@ -146,11 +127,7 @@ const EmblaCarousel11 = (props) => {
                             </div>
                           </InnerContainer2>
                           <InnerIMG5Container>
-                            <img src={slide.Brands['1']} key={`image-${index}-1`} />
-                            <img src={slide.Brands['2']} key={`image-${index}-2`} />
-                            <img src={slide.Brands['3']} key={`image-${index}-3`} />
-                            <img src={slide.Brands['4']} key={`image-${index}-4`} />
-                            <img src={slide.Brands['5']} key={`image-${index}-5`} />
+                            <img src={slide.Embla2image} />
                           </InnerIMG5Container>
                           <div className="embla__buttons bottom-0 flex absolute">
                             <PrevButton onClick={onPrevButtonClick} disabled={prevBtnDisabled} />
@@ -182,11 +159,7 @@ const EmblaCarousel11 = (props) => {
                             </div>
                           </InnerContainer2>
                           <InnerIMG5Container>
-                            <img src={slide.Brands2['1']} id="Dior" key={`image-${index}-6`} />
-                            <img src={slide.Brands2['2']} id="Chanel" key={`image-${index}-7`} />
-                            <img src={slide.Brands2['3']} key={`image-${index}-8`} />
-                            <img src={slide.Brands2['4']} id="Lancome" key={`image-${index}-9`} />
-                            <img src={slide.Brands2['5']} key={`image-${index}-10`} />
+                            <img src={slide.Embla3image} />
                           </InnerIMG5Container>
                           <div className="embla__buttons bottom-0 flex absolute">
                             <PrevButton onClick={onPrevButtonClick} disabled={prevBtnDisabled} />

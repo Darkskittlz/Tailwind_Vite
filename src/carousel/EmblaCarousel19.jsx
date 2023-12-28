@@ -6,10 +6,10 @@ import {
   NextButton,
   usePrevNextButtons
 } from './EmblaCarouselArrowButtons'
-import { Caption11Container, CaptionContainer, EmblaGridContainer, IMGContainer, InnerContainer1, InnerContainer2, Margin2Container, Margin3Container, Margin4Container } from "../Styles/Styles.js"
-import Embla1 from "../assets/CheersToAnIcon/Personalization Station.png"
-import Embla2 from "../assets/CheersToAnIcon/Evolution.png"
-import Embla3 from "../assets/CheersToAnIcon/Exclusive Travel Edition.png"
+import { Caption11Container, CaptionContainer, EmblaGridContainer, IMGContainer, InnerContainer1, InnerContainer2, InnerContainer3, Margin2Container, Margin3Container, Margin4Container } from "../Styles/Styles.js"
+import Embla1 from "../assets/CheersToAnIcon/Personalization_Station.png"
+import Embla2 from "../assets/CheersToAnIcon/Port Merchants.png"
+import Embla3 from "../assets/CheersToAnIcon/Johnnie_Walker.png"
 
 
 export const slides = [
@@ -17,7 +17,6 @@ export const slides = [
     image: Embla1,
     imgAlt: "",
     heading: "PERSONALIZING RETAIL MANAGEMENT",
-    caption1: "Personalization Station",
     SubHeader: "REVOLUTION",
     Embla1Br: <br />,
     Embla1text: "Guests can stand out from the crowd and take their cruise experience to the next level at Starboard’s personalization station located within Port Merchants.",
@@ -29,7 +28,6 @@ export const slides = [
   {
     image: Embla2,
     heading: "RAISE YOUR GLASS TO SPIRIT EXPERTS AND MAXIMUM CONVENIENCE",
-    caption2: "Part Merchants, Icon II & III",
     SubHeader: "EVOLUTION",
     Embla2Br: <br />,
     Embla2text: "We take pride in our ability to deliver exceptional service tailored to each guest’s individual interests and preferences. Port Merchants is no exception.  Whether you’re looking for high-end spirits or ready to take advantage of travel retail exclusives and value, we’re poised to serve.",
@@ -75,7 +73,7 @@ const EmblaCarousel19 = (props) => {
                     <span>{index + 1}</span>
                   </div>
                   <IMGContainer>
-                    <InnerContainer1>
+                    <InnerContainer3>
                       <div className="xs:w-full xs:pr-10 xs:mt-20 md:mt-0 xs:mb-20">
                         <h5 className="text-3xl text-white text-left font-semibold"><ul className="list-disc list-inside"><li className="listItem">{slide.SubHeader}</li></ul></h5>
                         <h1 className="font-bold leading-10 w-5/6 text-black">{slide.heading}</h1>
@@ -94,16 +92,18 @@ const EmblaCarousel19 = (props) => {
                         </h3>
 
                         {/* Slide 2 */}
-                        {slide.Embla2text}
-                        {slide.Embla2Br}
-                        {slide.Embla2Br}
-                        {slide.Embla2text2}
-                        {slide.Embla2Br}
-                        {slide.Embla2Br}
-                        {slide.Embla2text3}
-                        {slide.Embla2Br}
-                        {slide.Embla2Br}
-                        {slide.Embla2text4}
+                        <h6 className="lg:text-1xl xs:text-3xl mb-5 text-black">
+                          {slide.Embla2text}
+                          {slide.Embla2Br}
+                          {slide.Embla2Br}
+                          {slide.Embla2text2}
+                          {slide.Embla2Br}
+                          {slide.Embla2Br}
+                          {slide.Embla2text3}
+                          {slide.Embla2Br}
+                          {slide.Embla2Br}
+                          {slide.Embla2text4}
+                        </h6>
 
                         {/* Slide 3 */}
                         <h3 className="lg:text-3xl xs:text-3xl mb-5 text-black">
@@ -120,18 +120,8 @@ const EmblaCarousel19 = (props) => {
                         </h3>
 
                       </div>
-                    </InnerContainer1>
+                    </InnerContainer3>
                     <InnerContainer2>
-                      {slide.Embla1text && (
-                        <Caption11Container>
-                          <h2><ul className="ml-5 list-disc list-inside text-SB_Blue"><li>{slide.caption1}</li></ul></h2>
-                        </Caption11Container>
-                      )}
-                      {slide.Embla2text && (
-                        <Caption11Container>
-                          <h2><ul className="ml-5 list-disc list-inside text-white"><li>{slide.caption2}</li></ul></h2>
-                        </Caption11Container>
-                      )}
                       {slide.Embla1text && (
                         <>
                           <img

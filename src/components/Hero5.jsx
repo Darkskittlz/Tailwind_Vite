@@ -9,7 +9,7 @@ const Hero5 = () => {
         <div className="xs:m-10 flex justify-around">
           <BlueBulletContainer>
             <div className="md:flex-row-reverse xs:mx-10 xs:flex-col justify-between flex">
-              <div className="reveal w-full flex justify-center align-top">
+              <div className="w-full flex justify-center align-top">
                 <img
                   className="rounded-3xl sm:h-full md:h-5/6 lg:h-5/6 xl:h-5/6"
                   // src={Hero5IMG}

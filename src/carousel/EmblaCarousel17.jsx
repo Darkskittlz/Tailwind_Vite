@@ -7,11 +7,11 @@ import {
   usePrevNextButtons
 } from './EmblaCarouselArrowButtons'
 import { CaptionContainer, EmblaGridContainer, IMGContainer, InnerContainer1, InnerContainer2, InnerContainer7, InnerContainer8, InnerIMG5Container, InnerIMGContainer, Margin2Container, Margin4Container } from "../Styles/Styles.js"
-import Emblaimage1 from "../assets/ItsIconic/logo1.png"
-import Emblaimage3 from "../assets/ItsIconic/logo2.png"
-import Emblaimage4 from "../assets/ItsIconic/logo3.png"
-import Emblaimage5 from "../assets/ItsIconic/logo4.png"
-import Emblaimage6 from "../assets/ItsIconic/An Iconic Brand.png"
+import Emblaimage1 from "../assets/ItsIconic/Personalizing_Retail.png"
+import Emblaimage3 from "../assets/ItsIconic/The_Lounge_Capsule.png"
+import Emblaimage4 from "../assets/ItsIconic/The_Polo_Capsule.png"
+import Emblaimage5 from "../assets/ItsIconic/The_Linen_Capsule.png"
+import Emblaimage6 from "../assets/ItsIconic/Soft_Apparel_Growth.png"
 
 export const slides = [
   {

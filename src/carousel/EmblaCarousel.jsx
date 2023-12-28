@@ -13,7 +13,7 @@ import Embla3 from "../assets/PoppingUpDifferently/Swarovski.jpg"
 import Embla4 from "../assets/PoppingUpDifferently/Pandora.jpg"
 import Embla5 from "../assets/PoppingUpDifferently/Pavilions1.png"
 import Embla6 from "../assets/PoppingUpDifferently/Pavilions2.png"
-import Embla7 from "../assets/PoppingUpDifferently/Citzen.png"
+import Embla7 from "../assets/PoppingUpDifferently/Pavilions6.png"
 
 
 const timelessEleganceIframe = (
@@ -63,13 +63,12 @@ export const slides = [
   },
   {
     Embla4image: Embla7,
-    heading: "PAVILIONS ON 6: Citizen and Bulova",
-    caption4: "Port side, Pavilions on 6",
+    heading: "PAVILIONS ON 6: CITIZEN AND BULOVA",
     Embla4SubHeader: "REVOLUTION",
     Embla4Br: <br />,
     Embla4text: "The Port side of Pavilions on 6 will feature the latest styles from perennial guest favorite, Citizen and their line of watches from Bulova.",
     Embla4text2: "Fun Fact:  Like Royal Caribbean, Citizen brands are committed to sustainability with a specific focus on keeping waste out of landfills.  Citizen pioneered the world’s first light-powered watch.  Eco-Drive watches are powered by any light source, eliminating the need to replace batteries and preventing millions of watch batteries from entering landfills.",
-    Embla4text3: "Innovative and sustainable, a winning combination",
+    Embla4text3: "Innovative and sustainable, a winning combination.",
   },
 ]
 
@@ -207,15 +206,6 @@ const EmblaCarousel = (props) => {
                                 {slide.Embla4text3}
                               </div>
                               <div className="flex justify-center gap-3">
-                                <div className='absolute text-white mt-6'>
-                                  <h2>
-                                    <ul className="mr-sixty list-disc list-inside">
-                                      <li className="text-caption">
-                                        {slide.caption4}
-                                      </li>
-                                    </ul>
-                                  </h2>
-                                </div>
                                 <div >
                                   <img src={slide.Embla4image} className="h-tall mr-12 object-cover rounded-img" key={`image-${index}-30`} />
                                 </div>

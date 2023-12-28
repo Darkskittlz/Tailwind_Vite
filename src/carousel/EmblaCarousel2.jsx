@@ -7,24 +7,14 @@ import {
   usePrevNextButtons
 } from './EmblaCarouselArrowButtons'
 import { Caption2Container, Carousel2Container, CarouselContainer, EmblaGridContainer, IMGContainer, InnerContainer1, InnerContainer2, InnerIMGContainer, Margin2Container, Margin3Container, Margin4Container, MarginContainer, ModalContainer3 } from "../Styles/Styles.js"
-import Embla1 from "../assets/First_At_Sea.png"
-import Embla1_Chanel from "../assets/Chanel.png"
-import Embla2 from "../assets/Central_Park_HOS.jpg"
-import Embla2A from "../assets/Lux&Swiss/Bvlgari.png"
-import Embla2B from "../assets/Lux&Swiss/Chanel.png"
-import Embla2C from "../assets/Lux&Swiss/Breitling.svg"
-import Embla2D from "../assets/Lux&Swiss/Swiss Crown.jpg"
-import Embla2E from "../assets/Lux&Swiss/Cartier.png"
-import Embla2F from "../assets/Lux&Swiss/Hublot.png"
-import Embla2G from "../assets/Lux&Swiss/Tag Heur.png"
-import Embla2H from "../assets/Lux&Swiss/Longines.jpg"
-import Embla2I from "../assets/Lux&Swiss/Tissot.png"
-import Embla3 from "../assets/CentralPark.jpg"
+import Embla1 from "../assets/Lux&Swiss/Chanel.png"
+import Embla2 from "../assets/Lux&Swiss/Icon.png"
+import Embla2Brands from "../assets/Lux&Swiss/Luxe_Lineup.png"
+import Embla3 from "../assets/Lux&Swiss/Harmony.png"
 
 export const slides = [
   {
     image: Embla1,
-    Embla1_brandIMG: Embla1_Chanel,
     heading: "FIRST AT SEA: CHANEL",
     Embla1caption: "Introducing Chanel Watches & Jewelry",
     SubHeader: "REVOLUTION",
@@ -39,15 +29,7 @@ export const slides = [
   },
   {
     image: Embla2,
-    Embla2A: Embla2A,
-    Embla2B: Embla2B,
-    Embla2C: Embla2C,
-    Embla2D: Embla2D,
-    Embla2E: Embla2E,
-    Embla2F: Embla2F,
-    Embla2G: Embla2G,
-    Embla2H: Embla2H,
-    Embla2I: Embla2I,
+    Embla2Brands: Embla2Brands,
     heading: "OUR VISION OF DECK 8 ON ICON II & III",
     Embla2caption: "Central Park, Icon II & III",
     SubHeader: "EVOLUTION",
@@ -109,7 +91,7 @@ const EmblaCarousel2 = (props) => {
                     <InnerContainer1>
                       <div className="md:mt-0 xs:w-full xs:pr-10 xs:mt-20 xs:mb-20">
                         <h5 className="text-left font-semibold"><ul className="list-disc list-inside"><li className="listItem">{slide.SubHeader}</li></ul></h5>
-                        <h1 className="mb-10 font-bold leading-10 text-black mt-2">{slide.heading}</h1>
+                        <h1 className="mb-10 font-oswald font-bold leading-10 text-black mt-2">{slide.heading}</h1>
                         <h3 className="mb-5 text-black">
 
                           {/* Slide 1 */}
@@ -122,11 +104,6 @@ const EmblaCarousel2 = (props) => {
                           {slide.Embla1text3}
                           {slide.Embla1Br}
                           {slide.Embla1Br}
-                          {slide.Embla1text && (
-                            <div className='w-full flex justify-center'>
-                              <img src={slide.Embla1_brandIMG} className="h-chanelIMG w-2/3 mr-12 object-cover rounded-img" />
-                            </div>
-                          )}
 
 
 
@@ -140,15 +117,11 @@ const EmblaCarousel2 = (props) => {
                               </div>
                             </InnerContainer2>
                             <InnerIMGContainer>
-                              <img src={slide.Embla2A} className="" />
-                              <img src={slide.Embla2B} className="" />
-                              <img src={slide.Embla2C} className="" />
-                              <img src={slide.Embla2D} className="" />
-                              <img src={slide.Embla2E} className="" />
-                              <img src={slide.Embla2F} className="" />
-                              <img src={slide.Embla2G} className="" />
-                              <img src={slide.Embla2H} className="" />
-                              <img src={slide.Embla2I} className="" />
+                              <img
+                                className="embla__slide__img"
+                                src={slide.Embla2Brands}
+                                alt={`IMG${index + 1}`}
+                              />
                             </InnerIMGContainer>
                           </ModalContainer3>
 
@@ -169,24 +142,15 @@ const EmblaCarousel2 = (props) => {
                       </div>
                     </InnerContainer1>
                     <Carousel2Container>
-                      <h2><ul className="text-white ml-5 list-disc list-inside"><li>{slide.Embla1caption}</li></ul></h2>
-                      <h2><ul className="text-white ml-5 list-disc list-inside"><li>{slide.Embla2caption}</li></ul></h2>
-                      <h2><ul className="ml-5 list-disc list-inside"><li>{slide.Embla3caption}</li></ul></h2>
                       <img
                         className="embla__slide__img"
                         src={slide.image}
                         alt={`IMG${index + 1}`}
                       />
                       <div className="embla__buttons pb-20 flex absolute">
-                        {/* <button className="embla__prev mr-10" onClick={scrollPrev}> */}
-                        {/*   Prev */}
-                        {/* </button> */}
-                        {/* <button className="embla__next" onClick={scrollNext}> */}
-                        {/*   Next */}
-                        {/* </button> */}
                         <PrevButton onClick={onPrevButtonClick} disabled={prevBtnDisabled} />
                         <button
-                          className='forwardButton'
+                          className='forwardButton rounded-full border'
                           onClick={onNextButtonClick}
                           disabled={nextBtnDisabled}
                         >

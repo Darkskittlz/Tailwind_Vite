@@ -335,6 +335,11 @@ export const InnerContainer3 = styled.div`
     width: 100%;
   }
 
+  h6 {
+    width: 100%;
+    font-size:19px;
+  }
+
   p {
     width: 140%;
   }

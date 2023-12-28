@@ -6,21 +6,11 @@ import {
   NextButton,
   usePrevNextButtons
 } from './EmblaCarouselArrowButtons'
-import ArrowOutwardIcon from '@mui/icons-material/ArrowOutward'
 import { CaptionContainer, EmblaGridContainer, IMG2Container, IMGContainer, IMGContainer2, InnerCenterContainer, InnerContainer2, InnerContainer3, InnerIMG3Container, InnerIMG4Container, Margin2Container, Margin3Container, Margin4Container, MarginContainer } from "../Styles/Styles.js"
-import Embla1 from "../assets/the_vault.png"
-import Embla2 from "../assets/little_treasures.png"
-import Embla3 from "../assets/the_collection.png"
-import Embla3A from "../assets/ItsInTheBag/Kate Spade.png"
-import Embla3B from "../assets/ItsInTheBag/WGACA.png"
-import Embla3C from "../assets/ItsInTheBag/Marc Jacobs.png"
-import Embla3D from "../assets/ItsInTheBag/Mary Frances.svg"
-import Embla3E from "../assets/ItsInTheBag/Coach.png"
-import Embla3F from "../assets/ItsInTheBag/Karl Lagerfeld.png"
-import Embla3G from "../assets/ItsInTheBag/Guess.png"
-import Embla3H from "../assets/ItsInTheBag/Swarovski.png"
-import Embla3I from "../assets/ItsInTheBag/Kendra Scott.png"
-import Embla3J from "../assets/ItsInTheBag/Coeur de Lion.webp"
+import Embla1 from "../assets/ItsInTheBag/The_Vault.png"
+import Embla2 from "../assets/ItsInTheBag/Little_Treasures.png"
+import Embla3 from "../assets/ItsInTheBag/The_Collection.png"
+import Embla4 from "../assets/ItsInTheBag/Leather_Logos.png"
 
 export const slides = [
   {
@@ -45,24 +35,12 @@ export const slides = [
   },
   {
     Emblaimage3: Embla3,
+    Emblaimage4: Embla4,
     heading: "THE COLLECTION",
     caption3: "The Collection, Allure of the Seas",
     SubHeader: "TRIED & TRUE",
     Embla3Br: <br />,
     Embla3text: "This highly successful strategy, seamlessly incorporates our proven 'good, better, best' merchandising approach.  The Collection is a stylish and expansive boutique offering styles and brands that deliver a wide range of price points. Guests will find fashion jewelry, trending sunglasses, accessories, and handbags from trendy to artisanal, and contemporary to pre-loved vintage. This winning shopping experience is a Royal Caribbean 'fashion fan favorite'.",
-    Brands:
-    {
-      1: Embla3A,
-      2: Embla3B,
-      3: Embla3C,
-      4: Embla3D,
-      5: Embla3E,
-      6: Embla3F,
-      7: Embla3G,
-      8: Embla3H,
-      9: Embla3I,
-      10: Embla3J,
-    },
   },
 ]
 
@@ -129,19 +107,9 @@ const EmblaCarousel3 = (props) => {
                                 {slide.Embla3text}
                                 {slide.Embla3Br}
                                 {slide.Embla3Br}
-                                <InnerIMG4Container>
-                                  <img src={slide.Brands['1']} id="kateSpade" key={`image-${index}-1`} />
-                                  <img src={slide.Brands['2']} id="WGACA" key={`image-${index}-2`} />
-                                  <img src={slide.Brands['3']} id="MJ" key={`image-${index}-3`} />
-                                  <img src={slide.Brands['4']} id="MF" key={`image-${index}-4`} />
-                                  <img src={slide.Brands['5']} id="Coach" key={`image-${index}-5`} />
-                                  <img src={slide.Brands['6']} id="KL" key={`image-${index}-6`} />
-                                  <img src={slide.Brands['7']} id="Guess" key={`image-${index}-7`} />
-                                  <img src={slide.Brands['8']} id="Swarovski" key={`image-${index}-8`} />
-                                  <br />
-                                  <img src={slide.Brands['9']} id="KS" key={`image-${index}-9`} />
-                                  <img src={slide.Brands['10']} id="CDL" key={`image-${index}-10`} />
-                                </InnerIMG4Container>
+                                <div className='w-full -ml-14'>
+                                  <img src={slide.Emblaimage4} />
+                                </div>
                               </>
                             )}
 
@@ -150,22 +118,6 @@ const EmblaCarousel3 = (props) => {
                         </div>
                       </InnerContainer3>
                       <InnerContainer2>
-                        <CaptionContainer>
-
-
-                          {/* Captions */}
-                          {slide.caption1 && (
-                            <h2><ul className="ml-5 -mt-5 list-disc list-inside text-SB_Blue"><li>{slide.caption1}</li></ul></h2>
-                          )}
-                          {slide.caption2 && (
-                            <h2><ul className="ml-5 list-disc list-inside text-white"><li>{slide.caption2}</li></ul></h2>
-                          )}
-                          {slide.caption3 && (
-                            <h2><ul className="ml-5 list-disc list-inside text-white"><li>{slide.caption3}</li></ul></h2>
-                          )}
-
-
-                        </CaptionContainer>
                         {slide.Emblaimage1 && (
                           <div className="mr-96">
                             <img

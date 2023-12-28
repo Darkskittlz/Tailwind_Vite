@@ -1,11 +1,7 @@
 import React, { forwardRef } from 'react'
 import ArrowOutwardIcon from '@mui/icons-material/ArrowOutward'
-import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
 import PropTypes from 'prop-types';
 import Modal from 'react-modal';
-import EmblaCarousel5 from '../carousel/EmblaCarousel5'
-import EmblaCarousel6 from '../carousel/EmblaCarousel6'
-import EmblaCarousel8 from '../carousel/EmblaCarousel8'
 import '../Styles/base.css'
 import '../Styles/embla.css'
 import { IMGContainer, Margin4Container, ModalContainer, ModalContainer2 } from '../Styles/Styles';
@@ -23,7 +19,7 @@ const customStyles = {
   content: {
     top: '46%',
     width: '70%',
-    height: '60%',
+    // height: '50%',
     left: '50%',
     right: 'auto',
     bottom: 'auto',
@@ -37,7 +33,6 @@ const customStyles2 = {
   content: {
     top: '46%',
     width: '70%',
-    height: '65%',
     left: '50%',
     right: 'auto',
     bottom: 'auto',
@@ -51,7 +46,6 @@ const customStyles3 = {
   content: {
     top: '46%',
     width: '70%',
-    height: '70%',
     left: '50%',
     right: 'auto',
     bottom: 'auto',
@@ -118,7 +112,7 @@ const Hero3 = forwardRef(({ scrollToSection }, ref) => {
       <Margin4Container>
         <div className="Hero3Container rounded-xl pt-20 md:ml-20 md:mr-20 lg:mx-96 xs:mx-14 xs:mt-24">
           <div className="flex items-center flex-col pb-24 justify-center">
-            <h1 className="md:text-7xl md:mb-7 xs:text-6xl font-semibold font-sans text-center text-white z-0 px-40">ICON II & III REINVENTION UNVEILED</h1>
+            <h1 className="md:text-7xl xs:text-7xl md:mb-7 font-semibold font-oswald text-center text-white z-0 px-40">ICON II & III REINVENTION UNVEILED</h1>
             <h2 className="md:text-3xl text-white mt-6 text-center px-34 font-semibold">Discover our responses to your RFP questions by navigating through the buttons below</h2>
           </div>
           <hr />
@@ -153,7 +147,7 @@ const Hero3 = forwardRef(({ scrollToSection }, ref) => {
                         </ModalContainer2>
                       </IMGContainer>
                       <a
-                        className="top-5 xl:right-4 xs:top-0 xs:right-0 z-50 cursor-pointer absolute text-black"
+                        className="top-1.5 text-4xl right-8 z-50 cursor-pointer absolute text-black"
                         onClick={close1Modal}
                       >x</a>
                     </main>
@@ -176,7 +170,7 @@ const Hero3 = forwardRef(({ scrollToSection }, ref) => {
                 >
                   <main>
                     <a
-                      className="rounded-full flex items-center absolute right-5 z-30 cursor-pointer pr-5 bg-white text-black"
+                      className="top-1.5 text-4xl right-8 z-50 cursor-pointer absolute text-black"
                       onClick={close2Modal}
                     >x</a>
                     <EmblaCarousel13 slides={SLIDES} options={OPTIONS} />
@@ -201,7 +195,7 @@ const Hero3 = forwardRef(({ scrollToSection }, ref) => {
                   <main>
                     <EmblaCarousel14 slides={SLIDES} options={OPTIONS} />
                     <a
-                      className="rounded-full flex items-center absolute right-5 top-0 mt-10 z-30 cursor-pointer mr-10 bg-white text-black"
+                      className="top-1.5 text-4xl right-8 z-50 cursor-pointer absolute text-black"
                       onClick={close3Modal}
                     >x</a>
                   </main>
@@ -224,7 +218,7 @@ const Hero3 = forwardRef(({ scrollToSection }, ref) => {
                   <main>
                     <EmblaCarousel15 slides={SLIDES} options={OPTIONS} />
                     <a
-                      className="top-5 xl:right-4 xs:top-0 xs:right-0 z-50 cursor-pointer absolute text-3xl text-black"
+                      className="top-1.5 text-4xl right-8 z-50 cursor-pointer absolute text-black"
                       onClick={close4Modal}
                     >x</a>
                   </main>
@@ -247,7 +241,7 @@ const Hero3 = forwardRef(({ scrollToSection }, ref) => {
                   <main>
                     <EmblaCarousel16 slides={SLIDES} options={OPTIONS} />
                     <a
-                      className="top-5 xl:right-4 xs:top-0 xs:right-0 z-50 cursor-pointer absolute text-3xl text-black"
+                      className="top-1.5 text-4xl right-8 z-50 cursor-pointer absolute text-black"
                       onClick={close5Modal}
                     >x</a>
                   </main>

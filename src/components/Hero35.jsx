@@ -7,10 +7,10 @@ const Hero35 = () => {
     <section>
       <MarginContainer>
         <div className="lg:flex-row xs:flex-col md:flex-col m-10 items-center flex">
-          <div className="reveal w-full flex align-top">
+          <div className="w-full flex align-top">
             <h5 className="text-3xl text-left mt-5 ml-5 absolute font-semibold text-white"><ul className="list-disc list-inside"><li className="listItem">ICON OF THE SEAS</li></ul></h5>
             <img
-              className="rounded-3xl sm:h-full md:h-full lg:h-full xl:h-full"
+              className="rounded-3xl"
               src={Hero29IMG}
               alt="cruiseimg" />
           </div>

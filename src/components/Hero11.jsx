@@ -5,7 +5,7 @@ const Hero11 = () => {
   return (
     <section>
       <Margin4Container>
-        <div className="xl:h-full lg:flex-row md:flex-col xs:mt-32 xs:mx-10 xs:flex-col justify-between flex">
+        <div className="lg:flex-row md:flex-col xs:mt-32 xs:mx-10 xs:flex-col justify-between flex">
           <div className="reveal w-full flex justify-center align-top">
             {/* <h2><ul className="ml-4 absolute mt-5 font-semibold list-disc text-white list-inside"><li>Absolute Zero<span className="sup">SM</span></li></ul></h2> */}
             {/* <img className="rounded-3xl object-cover xl:h-full xl:w-full lg:h-full md:h-full sm:h-full" src="https://images.ctfassets.net/1euybtmvarct/yWATVINSawiIKVdQmXkve/55c095c46ff97c44ecc21678ec9031f8/RCI_IC_Absolute_Zero_CGI26_RET__1_.jpg?w=3200&h=3689&q=50&fm=webp" alt="cruiseimg" /> */}

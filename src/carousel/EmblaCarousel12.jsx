@@ -7,16 +7,15 @@ import {
   usePrevNextButtons
 } from './EmblaCarouselArrowButtons'
 import { Caption11Container, CaptionContainer, EmblaGridContainer, IMGContainer, InnerContainer1, InnerContainer2, InnerContainer6, Margin2Container, Margin3Container, Margin4Container } from "../Styles/Styles.js"
-import Embla1 from "../assets/AdventureAwaits/SugarBeach.jpg"
+import Embla1 from "../assets/AdventureAwaits/Sugar_Beach.png"
 import EmblaVid from "../assets/AdventureAwaits/StandardStore.mp4"
-import Embla3 from "../assets/AdventureAwaits/Record Breaking Plush Story.png"
+import Embla3 from "../assets/AdventureAwaits/Plush_Growth.png"
 
 
 export const slides = [
   {
     image: Embla1,
     heading: "SPLASHY TOWN",
-    caption1: "Sugar Beach Reimagined",
     SubHeader: "REVOLUTION",
     Embla1Br: <br />,
     Embla1text: `Welcome to “Splashy Town” a magical space designed for families and kids.  This pint-sized seaside town on the banks of Splashaway Bay is located within the former Sugar Beach.  Inside, kid-inspired storefronts will stir tiny imaginations.`,
@@ -27,7 +26,6 @@ export const slides = [
   {
     Embla2Vid: EmblaVid,
     heading: "TAP, SHOP, AND GO",
-    caption2: "Standard AI",
     SubHeader: "REVOLUTION",
     Embla2Br: <br />,
     Embla2text: "Shop in minutes, check out in seconds and never wait in line. Sunshine & Sundries will feature another first at sea – Tap, Shop, and Go!",
@@ -116,16 +114,6 @@ const EmblaCarousel18 = (props) => {
                     </InnerContainer1>
                     <InnerContainer2>
                       {slide.Embla1text && (
-                        <Caption11Container>
-                          <h2><ul className="ml-5 list-disc list-inside text-SB_Blue"><li>{slide.caption1}</li></ul></h2>
-                        </Caption11Container>
-                      )}
-                      {slide.Embla2text && (
-                        <Caption11Container>
-                          <h2><ul className="ml-52 list-disc list-inside text-SB_Blue"><li>{slide.caption2}</li></ul></h2>
-                        </Caption11Container>
-                      )}
-                      {slide.Embla1text && (
                         <>
                           <img
                             className="embla__slide__img"
@@ -150,6 +138,7 @@ const EmblaCarousel18 = (props) => {
                         <IMGContainer>
                           <div className="h-tall flex justify-end mr-10 relative">
                             <video
+                              loop
                               className="w-5/6 right-0 rounded-img2"
                               src={slide.Embla2Vid}
                               autoPlay

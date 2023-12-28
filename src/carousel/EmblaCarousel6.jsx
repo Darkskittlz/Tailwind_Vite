@@ -8,9 +8,9 @@ import {
 } from './EmblaCarouselArrowButtons'
 import { CaptionContainer, Caption11Container, EmblaGridContainer, IMG2Container, IMGContainer, InnerContainer1, InnerContainer2, InnerContainer3, Margin3Container, MarginContainer } from "../Styles/Styles.js"
 import Embla1Video from "../assets/BeachToBar/FashionTrendsetter.mp4"
-import Embla2 from "../assets/BeachToBar/athletic_capsule.png"
-import Embla3 from "../assets/BeachToBar/ThreePhotoCollage.png"
-import Embla4 from "../assets/BeachToBar/princeGreen.jpg"
+import Embla2 from "../assets/BeachToBar/Athletic_Capsule.png"
+import Embla3 from "../assets/BeachToBar/Fashion_Inspiration.png"
+import Embla4 from "../assets/BeachToBar/Prince_Greene.png"
 
 
 export const slides = [
@@ -50,7 +50,7 @@ export const slides = [
     SubHeader: "EVOLUTION",
     Embla4Br: <br />,
     Embla4text: "Sparked by the grand opening of Prince + Greene on Allure of the Seas we will continue to refine our assortment to be more modern and appealing to Royal Caribbean guests.",
-    Embla4text2: "In 2023 we tested a broad range of price points and brands.  We’ve hit our stride with Prince & Greene and will evolve our fashion apparel based on how your guests vote.",
+    Embla4text2: "In 2023 we tested a broad range of price points and brands.  We’ve hit our stride with Prince + Greene and will evolve our fashion apparel based on how your guests vote.",
   },
 ]
 
@@ -127,23 +127,13 @@ const EmblaCarousel6 = (props) => {
                       </div>
                     </InnerContainer3>
                     <InnerContainer2>
-                      <Caption11Container>
-                        {/* {slide.caption2 && ( */}
-                        {/*   <h2><ul className="list-disc list-inside text-white"><li>{slide.caption2}</li></ul></h2> */}
-                        {/* )} */}
-                        {slide.caption3 && (
-                          <h2><ul className="list-disc list-inside text-SB_Blue"><li>{slide.caption3}</li></ul></h2>
-                        )}
-                        {slide.caption4 && (
-                          <h2><ul className="list-disc list-inside text-white"><li>{slide.caption4}</li></ul></h2>
-                        )}
-                      </Caption11Container>
                       {slide.Embla1Video && (
                         <>
                           <div className="h-tall flex justify-end mr-10 relative">
                             <video
                               className="w-5/6 right-0 rounded"
                               src={slide.Embla1Video}
+                              loop
                               autoPlay
                               muted
                             />

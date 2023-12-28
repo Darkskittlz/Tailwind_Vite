@@ -89,7 +89,7 @@ const Hero3B = forwardRef(({ scrollToSection }, ref) => {
       <Margin4Container>
         <div className="Hero3Container rounded-xl pt-20 md:ml-20 md:mr-20 lg:mx-96 xs:mx-14 xs:mt-24">
           <div className="flex items-center flex-col pb-24 justify-center">
-            <h1 className="md:text-7xl xs:text-6xl font-semibold font-sans z-0 text-center text-white px-40">Big Ideas</h1>
+            <h1 className="md:text-7xl xs:text-6xl font-semibold z-0 text-center font-oswald uppercase text-white px-40">Big Ideas</h1>
           </div>
           <hr />
           <div className="flex mt-20 justify-center">

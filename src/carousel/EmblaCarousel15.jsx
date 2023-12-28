@@ -30,7 +30,7 @@ export const slides = [
     Embla3SubHeader: "POSITIONING",
     heading: "STRATEGIC TRIUMPH: THE IMPACT OF WINNING THIS BID ON STARBOARD’S FORWARD-LOOKING STRATEGY",
     Embla3Br: <br />,
-    Embla3text: "We’re thrilled to present our proposal to expand our partnership. Our continued collaboration is not only essential for mutual growth but also a testament to our shared commitment to delivering incredible experiences and retail transformation for our guests. Expanding our relationship will propel our business to new heights. Our shared dedication to dialing up the guest experience on Icon II and III will not only drive revenue growth but also elevate our reputation as a leader in the industry.",
+    Embla3text: "We’re thrilled to present our proposal to expand our partnership. Our continued collaboration is not only essential for mutual growth but also a testament to our shared commitment to delivering incredible experiences and retail transformation for our guests. Expanding our relationship will propel our business to new heights. Our shared dedication to dialing up the guest experience on Icon II & III will not only drive revenue growth but also elevate our reputation as a leader in the industry.",
     Embla3text2: "And, we like you…  scratch that, it’s true, we love you and we’re eternally Loyal to Royal!",
     Embla3text3: "Thank you for considering our proposal, we eagerly await the opportunity to discuss our future."
   },
@@ -114,15 +114,14 @@ const EmblaCarousel15 = (props) => {
                     </div>
                   </InnerContainer5>
 
-                  <div className="embla__buttons bottom-0 flex absolute">
-                    <PrevButton onClick={onPrevButtonClick} disabled={prevBtnDisabled} />
+                  <div className="forwardButton embla__buttons bottom-0 flex absolute">
+                    <PrevButton className="PrevButton" onClick={onPrevButtonClick} disabled={prevBtnDisabled} />
                     <button
-                      className='forwardButton'
                       onClick={onNextButtonClick}
                       disabled={nextBtnDisabled}
                     >
                       <NextButton
-                        className="pr-8 py-5 ml-3 items-center flex"
+                        className="NextButton pr-8 py-5 ml-3 items-center flex"
                       />
                     </button>
                   </div>

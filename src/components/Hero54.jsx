@@ -9,7 +9,7 @@ const SLIDE_COUNT = 5
 const SLIDES = Array.from(Array(SLIDE_COUNT).keys())
 
 const Hero54A = () => (
-  <main className="sandbox">
+  <main className="reveal sandbox">
     <section className="sandbox__carousel">
       <EmblaCarousel17 slides={SLIDES} options={OPTIONS} />
     </section>

@@ -182,10 +182,23 @@ section {
   justify-items: center;
   padding-left: 15px;
   align-items: center;
-  border: 1px solid black;
+  border: 1px solid #3663ae;
   border-radius: 90px;
+  color: #3663ae;
 }
 
+.forwardButton:hover {
+  color: black;
+  border: 1px solid black;
+}
+
+
+.forwardButton:hover button,
+.forwardButton:hover button,
+.NextButton:hover button,
+.PrevButton:hover button {
+  color: black;
+}
 
 
 .Hero4Container {
@@ -194,7 +207,6 @@ section {
   /* background-image: url('../assets/HeroVid.mp4'); */
   background-size: cover;
   background-position: left;
-  /* Adjust the position as needed */
 }
 
 
@@ -277,7 +289,7 @@ div.carousel-inner img {
   /* overflow-y: scroll; */
   /* scroll-snap-type: y mandatory; */
 
-  background-color: white;
+  background-color: #eeeeee;
 }
 
 .scroller .element {

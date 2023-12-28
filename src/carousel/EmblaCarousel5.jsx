@@ -7,9 +7,9 @@ import {
   usePrevNextButtons
 } from './EmblaCarouselArrowButtons'
 import { EmblaGridContainer, IMGContainer, IMGContainer2, InnerCenterContainer, InnerContainer1, InnerContainer2, InnerContainer3, InnerContainer7, Margin4Container } from "../Styles/Styles.js"
-import Embla1 from "../assets/BlingItOn/RoyalBling.png"
-import Embla2 from "../assets/BlingItOn/DiamondsInternational.jpg"
-import Embla3 from "../assets/BlingItOn/VY_Raffle.jpg"
+import Embla1 from "../assets/BlingItOn/Royal_Bling_Concepts.png"
+import Embla2 from "../assets/BlingItOn/Safi_Kilimia_Tanzanite.png"
+import Embla3 from "../assets/BlingItOn/Raffle.png"
 
 export const slides = [
   {
@@ -117,17 +117,6 @@ const EmblaCarousel5 = (props) => {
                       </div>
                     </InnerContainer7>
                     <InnerContainer2>
-
-                      {/* Captions */}
-                      {slide.caption1 && (
-                        <h2><ul className="ml-5 list-disc list-inside text-white"><li>{slide.caption1}</li></ul></h2>
-                      )}
-                      {slide.caption2 && (
-                        <h2><ul className="ml-5 list-disc list-inside text-white"><li>{slide.caption2}</li></ul></h2>
-                      )}
-                      {slide.caption3 && (
-                        <h2><ul className="ml-5 list-disc list-inside text-SB_Blue"><li>{slide.caption3}</li></ul></h2>
-                      )}
 
                       {/* Images */}
                       {slide.Embla1image ? (

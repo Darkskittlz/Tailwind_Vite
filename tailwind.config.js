@@ -7,7 +7,7 @@ export default {
   theme: {
     extend: {
       fontSize: {
-        header: "12.5rem",
+        header: "10.5rem",
         subheader: "4.9rem",
         paragraph: "3.5rem",
         caption: "20px"
