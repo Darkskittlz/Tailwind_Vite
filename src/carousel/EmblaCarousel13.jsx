@@ -195,7 +195,7 @@ const EmblaCarousel13 = (props) => {
                 </div>
                 <IMG3Container>
                   <InnerContainer4>
-                    <div className="md:mt-0 md:w-full xs:w-full xs:pr-10 xs:mt-10">
+                    <div className="md:mt-0 ">
                       <h5 className="text-3xl text-white text-left font-semibold">
                         <ul className="list-disc list-inside">
                           <li className="listItem">

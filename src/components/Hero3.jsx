@@ -55,6 +55,21 @@ const customStyles3 = {
   },
 };
 
+const mediaQueries = {
+  '@media (max-width: 768px)': {
+    content: {
+      width: '90%',
+    },
+  },
+  '@media (max-width: 480px)': {
+    content: {
+      width: '100%',
+    },
+  },
+};
+
+const responsiveStyles = Object.assign({}, customStyles2, mediaQueries);
+
 // Make sure to bind modal to your appElement (https://reactcommunity.org/react-modal/accessibility/)
 Modal.setAppElement('#root');
 
@@ -131,7 +146,7 @@ const Hero3 = forwardRef(({ scrollToSection }, ref) => {
                 <Modal
                   isOpen={modal1IsOpen}
                   onRequestClose={close1Modal}
-                  style={customStyles}
+                  style={responsiveStyles}
                   contentLabel="Example Modal"
                 >
                   <ModalContainer>
@@ -165,7 +180,7 @@ const Hero3 = forwardRef(({ scrollToSection }, ref) => {
                 <Modal
                   isOpen={modal2IsOpen}
                   onRequestClose={close2Modal}
-                  style={customStyles2}
+                  style={responsiveStyles}
                   contentLabel="Example Modal"
                 >
                   <main>

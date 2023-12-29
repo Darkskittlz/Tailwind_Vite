@@ -107,8 +107,8 @@ const EmblaCarousel3 = (props) => {
                                 {slide.Embla3text}
                                 {slide.Embla3Br}
                                 {slide.Embla3Br}
-                                <div className='w-full -ml-14'>
-                                  <img src={slide.Emblaimage4} />
+                                <div className='w-full lg:-ml-14 xs:mt-20'>
+                                  <img className='lg:h-0 xs:h-xs xs:-ml-4' src={slide.Emblaimage4} />
                                 </div>
                               </>
                             )}
@@ -119,7 +119,7 @@ const EmblaCarousel3 = (props) => {
                       </InnerContainer3>
                       <InnerContainer2>
                         {slide.Emblaimage1 && (
-                          <div className="mr-96">
+                          <div className='lg:mr-44 xs:mb-9 xs:mr-4'>
                             <img
                               className="embla__slide__img"
                               src={slide.Emblaimage1}
@@ -128,7 +128,7 @@ const EmblaCarousel3 = (props) => {
                           </div>
                         )}
                         {slide.Emblaimage2 && (
-                          <div className="mr-24">
+                          <div className='lg:mr-44 xs:mb-9 xs:mr-4'>
                             <img
                               className="embla__slide__img"
                               src={slide.Emblaimage2}
@@ -137,7 +137,7 @@ const EmblaCarousel3 = (props) => {
                           </div>
                         )}
                         {slide.Emblaimage3 && (
-                          <div className="mr-56">
+                          <div className='lg:mr-44 xs:mb-9 xs:mr-4'>
                             <img
                               className="embla__slide__img"
                               src={slide.Emblaimage3}
@@ -145,7 +145,7 @@ const EmblaCarousel3 = (props) => {
                             />
                           </div>
                         )}
-                        <div className="embla__buttons pb-20 flex absolute">
+                        <div className="embla__buttons pb-28 lg:mt-0 xs:mt-22 xs:mb-22 flex absolute">
                           <PrevButton onClick={onPrevButtonClick} disabled={prevBtnDisabled} />
                           <button
                             className='forwardButton'

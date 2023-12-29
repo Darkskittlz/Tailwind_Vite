@@ -93,7 +93,7 @@ const EmblaCarousel6 = (props) => {
                   </div>
                   <IMGContainer>
                     <InnerContainer3>
-                      <div className="md:mt-0 md:w-full xs:w-full xs:pr-10 xs:mt-10">
+                      <div className="md:mt-0 md:w-full xs:w-full xs:pr-10 xs:mt-20">
                         <h5 className="text-3xl text-white text-left font-semibold"><ul className="list-disc list-inside"><li className="listItem">{slide.SubHeader}</li></ul></h5>
                         <h1 className="mb-10 text-7xl font-bold text-black mt-2">{slide.heading}</h1>
                         <h3 className="xs:text-1xl mb-5 text-black">
@@ -129,9 +129,9 @@ const EmblaCarousel6 = (props) => {
                     <InnerContainer2>
                       {slide.Embla1Video && (
                         <>
-                          <div className="h-tall flex justify-end mr-10 relative">
+                          <div className="lg:h-xx xs:h-md flex justify-end lg:mr-10 xs:mr-0 xs:-mt-48 relative">
                             <video
-                              className="w-5/6 right-0 rounded"
+                              className="lg:mb-0 xs:-mb-36 right-0 rounded"
                               src={slide.Embla1Video}
                               loop
                               autoPlay
@@ -155,7 +155,7 @@ const EmblaCarousel6 = (props) => {
                       )}
                       {slide.Embla2image && (
                         <>
-                          <img src={slide.Embla2image} className="h-tall object-cover mr-64 rounded-img" key={`image-${index}-19`} />
+                          <img src={slide.Embla2image} className="lg:h-tall xs:h-full xs:mb-5 object-cover lg:mr-64 rounded-img" key={`image-${index}-19`} />
                           <div className="embla__buttons pb-20 flex absolute">
                             <PrevButton onClick={onPrevButtonClick} disabled={prevBtnDisabled} />
                             <button
@@ -173,8 +173,8 @@ const EmblaCarousel6 = (props) => {
                       )}
                       {slide.Embla3image && (
                         <>
-                          <img src={slide.Embla3image} className="h-tall mr-60 object-cover rounded-img2" key={`image-${index}-20`} />
-                          <div className="embla__buttons pb-20 flex absolute">
+                          <img src={slide.Embla3image} className="h-tall mr-28 object-cover rounded-img2" key={`image-${index}-20`} />
+                          <div className="embla__buttons pb-8 flex absolute">
                             <PrevButton onClick={onPrevButtonClick} disabled={prevBtnDisabled} />
                             <button
                               className='forwardButton'
@@ -191,8 +191,8 @@ const EmblaCarousel6 = (props) => {
                       )}
                       {slide.Embla4image && (
                         <>
-                          <img src={slide.Embla4image} className="h-tall mr-20 object-cover rounded-img" key={`image-${index}-21`} />
-                          <div className="embla__buttons pb-20 flex absolute">
+                          <img src={slide.Embla4image} className="h-tall lg:mr-20 xs:mr-0 object-cover rounded-img" key={`image-${index}-21`} />
+                          <div className="embla__buttons pb-8 flex absolute">
                             <PrevButton onClick={onPrevButtonClick} disabled={prevBtnDisabled} />
                             <button
                               className='forwardButton'

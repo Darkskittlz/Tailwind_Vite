@@ -125,15 +125,30 @@ const EmblaCarousel = (props) => {
                               <div className="flex justify-center gap-3">
                                 <div className='absolute text-white mt-6'>
                                   <h2>
-                                    <ul className="mr-sixty_five list-disc list-inside">
+                                    <ul className="lg:mr-ninety_nine xs:mr-20 xs:mt-20 list-disc list-inside">
                                       <li className="text-caption">
                                         {slide.caption1}
                                       </li>
                                     </ul>
                                   </h2>
                                 </div>
-                                <img src={slide.Emblaimage1} className="h-md object-cover rounded-img" key={`image-${index}-18`} />
-                                <img src={slide.Emblaimage2} className="h-md object-cover rounded-img" key={`image-${index}-19`} />
+                                <div className='flex xs:justify-center lg:flex-row xs:mt-20 lg:mt-24 xs:flex-col'>
+                                  <img src={slide.Emblaimage1} className="lg:h-tall xs:h-md xs:mb-10 lg:mr-10 object-cover rounded-img" key={`image-${index}-18`} />
+                                  <img src={slide.Emblaimage2} className="lg:h-tall xs:h-md object-cover rounded-img" key={`image-${index}-19`} />
+                                </div>
+                              </div>
+                              <div className="embla__buttons lg:bottom-0 xs:mt-96 lg:-mb-5 flex absolute">
+                                <PrevButton onClick={onPrevButtonClick} disabled={prevBtnDisabled} />
+                                <button
+                                  className='forwardButton'
+                                  onClick={onNextButtonClick}
+                                  disabled={nextBtnDisabled}
+                                >
+                                  {slide.ButtonText}
+                                  <NextButton
+                                    className="pr-8 py-5 ml-3 items-center flex"
+                                  />
+                                </button>
                               </div>
                             </div>
                           )}
@@ -152,15 +167,30 @@ const EmblaCarousel = (props) => {
                               <div className="flex justify-center gap-3">
                                 <div className='absolute text-white mt-6'>
                                   <h2>
-                                    <ul className="mr-eighty_eight list-disc list-inside">
+                                    <ul className="lg:mr-one_ten xs:mr-20 xs:mt-20 list-disc list-inside">
                                       <li className="text-caption">
                                         {slide.caption2}
                                       </li>
                                     </ul>
                                   </h2>
                                 </div>
-                                <img src={slide.Embla2image1} className="h-semi_mid_minus object-cover rounded-img" key={`image-${index}-20`} />
-                                <img src={slide.Embla2image2} className="h-semi_mid_minus object-cover rounded-img" key={`image-${index}-21`} />
+                                <div className='flex xs:justify-center lg:flex-row xs:mt-20 xs:flex-col'>
+                                  <img src={slide.Embla2image1} className="h-md xs:mb-10 lg:mr-10 object-cover rounded-img" key={`image-${index}-20`} />
+                                  <img src={slide.Embla2image2} className="h-md object-cover rounded-img" key={`image-${index}-21`} />
+                                </div>
+                              </div>
+                              <div className="embla__buttons bottom-0 xs:mb-eighty_eight lg:-mb-5 flex absolute">
+                                <PrevButton onClick={onPrevButtonClick} disabled={prevBtnDisabled} />
+                                <button
+                                  className='forwardButton'
+                                  onClick={onNextButtonClick}
+                                  disabled={nextBtnDisabled}
+                                >
+                                  {slide.ButtonText}
+                                  <NextButton
+                                    className="pr-8 py-5 ml-3 items-center flex"
+                                  />
+                                </button>
                               </div>
                             </div>
                           )}
@@ -179,22 +209,37 @@ const EmblaCarousel = (props) => {
                               <div className="flex justify-center gap-3">
                                 <div className='absolute text-white mt-6'>
                                   <h2>
-                                    <ul className="mr-eighty list-disc list-inside">
-                                      <li className="text-caption">
+                                    <ul className="lg:mr-ninety_nine xs:-mr-4 xs:mt-20 list-disc list-inside">
+                                      <li className="text-caption2">
                                         {slide.caption3}
                                       </li>
                                     </ul>
                                   </h2>
                                 </div>
-                                <img src={slide.Embla3image1} className="h-semi_mid_minus object-cover rounded-img" key={`image-${index}-22`} />
-                                <img src={slide.Embla3image2} className="h-semi_mid_minus object-cover rounded-img" key={`image-${index}-23`} />
+                                <div className='flex xs:justify-center lg:flex-row xs:mt-20 xs:flex-col'>
+                                  <img src={slide.Embla3image1} className="h-md xs:mb-10 xs:mr-10 lg:mr-10 object-cover rounded-img" key={`image-${index}-22`} />
+                                  <img src={slide.Embla3image2} className="h-md object-cover rounded-img" key={`image-${index}-23`} />
+                                </div>
+                              </div>
+                              <div className="embla__buttons bottom-0 xs:mb-eighty_three lg:-mb-5 flex absolute">
+                                <PrevButton onClick={onPrevButtonClick} disabled={prevBtnDisabled} />
+                                <button
+                                  className='forwardButton'
+                                  onClick={onNextButtonClick}
+                                  disabled={nextBtnDisabled}
+                                >
+                                  {slide.ButtonText}
+                                  <NextButton
+                                    className="pr-8 py-5 ml-3 items-center flex"
+                                  />
+                                </button>
                               </div>
                             </div>
                           )}
 
                           {slide.Embla4text && (
-                            <div className='w-full flex justify-between'>
-                              <div className='w-2/4 -mt-24'>
+                            <div className='w-full flex xs:flex-col justify-between'>
+                              <div className='w-2/4 xs:w-full xs:mb-10 -mt-24'>
                                 {slide.Embla4Br}
                                 {slide.Embla4Br}
                                 {slide.Embla4text}
@@ -207,8 +252,21 @@ const EmblaCarousel = (props) => {
                               </div>
                               <div className="flex justify-center gap-3">
                                 <div >
-                                  <img src={slide.Embla4image} className="h-tall mr-12 object-cover rounded-img" key={`image-${index}-30`} />
+                                  <img src={slide.Embla4image} className="mr-12 object-cover rounded-img" key={`image-${index}-30`} />
                                 </div>
+                              </div>
+                              <div className="embla__buttons bottom-0 xs:mb-thirty lg:-mb-5 flex absolute">
+                                <PrevButton onClick={onPrevButtonClick} disabled={prevBtnDisabled} />
+                                <button
+                                  className='forwardButton'
+                                  onClick={onNextButtonClick}
+                                  disabled={nextBtnDisabled}
+                                >
+                                  {slide.ButtonText}
+                                  <NextButton
+                                    className="pr-8 py-5 ml-3 items-center flex"
+                                  />
+                                </button>
                               </div>
                             </div>
                           )}
@@ -216,19 +274,6 @@ const EmblaCarousel = (props) => {
                       </div>
                     </InnerContainer5>
 
-                    <div className="embla__buttons bottom-0 -mb-5 flex absolute">
-                      <PrevButton onClick={onPrevButtonClick} disabled={prevBtnDisabled} />
-                      <button
-                        className='forwardButton'
-                        onClick={onNextButtonClick}
-                        disabled={nextBtnDisabled}
-                      >
-                        {slide.ButtonText}
-                        <NextButton
-                          className="pr-8 py-5 ml-3 items-center flex"
-                        />
-                      </button>
-                    </div>
 
                   </IMG3Container>
                 </div>

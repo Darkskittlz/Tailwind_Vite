@@ -120,7 +120,7 @@ const EmblaCarousel5 = (props) => {
 
                       {/* Images */}
                       {slide.Embla1image ? (
-                        <div className='mr-44'>
+                        <div className='lg:mr-44 xs:mb-9 xs:mr-4'>
                           <img
                             className="embla__slide__img bg-black"
                             src={slide.Embla1image}
@@ -129,7 +129,7 @@ const EmblaCarousel5 = (props) => {
                         </div>
                       ) : null}
                       {slide.Embla2image ? (
-                        <div className='mr-72'>
+                        <div className='lg:mr-44 xs:mb-9 xs:mr-4'>
                           <img
                             className="embla__slide__img"
                             src={slide.Embla2image}
@@ -138,11 +138,13 @@ const EmblaCarousel5 = (props) => {
                         </div>
                       ) : null}
                       {slide.Embla3image ? (
-                        <img
-                          className="embla__slide__img"
-                          src={slide.Embla3image}
-                          alt={`IMG${index + 3}`}
-                        />
+                        <div className='lg:mr-44 xs:mb-9 xs:mr-4'>
+                          <img
+                            className="embla__slide__img"
+                            src={slide.Embla3image}
+                            alt={`IMG${index + 3}`}
+                          />
+                        </div>
                       ) : null}
                       <div className="embla__buttons pb-20 flex absolute">
                         <PrevButton onClick={onPrevButtonClick} disabled={prevBtnDisabled} />

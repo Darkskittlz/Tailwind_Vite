@@ -23,6 +23,7 @@ export default {
         max: '999'
       },
       height: {
+        xx: '70vh',
         xtra_tall: '62vh',
         tall_plus: '542px',
         tall: '500px',
@@ -31,9 +32,13 @@ export default {
         semi_md: '368px',
         semi_mid_minus: '348px',
         sm: '300px',
+        xs: '80px',
         chanelIMG: '70px'
       },
       margin: {
+        mobile_buttons: "136.75rem",
+        mobile_height: "123rem",
+        one_ten: "110rem",
         margin_1_75: "1.75rem",
         eighteen: "18rem",
         twenty_two: "22rem",
@@ -43,8 +48,14 @@ export default {
         forty_five: "45rem",
         sixty: "60rem",
         sixty_five: "65rem",
+        seventy_five: "75rem",
+        eighty_three: "82.75rem",
         eighty: "80rem",
-        eighty_eight: "88rem"
+        eighty_eight: "88rem",
+        ninety_nine: "99rem"
+      },
+      bottom: {
+        seventy: "50rem",
       },
       padding: {
         half: "25%"

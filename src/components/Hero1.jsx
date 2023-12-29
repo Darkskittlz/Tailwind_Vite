@@ -26,12 +26,12 @@ const Hero1 = forwardRef(({ scrollToSection }, ref) => {
 
   return (
     <>
-      <div className="flex flex-col z-10 xs:mb-28" ref={ref} >
+      <div className="flex flex-col z-10" ref={ref} >
         <video className="brightness-75" src={Hero1Vid} autoPlay loop muted />
-        <div className="w-full absolute items-center lg:mt-64 xs:mt-20 md:mt-48 sm:mt-44 h-2/5 flex flex-col">
+        <div className="w-full absolute items-center lg:mt-64 xs:mt-20 md:mt-48 sm:mt-56 h-2/5 flex flex-col">
           <Hero1Header>
-            <h1 className='text-white font-family italic'>ICONIC RETAIL </h1>
-            <h2 className='text-white font-family italic'>ON ICON OF THE SEAS II & III</h2>
+            <h1 className='text-white font-oswald italic'>ICONIC RETAIL </h1>
+            <h2 className='text-white font-oswald italic'>ON ICON OF THE SEAS II & III</h2>
           </Hero1Header>
         </div>
         {

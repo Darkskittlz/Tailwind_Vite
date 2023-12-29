@@ -100,7 +100,7 @@ const EmblaCarousel17 = (props) => {
                       {slide.Embla1text && (
                         <IMGContainer>
                           <InnerContainer1>
-                            <div className="xs:w-full xs:pr-10 xs:mt-20 md:mt-0 xs:mb-20">
+                            <div className=" xs:pr-10 xs:mt-20 md:mt-0 xs:mb-20">
 
                               {/* Slide 1 */}
                               <h3 className="lg:text-3xl xs:text-3xl mb-5 text-black">
@@ -120,9 +120,9 @@ const EmblaCarousel17 = (props) => {
                               </h3>
                             </div>
                           </InnerContainer1>
-                          <div className="flex justify-end mr-twenty_two relative">
+                          <div className="flex justify-end lg:mr-twenty_two xs:mr-0 relative">
                             <img
-                              className="w-full h-xtra_tall right-0 rounded-img"
+                              className="w-full lg:h-xtra_tall xs:h-md right-0 rounded-img"
                               src={slide.Emblaimage1}
                             />
                           </div>
@@ -152,7 +152,7 @@ const EmblaCarousel17 = (props) => {
                               </h3>
                             </div>
                           </InnerContainer8>
-                          <div className="embla__buttons bottom-0 flex absolute">
+                          <div className="embla__buttons lg:bottom-0 flex absolute">
                             <PrevButton onClick={onPrevButtonClick} disabled={prevBtnDisabled} />
                             <button
                               className='forwardButton'
@@ -173,11 +173,11 @@ const EmblaCarousel17 = (props) => {
                         <div className='w-full mx-5 justify-between flex flex-col'>
                           <div className="h-tall_plus flex -mt-18 justify-center relative">
                             <img
-                              className="w-2/4 rounded-img2 object-fit"
+                              className="lg:w-2/4 xs:w-full xs:h-md rounded-img2 object-fit"
                               src={slide.Emblaimage3}
                             />
                           </div>
-                          <div className="embla__buttons mt-22 -bottom-5 flex absolute">
+                          <div className="embla__buttons lg:mt-22 xs:-bottom-seventy -bottom-5 flex absolute">
                             <PrevButton onClick={onPrevButtonClick} disabled={prevBtnDisabled} />
                             <button
                               className='forwardButton'

@@ -77,7 +77,7 @@ export const IMGContainer = styled.div`
 
   @media screen and (max-width: 1530px) {
     flex-direction: column-reverse;
-
+    justify-content: flex-end;
   }
 `
 
@@ -196,6 +196,8 @@ export const IMG3Container = styled.div`
 
   @media screen and (max-width: 1530px) {
     flex-direction: column-reverse;
+    justify-content: flex-end;
+    height: 136rem;
   }
 `
 
@@ -250,12 +252,14 @@ export const ModalContainer2 = styled.div`
 
   @media screen and (max-width: 1530px) {
     width: 100%;
+    padding-left: 0px;
 
     h1 {
       margin-bottom: 20px;
     }
 
     h5 {
+      margin-top: -100px;
       margin-bottom: 15px;
     }
   }
@@ -278,7 +282,7 @@ export const InnerContainer1 = styled.div`
   }
 
   h3 {
-    font-size: 18px;
+    font-size: 22px;
   }
 
   h4 {
@@ -294,13 +298,19 @@ export const InnerContainer1 = styled.div`
 
   @media screen and (max-width: 1530px) {
     width: 100%;
+    padding-left: 0px;
 
     h1 {
       margin-bottom: 20px;
     }
 
+    h3 {
+      font-size: 20px;
+    }
+
     h5 {
       margin-bottom: 15px;
+      margin-top: 0px;
     }
   }
 `
@@ -325,7 +335,7 @@ export const InnerContainer2 = styled.div`
 
 export const InnerContainer3 = styled.div`
   padding-left: 20px;
-  width: 54%;
+  width: 64%;
 
   h4 {
     font-style: italic;
@@ -352,6 +362,8 @@ export const InnerContainer3 = styled.div`
 
   @media screen and (max-width: 1530px) {
     width: 100%;
+    padding-left: 0px;
+    margin-top: 10px;
 
     h5 {
       margin-bottom: 15px;
@@ -487,7 +499,7 @@ export const InnerContainer7 = styled.div`
 
 
   h2 {
-    font-size: 15px;
+    font-size: 20px;
   }
 
   h3 {
@@ -506,10 +518,15 @@ export const InnerContainer7 = styled.div`
 
 
   @media screen and (max-width: 1530px) {
+    padding-left: 0px;
     width: 100%;
 
     h1 {
       margin-bottom: 20px;
+    }
+  
+    h2 {
+      font-size: 20px;
     }
 
     h5 {
@@ -536,6 +553,96 @@ export const InnerContainer8 = styled.div`
   }
 `
 
+export const InnerContainer9 = styled.div`
+  padding-left: 30px;
+  width: 116%;
+
+
+  h2 {
+    font-size: 15px;
+  }
+
+  h3 {
+    font-size: 22px;
+  }
+
+  h4 {
+    font-style: italic;
+  }
+
+  h5 {
+    color: #3663ae;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+
+  @media screen and (max-width: 1530px) {
+    width: 100%;
+    padding-left: 0px;
+
+    h1 {
+      margin-bottom: 20px;
+    }
+
+    h3 {
+      font-size: 20px;
+    }
+
+    h5 {
+      margin-bottom: 15px;
+      margin-top: 0px;
+    }
+  }
+`
+
+
+export const InnerContainer10 = styled.div`
+  padding-left: 20px;
+  width: 58%;
+
+  h4 {
+    font-style: italic;
+  }
+
+  h3 {
+    width: 100%;
+  }
+
+  h6 {
+    width: 100%;
+    font-size:19px;
+  }
+
+  p {
+    width: 140%;
+  }
+
+  h5 {
+    color: #3663ae;
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+
+  @media screen and (max-width: 1530px) {
+    width: 100%;
+    padding-left: 0px;
+    margin-top: 10px;
+
+    h5 {
+      margin-bottom: 15px;
+    }
+
+    h3 {
+      width: 100%;
+    }
+
+    p {
+      width: 100%;
+    }
+  }
+`
+
 
 export const InnerIMGContainer = styled.div`
   justify-items: center;
@@ -548,18 +655,10 @@ export const InnerIMGContainer = styled.div`
   img {
     display: flex;
     object-fit: cover;
-    height: 50px;
   }
 
-  #coach {
-    margin-top:-20px;
-    height: 90px;
-  }
-
-  #kateSpade {
-    margin-top:-27px;
-    margin-left: -31px;
-    height: 94px;
+  @media screen and (max-width: 1530px) {
+    margin-top: 10px;
   }
 `
 
@@ -664,11 +763,6 @@ export const InnerIMG5Container = styled.div`
   justify-content: center;
   flex-wrap: wrap;
 
-  img {
-    display: flex;
-    object-fit: cover;
-    height: 100px;
-  }
 
   #Dior {
     height: 50px;

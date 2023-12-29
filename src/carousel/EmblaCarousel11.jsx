@@ -6,7 +6,7 @@ import {
   NextButton,
   usePrevNextButtons
 } from './EmblaCarouselArrowButtons'
-import { CaptionContainer, EmblaGridContainer, IMGContainer, InnerContainer1, InnerContainer2, InnerIMG5Container, InnerIMGContainer, Margin2Container, Margin4Container } from "../Styles/Styles.js"
+import { CaptionContainer, EmblaGridContainer, IMGContainer, InnerContainer1, InnerContainer2, InnerContainer9, InnerIMG5Container, InnerIMGContainer, Margin2Container, Margin4Container } from "../Styles/Styles.js"
 import EmblaVid from "../assets/MirrorMirror/sephoraVid.mp4"
 import Embla2image from "../assets/MirrorMirror/BeautyLogos.png"
 import Embla3image from "../assets/MirrorMirror/BeautyLogosTT.png"
@@ -68,12 +68,12 @@ const EmblaCarousel11 = (props) => {
                       <span>{index + 1}</span>
                     </div>
                     <div className="xs:w-full xs:pr-10 xs:mt-20 md:mt-0 xs:mb-20">
-                      <h5 className="text-3xl text-white ml-12 mb-10 text-left font-semibold"><ul className="list-disc list-inside"><li className="listItem">{slide.SubHeader}</li></ul></h5>
-                      <h1 className="font-bold leading-10 w-5/6 ml-10 text-black">{slide.heading}</h1>
+                      <h5 className="text-3xl text-white lg:ml-12 xs:ml-0 mb-10 text-left font-semibold"><ul className="list-disc list-inside"><li className="listItem">{slide.SubHeader}</li></ul></h5>
+                      <h1 className="font-bold leading-10 w-full lg:ml-12 xs:ml-0 text-black">{slide.heading}</h1>
 
                       {slide.EmblaVid && (
                         <IMGContainer>
-                          <InnerContainer1>
+                          <InnerContainer9>
                             <div className="xs:w-full xs:pr-10 xs:mt-20 md:mt-0 xs:mb-20">
 
                               {/* Slide 1 */}
@@ -90,7 +90,7 @@ const EmblaCarousel11 = (props) => {
                                 {slide.Embla1text4}
                               </h3>
                             </div>
-                          </InnerContainer1>
+                          </InnerContainer9>
                           <div className="flex justify-end mr-10 relative">
                             <video
                               loop
@@ -118,18 +118,18 @@ const EmblaCarousel11 = (props) => {
 
                       {/* Slide 2 */}
                       {slide.Embla2text && (
-                        <div className='w-full mx-5 justify-between flex flex-col'>
+                        <div className='w-full lg:mx-5 xs:mx-0 justify-between flex flex-col'>
                           <InnerContainer2>
-                            <div className='ml-8'>
+                            <div className='lg:ml-8 xs:ml-0'>
                               <h3 className="lg:text-3xl xs:text-3xl mb-5 text-black">
                                 {slide.Embla2text}
                               </h3>
                             </div>
                           </InnerContainer2>
                           <InnerIMG5Container>
-                            <img src={slide.Embla2image} />
+                            <img className="lg:h-72 xs:h-32 lg:-mt-24 xs:-mt-24" src={slide.Embla2image} />
                           </InnerIMG5Container>
-                          <div className="embla__buttons bottom-0 flex absolute">
+                          <div className="embla__buttons lg:bottom-0 xs:bottom-44 flex absolute">
                             <PrevButton onClick={onPrevButtonClick} disabled={prevBtnDisabled} />
                             <button
                               className='forwardButton'
@@ -147,9 +147,9 @@ const EmblaCarousel11 = (props) => {
 
                       {/* Slide 3 */}
                       {slide.Embla3text && (
-                        <div className='w-full mx-5 justify-between flex flex-col'>
+                        <div className='w-full lg:mx-5 xs:mx-0 justify-between flex flex-col'>
                           <InnerContainer2>
-                            <div className='ml-8'>
+                            <div className='lg:ml-8 xs:ml-0'>
                               <h3 className="lg:text-3xl xs:text-3xl mb-5 text-black">
                                 {slide.Embla3text}
                                 {slide.Embla3Br}
@@ -159,9 +159,9 @@ const EmblaCarousel11 = (props) => {
                             </div>
                           </InnerContainer2>
                           <InnerIMG5Container>
-                            <img src={slide.Embla3image} />
+                            <img className='lg:h-72 xs:h-32 lg:-mt-24 xs:-mt-24' src={slide.Embla3image} />
                           </InnerIMG5Container>
-                          <div className="embla__buttons bottom-0 flex absolute">
+                          <div className="embla__buttons bottom-0 lg:bottom-0 xs:bottom-44 flex absolute">
                             <PrevButton onClick={onPrevButtonClick} disabled={prevBtnDisabled} />
                             <button
                               className='forwardButton'
