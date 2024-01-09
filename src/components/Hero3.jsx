@@ -81,28 +81,40 @@ const Hero3 = forwardRef(({ scrollToSection }, ref) => {
   const [modal5IsOpen, set5IsOpen] = React.useState(false);
 
   function open1Modal() {
-    set1IsOpen(true);
+    if (window.innerWidth > 1537) {
+      set1IsOpen(true);
+    }
   }
 
   function open2Modal() {
-    set2IsOpen(true);
+    if (window.innerWidth > 1537) {
+      set2IsOpen(true);
+    }
   }
 
   function open3Modal() {
-    set3IsOpen(true);
+    if (window.innerWidth > 1537) {
+      set3IsOpen(true);
+    }
   }
 
   function open4Modal() {
-    set4IsOpen(true);
+    if (window.innerWidth > 1537) {
+      set4IsOpen(true);
+    }
   }
 
   function open5Modal() {
-    set5IsOpen(true);
+    if (window.innerWidth > 1537) {
+      set5IsOpen(true);
+    }
   }
 
 
   function close1Modal() {
-    set1IsOpen(false);
+    if (window.innerWidth > 1537) {
+      set1IsOpen(false);
+    }
   }
 
   function close2Modal() {
@@ -155,7 +167,7 @@ const Hero3 = forwardRef(({ scrollToSection }, ref) => {
                         <ModalContainer2>
                           <div className="md:mt-0 xs:w-full xs:pr-10 xs:mt-20">
                             <h5 className="text-3xl text-left font-semibold"><ul className="list-disc list-inside"><li className="listItem">FINANCIAL TERMS</li></ul></h5>
-                            <h3 className="xs:text-3xl lg:w-full md:w-full text-black">
+                            <h3 className="xs:text-3xl xs:w-full text-black">
                               Financial terms have been sent under separate copy to: Irena Meyer and Cynthia Pintado in a password protected file.
                             </h3>
                           </div>
@@ -172,7 +184,7 @@ const Hero3 = forwardRef(({ scrollToSection }, ref) => {
                 {/* Modal2 */}
                 <a
                   onClick={open2Modal}
-                  className="rounded-full flex items-center relative cursor-pointer p-2 px-5 bg-white m-2 text-black"
+                  className="rounded-full flex items-center xs:disabled:opacity-75 lg:enabled relative cursor-pointer p-2 px-5 bg-white m-2 text-black"
                 >
                   Cruise & Travel Business Updates
                   <ArrowOutwardIcon style={{ color: '#3663ae', fontSize: '20px' }} className="p-0 ml-3" />

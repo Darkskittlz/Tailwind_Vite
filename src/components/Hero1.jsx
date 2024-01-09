@@ -118,7 +118,7 @@ const Hero1 = forwardRef(({ scrollToSection }, ref) => {
                 onClick={() => {
                   scrollToSection('section4')
                 }}
-                className="rounded-full xs:-mt-20 absolute justify-center xs:pt-3 xs:pl-5 xs:pr-5 xs:pb-3 pt-5 pl-10 pr-10 pb-5 bg-white text-black">
+                className="rounded-full xs:-mt-20 absolute justify-center xs:mt-20 xs:pl-5 xs:pr-5 xs:pb-3 pt-5 pl-10 pr-10 pb-5 bg-white text-black">
                 Explore Details
                 <ArrowDownwardIcon style={{ color: "#3663ae" }} />
               </a>

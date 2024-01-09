@@ -119,7 +119,7 @@ const EmblaCarousel18 = (props) => {
                             className="embla__slide__img"
                             src={slide.image}
                           />
-                          <div className="embla__buttons pb-20 flex absolute">
+                          <div className="embla__buttons lg:pb-12 xs:pb-12 flex absolute">
                             <PrevButton onClick={onPrevButtonClick} disabled={prevBtnDisabled} />
                             <button
                               className='forwardButton'
@@ -164,11 +164,11 @@ const EmblaCarousel18 = (props) => {
                         <>
                           <div className='mr-thirty_two'>
                             <img
-                              className="embla__slide__img"
+                              className="xs:hidden lg:flex embla__slide__img"
                               src={slide.image}
                             />
                           </div>
-                          <div className="embla__buttons pb-20 flex absolute">
+                          <div className="embla__buttons lg:pb-12 xs:pb-12 flex absolute">
                             <PrevButton onClick={onPrevButtonClick} disabled={prevBtnDisabled} />
                             <button
                               className='forwardButton'

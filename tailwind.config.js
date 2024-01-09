@@ -10,6 +10,7 @@ export default {
         header: "10.5rem",
         subheader: "4.4rem",
         paragraph: "3.2rem",
+        modalHeader: "2.9rem",
         caption: "20px"
       },
       lineHeight: {

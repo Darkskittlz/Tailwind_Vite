@@ -122,7 +122,7 @@ const EmblaCarousel17 = (props) => {
                           </InnerContainer1>
                           <div className="flex justify-end lg:mr-twenty_two xs:mr-0 relative">
                             <img
-                              className="w-full lg:h-xtra_tall xs:h-md right-0 rounded-img"
+                              className="w-full xs:object-cover lg:h-xtra_tall xs:h-md right-0 rounded-img"
                               src={slide.Emblaimage1}
                             />
                           </div>
@@ -152,7 +152,7 @@ const EmblaCarousel17 = (props) => {
                               </h3>
                             </div>
                           </InnerContainer8>
-                          <div className="embla__buttons lg:bottom-0 flex absolute">
+                          <div className="embla__buttons xs:hidden lg:flex absolute">
                             <PrevButton onClick={onPrevButtonClick} disabled={prevBtnDisabled} />
                             <button
                               className='forwardButton'
@@ -173,7 +173,7 @@ const EmblaCarousel17 = (props) => {
                         <div className='w-full mx-5 justify-between flex flex-col'>
                           <div className="h-tall_plus flex -mt-18 justify-center relative">
                             <img
-                              className="lg:w-2/4 xs:w-full xs:h-md rounded-img2 object-fit"
+                              className="lg:w-2/4 xs:w-full xs:h-md xs:object-cover rounded-img2 object-fit"
                               src={slide.Emblaimage3}
                             />
                           </div>
@@ -198,7 +198,7 @@ const EmblaCarousel17 = (props) => {
                         <div className='w-full mx-5 justify-between flex flex-col'>
                           <div className="h-md_plus mt-11 flex justify-center relative">
                             <img
-                              className="w-2/4 rounded-img2 object-fit"
+                              className="lg:w-2/4 xs:w-full xs:h-md xs:object-cover rounded-img2 object-fit"
                               src={slide.Emblaimage4}
                             />
                           </div>
@@ -223,7 +223,7 @@ const EmblaCarousel17 = (props) => {
                         <div className='w-full mx-5 justify-between flex flex-col'>
                           <div className="h-md_plus flex justify-center relative">
                             <img
-                              className="w-2/4 h-xtra_tall rounded-img3 object-fit"
+                              className="lg:w-2/4 xs:w-full xs:h-md xs:object-cover rounded-img2 object-fit"
                               src={slide.Emblaimage5}
                             />
                           </div>
@@ -262,9 +262,9 @@ const EmblaCarousel17 = (props) => {
                               </h3>
                             </div>
                           </InnerContainer1>
-                          <div className="h-xtra_tall flex justify-end mr-thirty relative">
+                          <div className="h-xtra_tall flex justify-end lg:mr-thirty xs:mr-0 relative">
                             <img
-                              className="w-full right-0 rounded-img"
+                              className="lg:w-2/4 xs:w-full xs:h-md xs:object-cover rounded-img2 object-fit"
                               src={slide.Emblaimage6}
                             />
                           </div>

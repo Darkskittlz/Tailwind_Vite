@@ -116,9 +116,9 @@ const Hero3B = forwardRef(({ scrollToSection }, ref) => {
                     <main>
                       <IMGContainer>
                         <div className="flex">
-                          <div className="md:mt-0 h-md xs:w-2/4 xs:pr-10 xs:mt-20">
-                            <h5 className="text-3xl text-left font-semibold text-SB_Blue"><ul className="list-disc list-inside"><li className="listItem">REVOLUTIONIZING CUSTOMER INSIGHT</li></ul></h5>
-                            <h1 className="md:text-6xl mt-10 md:mb-7 text-black xs:text-6xl text-left font-semibold font-sans z-0">VOICE OF THE CUSTOMER</h1>
+                          <div className="md:mt-0 h-md w-full xs:pr-10 xs:mt-20">
+                            <h5 className="lg:text-3xl xs:hidden text-left font-semibold text-SB_Blue"><ul className="list-disc list-inside"><li className="listItem">REVOLUTIONIZING CUSTOMER INSIGHT</li></ul></h5>
+                            <h1 className="lg:text-6xl lg:mb-0 xs:mb-10 xs:text-3xl xs:-mt-10 lg:mt-10 md:mb-7 text-black xs:text-6xl text-left font-semibold font-sans z-0">VOICE OF THE CUSTOMER</h1>
                             <h3 className="xs:text-3xl lg:w-full md:w-full text-black">
                               With First Insight, Starboard will take guest engagement to the next level.
                               <br />
@@ -133,7 +133,7 @@ const Hero3B = forwardRef(({ scrollToSection }, ref) => {
                             </h3>
                           </div>
                           <h5 className="text-1xl absolute right-0 mr-thirty_nine mt-9 font-semibold text-SB_Blue"><ul className="list-disc list-inside"><li className="listItem">First Insight Platform</li></ul></h5>
-                          <img src={FirstInsight} className='mt-14 w-2/4' alt="First Insight Platform" />
+                          <img src={FirstInsight} className='mt-14 w-2/4 xs:hidden lg:flex' alt="First Insight Platform" />
                         </div>
                       </IMGContainer>
                       <a
@@ -163,9 +163,10 @@ const Hero3B = forwardRef(({ scrollToSection }, ref) => {
                     <main>
                       <IMGContainer>
                         <div className="flex">
-                          <div className="md:mt-0 h-md xs:w-2/4 xs:pr-10 xs:mt-20">
-                            <h5 className="text-3xl text-left font-semibold text-SB_Blue"><ul className="list-disc list-inside"><li className="listItem">REVOLUTIONIZING INSTORE MERCHANDISING</li></ul></h5>
-                            <h1 className="md:text-6xl mt-10 md:mb-7 text-black xs:text-6xl text-left font-semibold font-sans z-0">MERCHANDISING TRANSFORMATION</h1> <h3 className="xs:text-3xl lg:w-full md:w-full text-black">
+                          <div className="md:mt-0 h-md w-full xs:pr-10 xs:mt-20">
+                            <h5 className="lg:text-3xl xs:hidden text-left font-semibold text-SB_Blue"><ul className="list-disc list-inside"><li className="listItem">REVOLUTIONIZING INSTORE MERCHANDISING</li></ul></h5>
+                            <h1 className="lg:text-6xl lg:mb-0 xs:mb-10 xs:text-modalHeader xs:-mt-10 lg:mt-10 md:mb-7 text-black xs:text-6xl text-left font-semibold font-sans z-0">MERCHANDISING TRANSFORMATION</h1>
+                            <h3 className="xs:text-3xl lg:w-full md:w-full text-black">
                               Once again Starboard brings the tech with Mockshop.
                               <br />
                               <br />
@@ -182,13 +183,6 @@ const Hero3B = forwardRef(({ scrollToSection }, ref) => {
                             </h3>
                           </div>
                           <h5 className="text-1xl absolute right-0 mr-thirty_nine mt-9 font-semibold text-SB_Blue"><ul className="list-disc list-inside"><li className="listItem">MockShop</li></ul></h5>
-                          {/* <video */}
-                          {/*   className="w-5/6 right-0 rounded" */}
-                          {/*   src={Transformation} */}
-                          {/*   loop */}
-                          {/*   autoPlay */}
-                          {/*   muted */}
-                          {/* /> */}
                         </div>
                       </IMGContainer>
                       <a
@@ -217,9 +211,9 @@ const Hero3B = forwardRef(({ scrollToSection }, ref) => {
                     <main>
                       <IMGContainer>
                         <div className="flex">
-                          <div className="md:mt-0 h-md xs:w-2/4 xs:pr-10 xs:mt-20">
-                            <h5 className="text-3xl text-left font-semibold text-SB_Blue"><ul className="list-disc list-inside"><li className="listItem">SUITE SPOT</li></ul></h5>
-                            <h1 className="md:text-6xl mt-10 md:mb-7 text-black xs:text-6xl text-left font-semibold font-sans z-0">LUXURY PERSONAL STYLIST</h1>
+                          <div className="md:mt-0 h-md w-full xs:pr-10 xs:mt-20">
+                            <h5 className="lg:text-3xl xs:hidden text-left font-semibold text-SB_Blue"><ul className="list-disc list-inside"><li className="listItem">SUITE SPOT</li></ul></h5>
+                            <h1 className="lg:text-6xl lg:mb-0 xs:mb-10 xs:text-modalHeader xs:-mt-10 lg:mt-10 md:mb-7 text-black xs:text-6xl text-left font-semibold font-sans z-0">LUXURY PERSONAL STYLIST</h1>
                             <h3 className="xs:text-3xl lg:w-full md:w-full text-black">
                               Imagine having a world-class personal shopper available in your suite and at your convenience.
                               <br />
@@ -230,7 +224,7 @@ const Hero3B = forwardRef(({ scrollToSection }, ref) => {
                               Expert advice and exceptional service to enhance the Royal Suite Class guest experience.
                             </h3>
                           </div>
-                          <img src={Trunk} className='mt-14 w-2/4' alt="SUITE SPOT" />
+                          <img src={Trunk} className='mt-14 w-2/4 lg:flex xs:hidden' alt="SUITE SPOT" />
                         </div>
                       </IMGContainer>
                       <a
